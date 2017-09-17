@@ -1,0 +1,309 @@
+LOCATIONS	Callouttype	Suspect Ped Position	Suspect Ped Heading	Suspect Vehicle Position	Suspect Vehicle Heading	Suspect Vehicle Color1	Suspect Vehicle Color2	Police Wait Position	Police Wait Heading	Backup Start Position	Backup Start Heading	Backup Vehicle Model Name	Backup Ped Modelname	Searcharea Position	Area Name	Audiofile
+1	_Default	-371.318f, 344.831f, 109.948f	20.069f	-372.963f, 348.187f, 108.676f	93.033f	Black	Red	-414.738f, 358.037f, 107.174f	276.016f	-1333.969f, 210.553f, 58.286f	271.629f	POLICE4	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	-350.299f, 514.528f, 120.639f	141.541f	-358.285f, 514.132f, 119.331f	132.976f	Green	Black	-328.066f, 471.285f, 109.213f	48.511f	834.486f, 357.302f, 117.271f	121.921f	POLICE	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-185.555f, 964.173f, 237.534f	287.902f	-167.587f, 969.192f, 236.614f	315.644f	Blue	Yellow	-160.591f, 1025.919f, 231.863f	160.248f	568.731f, 1804.229f, 209.388f	81.661f	POLICE2	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	-1365.972f, 564.851f, 134.973f	333.800f	-1359.004f, 577.134f, 130.977f	246.286f	White	Blue	-1361.306f, 615.420f, 133.841f	180.518f	-1662.834f, 964.894f, 151.636f	156.488f	POLICE2	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-597.178f, 852.608f, 211.384f	28.166f	-607.483f, 864.654f, 212.567f	336.557f	Red	White	-532.592f, 845.190f, 195.326f	85.084f	323.728f, 860.678f, 193.908f	124.938f	POLICE	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	1251.253f, -515.581f, 69.349f	234.660f	1241.170f, -519.351f, 68.568f	56.094f	Green 	Yellow	1269.386f, -495.490f, 68.649f	155.285f	784.387f, -569.989f, 31.048f	357.360f	POLICE4	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	963.588f, -595.303f, 59.903f	58.785f	961.343f, -608.722f, 58.738f	31.314f	Black	White	956.704f, -624.036f, 57.001f	43.843f	1291.650f, -1513.463f, 42.278f	18.741f	POLICE3	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	-868.808f, -1104.358f, 6.446f	272.131f	-862.831f, -1094.285f, 1.519f	298.837f	Black	Black	-896.707f, -1060.410f, 1.811f	211.068f	-94.625f, -623.919f, 35.968f	159.083f	POLICE	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	1245.414f, -1626.040f, 53.282f	25.261f	1237.354f, -1632.322f, 51.609f	29.632f	White	Red	1266.683f, -1585.769f, 52.398f	124.421f	1944.870f, -1083.797f, 95.077f	343.818f	POLICE2	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-23.991f, -23.640f, 73.246f	19.733f	-38.168f, -32.076f, 68.579f	31.373f	White	Black	-55.642f, -59.803f, 60.017f	344.227f	-893.565f, -400.468f, 38.027f	293.105f	POLICE	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	98.188f, -255.174f, 47.416f	20.523f	88.707f, -277.061f, 47.096f	159.349f	Green	White	91.985f, -291.302f, 46.038f	66.215f	5.249f, -968.549f, 29.012f	250.240f	POLICE	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-240.293f, 381.124f, 112.428f	87.155f	-262.919f, 394.792f, 109.823f	219.269f	Red	Black	-247.127f, 412.901f, 108.634f	107.466f	-1170.465f, 745.542f, 153.281f	144.715f	POLICE3	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-337.014f, 31.166f, 47.859f	75.784f	-355.108f, 37.789f, 47.761f	260.437f	Yellow	Black	-382.589f, 40.574f, 49.704f	179.398f	376.576f, 195.229f, 102.641f	160.382f	POLICE2	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-927.363f, -949.452f, 2.745f	302.843f	-920.066f, -953.762f, 1.770f	119.409f	Yellow	White	-884.182f, -995.304f, 1.997f	30.604f	-954.652f, -462.248f, 37.087f	207.065f	POLICE4	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-1183.101f, -1064.802f, 2.150f	99.883f	-1189.226f, -1066.147f, 1.757f	304.746f	Red	Red	-1176.466f, -1091.557f, 1.847f	119.154f	-1063.521f, -1925.449f, 12.681f	313.518f	POLICE3	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-1742.123f, 364.746f, 88.728f	126.255f	-1749.355f, 366.901f, 89.328f	296.631f	Black	Red	-1793.107f, 355.609f, 88.191f	298.284f	-2524.658f, 1053.447f, 183.426f	253.084f	POLICE2	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-664.282f, 668.728f, 150.439f	21.047f	-666.219f, 671.326f, 150.035f	251.054f	Green	Black	-674.583f, 690.649f, 153.261f	177.695f	-82.645f, 1057.137f, 224.564f	90.464f	POLICE	s_m_y_cop_01	0f,0f,0f	none	none
+1	_Default	-1230.736f, -1229.820f, 10.626f	45.886f	-1228.651f, -1231.822f, 6.643f	19.957f	Blue	Yellow	-1248.725f, -1239.334f, 6.148f	17.869f	-226.522f, -866.854f, 29.715f	71.177f	POLICE2	s_f_y_cop_01	0f,0f,0f	none	none
+1	_Default	-604.034f, -782.574f, 25.017f	23.924f	-615.145f, -784.206f, 24.720f	180.402f	White	Blue	-622.709f, -744.364f, 26.737f	181.374f	-15.712f, -1459.961f, 30.176f	94.684f	POLICE3	s_f_y_cop_01	0f,0f,0f	none	none
+2	_Default	506.038f, 2610.865f, 43.538f	46.029f	497.747f, 2614.405f, 42.609f	189.008f	Black	White	578.037f, 2634.854f, 41.281f	98.994f	1983.873f, 2985.010f, 45.408f	101.194f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	365.784f, 2570.713f, 43.568f	117.713f	363.759f, 2567.007f, 43.169f	242.586f	Black	Black	285.166f, 2593.573f, 44.053f	222.417f	-102.756f, 1984.025f, 184.524f	289.501f	SHERIFF2	s_f_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	983.777f, 2717.923f, 39.503f	190.556f	970.941f, 2724.826f, 39.132f	345.501f	White	Red	1035.292f, 2677.197f, 39.161f	90.432f	2151.450f, 3260.888f, 45.689f	66.617f	SHERIFF	s_f_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1252.129f, 2741.905f, 38.447f	151.530f	1245.762f, 2743.315f, 38.094f	11.147f	White	Black	1212.119f, 2673.549f, 37.290f	270.541f	-118.223f, 2836.639f, 50.486f	246.870f	SHERIFF2	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1405.868f, 3655.384f, 34.093f	47.059f	1405.566f, 3668.235f, 33.672f	274.537f	Green	White	1337.182f, 3655.511f, 32.844f	290.431f	317.370f, 3438.884f, 36.114f	304.123f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1924.826f, 3897.377f, 32.645f	23.614f	1930.427f, 3903.034f, 32.281f	114.893f	Red	Black	1971.771f, 3852.292f, 31.681f	34.252f	1784.519f, 3358.805f, 40.041f	29.059f	SHERIFF	s_f_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1742.480f, 3804.384f, 35.118f	224.021f	1752.468f, 3805.408f, 33.939f	299.795f	Yellow	Black	1718.558f, 3762.986f, 33.841f	32.576f	2235.515f, 3716.412f, 37.284f	114.705f	SHERIFF2	s_f_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1499.243f, 3702.761f, 39.059f	72.396f	1506.651f, 3686.636f, 34.192f	263.186f	Yellow	White	1405.660f, 3681.580f, 33.410f	289.926f	415.253f, 3512.842f, 34.121f	2.679f	SHERIFF2	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1374.029f, 4380.185f, 44.516f	178.203f	1369.430f, 4383.132f, 44.101f	11.276f	Red	Red	1432.743f, 4467.259f, 49.428f	164.555f	2389.542f, 4660.637f, 36.141f	43.072f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	1724.990f, 4642.132f, 43.876f	124.081f	1735.852f, 4636.287f, 42.963f	297.866f	Black	Red	1690.068f, 4692.890f, 42.419f	179.883f	2393.643f, 5174.267f, 49.678f	8.148f	SHERIFF2	s_f_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	2728.885f, 4280.826f, 48.961f	82.084f	2737.693f, 4273.234f, 48.186f	284.032f	Black	Red	2659.912f, 4334.656f, 44.664f	308.883f	1986.639f, 3674.031f, 32.947f	300.842f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+2	_Default	2016.380f, 4987.091f, 42.098f	135.415f	2010.520f, 4993.794f, 40.884f	341.740f	Green	Black	2074.206f, 4995.856f, 40.462f	66.490f	2742.768f, 5024.875f, 38.314f	8.594f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	1522.557f, 6329.463f, 24.607f	1.239f	1539.947f, 6336.328f, 23.623f	237.881f	Black	Red	1476.681f, 6425.723f, 21.382f	218.217f	1983.817f, 6265.395f, 45.182f	29.880f	SHERIFF	s_f_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	-379.724f, 6253.506f, 31.851f	336.772f	-380.853f, 6262.605f, 30.803f	203.462f	Green	Black	-404.264f, 6246.519f, 30.230f	355.568f	-733.629f, 5753.326f, 18.296f	334.077f	SHERIFF2	s_f_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	422.795f, 6479.252f, 28.813f	60.295f	427.246f, 6475.650f, 28.341f	278.809f	Blue	Yellow	422.411f, 6539.682f, 27.270f	168.188f	-299.096f, 6069.491f, 30.575f	315.714f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	-59.678f, 6450.160f, 31.492f	58.779f	-61.727f, 6443.690f, 30.851f	227.803f	White	Blue	-37.992f, 6509.096f, 30.803f	148.790f	1609.133f, 6428.814f, 25.576f	70.097f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	-302.508f, 6327.479f, 32.887f	37.731f	-294.632f, 6338.443f, 31.647f	230.171f	Black	White	-347.709f, 6311.189f, 29.222f	312.281f	-881.312f, 5424.117f, 34.977f	286.099f	SHERIFF2	s_m_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	35.287f, 6662.094f, 32.190f	172.783f	22.716f, 6664.468f, 30.925f	345.972f	Black	Black	73.178f, 6619.002f, 30.812f	44.032f	-645.335f, 5568.782f, 38.209f	303.302f	SHERIFF	s_f_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	-233.113f, 6450.653f, 31.198f	48.782f	-233.065f, 6441.617f, 30.558f	50.759f	White	Red	-190.995f, 6464.768f, 29.993f	144.830f	1401.058f, 6508.332f, 18.879f	98.639f	SHERIFF	s_m_y_sheriff_01	0f,0f,0f	none	none
+3	_Default	-480.839f, 6266.175f, 13.635f	145.745f	-485.072f, 6262.172f, 12.206f	250.853f	White	Black	-527.837f, 6210.081f, 7.065f	349.938f	429.475f, 6659.032f, 18.933f	217.865f	SHERIFF2	s_f_y_sheriff_01	0f,0f,0f	none	none
+1	_Water	-856.620f, -1469.388f, 1.634f	317.483f	-861.194f, -1468.570f, 0.306f	109.313f	Black	Red	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_01
+1	_Water	-736.532f, -1387.271f, 1.595f	79.7453f	-735.627f, -1382.588f, 0.277f	320.024f	Blue	Yellow	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_02
+1	_Water	-718.223f, -1326.099f, 1.596f	210.671f	-723.332f, -1318.624f, 0.284f	49.792f	Lime	Black	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_03
+1	_Water	-790.977f, -1508.940f, 1.595f	42.902f	-784.065f, -1511.753f, 0.308f	319.910f	Red	Yellow	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_04
+1	_Water	-953.205f, -1353.757f, 1.605f	195.114f	-951.675f, -1355.399f, 0.320f	111.414f	Black	White	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_05
+1	_Water	-1003.789f, -1399.513f, 1.595f	274.706f	-1004.591f, -1409.901f, 0.314f	199.473f	Aqua	Black	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-833.224f, -1412.419f, 0.0f	Puerto del Sol Marina	AREA_PUERTO_DEL_SOL_06
+1	_Water	-1089.795f, -1086.657f, 2.150f	175.883f	-1084.943f, -1094.751f, -0.145f	117.145f	Orange	Black	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_01
+1	_Water	-1032.259f, -1172.816f, 2.159f	229.644f	-1027.486f, -1185.644f, -0.176f	302.426f	Purple	Yellow	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_02
+1	_Water	-920.930f, -1094.763f, 2.150f	287.920f	-909.939f, -1084.670f, -0.169f	31.767f	Blue	Aqua	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_03
+1	_Water	-989.723f, -974.468f, 4.223f	290.421f	-978.789f, -966.813f, -0.200f	34.309f	White	Orange	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_04
+1	_Water	-1074.430f, -939.539f, 2.362f	148.279f	-1067.520f, -958.105f, -0.099f	118.749f	White	IndianRed	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_05
+1	_Water	-1130.453f, -1031.726f, 2.150f	50.133f	-1144.562f, -1020.402f, 0.016f	124.372f	Black	Lime	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_06
+																
+HUMANS	Modelname	AnimationDir	AnimationName	AnimationFlags												
+_Rich	a_m_y_vinewood_01	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_m_y_vinewood_02	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_m_y_vinewood_03	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_m_y_vinewood_04	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_f_y_vinewood_01	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_f_y_vinewood_02	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_f_y_vinewood_03	missmic2@enemy	smoking_loop	Loop												
+_Rich	a_f_y_vinewood_04	missmic2@enemy	smoking_loop	Loop												
+_Normal	u_m_y_party_01	missmic2@enemy	smoking_loop	Loop												
+_Normal	u_m_m_partytarget	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_m_m_eastsa_02	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_m_m_soucent_04	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_f_y_eastsa_03	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_f_y_soucent_03	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_f_m_bevhills_01	missmic2@enemy	smoking_loop	Loop												
+_Normal	a_f_m_ktown_01	missmic2@enemy	smoking_loop	Loop												
+_County	a_f_m_eastsa_01	missmic2@enemy	smoking_loop	Loop												
+_County	a_m_m_hillbilly_01	missmic2@enemy	smoking_loop	Loop												
+_County	a_m_m_mexlabor_01	missmic2@enemy	smoking_loop	Loop												
+_County	a_m_y_salton_01	missmic2@enemy	smoking_loop	Loop												
+_County	s_f_m_sweatshop_01	missmic2@enemy	smoking_loop	Loop												
+_County	s_m_m_autoshop_01	missmic2@enemy	smoking_loop	Loop												
+_County	g_f_y_families_01	missmic2@enemy	smoking_loop	Loop												
+_County	s_m_m_trucker_01	missmic2@enemy	smoking_loop	Loop												
+																
+VEHICLES	Modelname															
+_Rich	REAPER															
+_Rich	OSIRIS															
+_Rich	VACCA															
+_Rich	ZENTORNO,															
+_Rich	BESTIAGTS															
+_Rich	T20															
+_Rich	NINEF															
+_Rich	BANSHEE															
+_Rich	FMJ															
+_Rich	PFISTER811															
+_Rich	PROTOTIPO															
+_Rich	BULLET															
+_Normal	GAUNTLET															
+_Normal	SABREGT															
+_Normal	DOMINATOR															
+_Normal	VIGERO															
+_Normal	PHOENIX															
+_Normal	BUCCANEER															
+_Normal	TAMPA															
+_Normal	NIGHTSHADE															
+_Normal	STALION															
+_Normal	BLADE															
+_Normal	DUKES															
+_Normal	CHINO															
+_County	DLOADER															
+_County	RANCHERXL															
+_County	REBEL2															
+_County	SANDKING2															
+_County	BFINJECTION															
+_County	BIFTA															
+_County	MESA															
+_County	GRANGER															
+_County	EMPEROR2															
+_County	RUINER															
+_County	VOODOO2															
+_County	PICADOR															
+_Water	TROPIC															
+_Water	JETMAX															
+_Water	SQUALO															
+_Water	SUNTRAP															
+																
+DIALOGS	Dialog ID	Counter	Text													
+_Default	1	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do you own the vehicle in your driveway?"													
+_Default	1	1	~r~Suspect:~w~ Yes, officer, I do.													
+_Default	1	2	"~b~"" + GameHandler.ini_username + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
+_Default	1	3	~r~Suspect:~w~ Am I being detained, officer?													
+_Default	1	4	"~b~"" + GameHandler.ini_username + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
+_Default	1	5	~r~Suspect:~w~ Well, what's happening? Is there a problem with my vehicle?													
+_Default	1	6	"~b~"" + GameHandler.ini_username + "":~w~ Yes. It matches the description of a vehicle involved in a Hit and Run."													
+_Default	1	7	~r~Suspect:~w~ Well, I was home all day. Your source must have a misunderstanding or something.													
+_Default	1	8	"~b~"" + GameHandler.ini_username + "":~w~ Can I take a closer look at your vehicle?"													
+_Default	1	9	~r~Suspect:~w~ Ugh, you got me. I hit the person and drove off, I didn't know what to do. I'm so sorry, don't arrest me please!													
+_Default	1	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
+_Default	1	11	~r~Suspect:~w~ Fuck this! I ain't going' back to jail.													
+_Default	2	0	"~b~"" + GameHandler.ini_username + "":~w~ Hey there. Is that your vehicle in the driveway?"													
+_Default	2	1	r~Suspect:~w~ Yes, it is. Is everything okay?													
+_Default	2	2	"~b~"" + GameHandler.ini_username + "":~w~ Can you tell me where you were about 15 minutes ago? "													
+_Default	2	3	~r~Suspect:~w~ Can you tell me what is going on? Do I need a lawyer?													
+_Default	2	4	"~b~"" + GameHandler.ini_username + "":~w~Your vehicle matches the description of a vehicle involved in a Hit and Run"													
+_Default	2	5	~r~Suspect:~w~ Bullshit! I was home all day!													
+_Default	2	6	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained and will have to come down to the station with me."													
+_Default	2	7	~r~Suspect:~w~ No! I'm not doing that!													
+_Default	2	8	"~b~"" + GameHandler.ini_username + "":~w~ Well unfortunately, at this point, you have no choice. "													
+_Default	2	9	~r~Suspect:~w~ Stupid cops, stupid justice system. Go screw yourself!													
+_Default	2	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Go ahead and put your hands where I can see them."													
+_Default	2	11	~r~Suspect:~w~ Screw this! Try to catch me pig!													
+_Default	3	0	"~b~"" + GameHandler.ini_username + "":~w~ Is that your vehicle in the driveway?"													
+_Default	3	1	~r~Suspect:~w~ Hello Officer. Yes, it is.													
+_Default	3	2	"~b~"" + GameHandler.ini_username + "":~w~: Any reason for so much vehicle damage?"													
+_Default	3	3	~r~Suspect:~w~ I got in an accident a few days ago. It's in the process of being fixed, officer.													
+_Default	3	4	"~b~"" + GameHandler.ini_username + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
+_Default	3	5	~r~Suspect:~w~ No, I wasn't involved in an accident today. Why do you ask?													
+_Default	3	6	"~b~"" + GameHandler.ini_username + "":~w~ This vehicle matches the description of a vehicle involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
+_Default	3	7	~r~Suspect:~w~ I am clean. I didn't get in an accident. Please leave now. You aren't welcomed at my home.													
+_Default	3	8	"~b~"" + GameHandler.ini_username + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
+_Default	3	9	~r~Suspect:~w~ Ugh, fine! The person got in my way. I couldn't stop in time. It wasn't my fault, officer, it was theirs...													
+_Default	3	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
+_Default	3	11	~r~Suspect:~w~ I'm not going back to jail! Stupid pig!													
+_Default	4	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
+_Default	4	1	~r~Suspect:~w~ No, sorry. I'm in a hurry!													
+_Default	4	2	"~b~"" + GameHandler.ini_username + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your vehicle?"													
+_Default	4	3	~r~Suspect:~w~ As I said, I don't have time! Please leave!													
+_Default	4	4	"~b~"" + GameHandler.ini_username + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your vehicle?"													
+_Default	4	5	~r~Suspect:~w~ Because some bastard hit me, and now you are going to arrest me, when they caused it!													
+_Default	4	6	"~b~"" + GameHandler.ini_username + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
+_Default	4	7	~r~Suspect:~w~ No, I am staying right here.													
+_Default	4	8	"~b~"" + GameHandler.ini_username + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
+_Default	4	9	~r~Suspect:~w~ This isn't fair!.													
+_Default	4	10	"~b~"" + GameHandler.ini_username + "":~w~ Last chance. Put your hands where I can see them."													
+_Default	4	11	~r~Suspect:~w~ No, this isn't fair I said!													
+_Default	5	0	"~b~"" + GameHandler.ini_username + "":~w~ Do me a favor and keep your hands where I can see them. Is that your vehicle parked over there?"													
+_Default	5	1	~r~Suspect:~w~ ..Yes officer, it is. Is everything alright?													
+_Default	5	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
+_Default	5	3	~r~Suspect:~w~ Can you tell me why you're acting like a dick?													
+_Default	5	4	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
+_Default	5	5	~r~Suspect:~w~ I was cruising around! I was enjoying my day off and just got done pulling in. What the hell is going on?!													
+_Default	5	6	"~b~"" + GameHandler.ini_username + "":~w~ Did you happen to hit someone while you were out?"													
+_Default	5	7	~r~Suspect:~w~ What?													
+_Default	5	8	"~b~"" + GameHandler.ini_username + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
+_Default	5	9	~r~Suspect:~w~ Maybe. I would like to talk to my lawyer.													
+_Default	5	10	"~b~"" + GameHandler.ini_username + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
+_Default	5	11	~r~Suspect:~w~ Fuck you, bitch. Catch me if you can!													
+_Water	6	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do you own the boat anchored over there?"													
+_Water	6	1	~r~Suspect:~w~ Yes, officer, I do.													
+_Water	6	2	"~b~"" + GameHandler.ini_username + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
+_Water	6	3	~r~Suspect:~w~ Am I being detained, officer?													
+_Water	6	4	"~b~"" + GameHandler.ini_username + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
+_Water	6	5	~r~Suspect:~w~ Well, whats happening? Is there a problem with my boat?													
+_Water	6	6	"~b~"" + GameHandler.ini_username + "":~w~ Yes. It matches the description of a watercraft involved in a Hit and Run."													
+_Water	6	7	~r~Suspect:~w~ Well, I was home all day. Your source must have a misunderstanding or something.													
+_Water	6	8	"~b~"" + GameHandler.ini_username + "":~w~ Can I take a closer look at your boat?"													
+_Water	6	9	~r~Suspect:~w~ Ugh, you got me. I hit the person and sped off, I didn't know what to do. I'm so sorry, don't arrest me please!													
+_Water	6	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
+_Water	6	11	~r~Suspect:~w~ Fuck this! I ain't going back to jail.													
+_Water	7	0	"~b~"" + GameHandler.ini_username + "":~w~ Hey there. Is that your boat anchored over there?"													
+_Water	7	1	~r~Suspect:~w~ Yes, it is. Is everything okay?													
+_Water	7	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were about 15 minutes ago?"													
+_Water	7	3	~r~Suspect:~w~ Can you tell me what is going on? Do I need a lawyer?													
+_Water	7	4	"~b~"" + GameHandler.ini_username + "":~w~Your boat matches the description of a watercraft involved in a Hit and Run"													
+_Water	7	5	~r~Suspect:~w~ Bullshit! I was home all day!													
+_Water	7	6	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained, and will have to come down to the station with me."													
+_Water	7	7	~r~Suspect:~w~ No! I am not doing that!													
+_Water	7	8	"~b~"" + GameHandler.ini_username + "":~w~ Well unfortunately, at this point, you have no choice."													
+_Water	7	9	~r~Suspect:~w~ Stupid cops, stupid justice system. Go screw yourself.													
+_Water	7	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Go ahead and put your hands where I can see them."													
+_Water	7	11	~r~Suspect:~w~ Screw this. Try to catch me pig!													
+_Water	8	0	"~b~"" + GameHandler.ini_username + "":~w~ Is that your boat anchored over there?"													
+_Water	8	1	~r~Suspect:~w~ Hello Officer. Yes, it is.													
+_Water	8	2	"~b~"" + GameHandler.ini_username + "":~w~: Any reason for so much damage to your boat?"													
+_Water	8	3	~r~Suspect:~w~ I got in an accident a few days ago. It's in the process of being fixed, officer.													
+_Water	8	4	"~b~"" + GameHandler.ini_username + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
+_Water	8	5	~r~Suspect:~w~ No, I wasn't involved in an accident today. Why do you ask?													
+_Water	8	6	"~b~"" + GameHandler.ini_username + "":~w~ Your boat matches the description of a watercraft involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
+_Water	8	7	~r~Suspect:~w~ I am clean. I didn't get in an accident. Please leave now. I don't want to answer any more questions.													
+_Water	8	8	"~b~"" + GameHandler.ini_username + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
+_Water	8	9	~r~Suspect:~w~ Ugh, fine! The person got in my way. I couldn't stop in time. It wast my fault, officer, it was theirs...													
+_Water	8	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
+_Water	8	11	~r~Suspect:~w~ I'm not going back to jail! Stupid pig!													
+_Water	9	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
+_Water	9	1	~r~Suspect:~w~ No, sorry. I'm in a hurry!													
+_Water	9	2	"~b~"" + GameHandler.ini_username + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your boat?"													
+_Water	9	3	~r~Suspect:~w~ As I said, I don't have time! Please leave!													
+_Water	9	4	"~b~"" + GameHandler.ini_username + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your boat?"													
+_Water	9	5	~r~Suspect:~w~ Because some bastard got in front of me, and now you are going to arrest me, when they caused it!													
+_Water	9	6	"~b~"" + GameHandler.ini_username + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
+_Water	9	7	~r~Suspect:~w~ No, I am staying right here.													
+_Water	9	8	"~b~"" + GameHandler.ini_username + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
+_Water	9	9	~r~Suspect:~w~ This isn't fair!.													
+_Water	9	10	"~b~"" + GameHandler.ini_username + "":~w~ Last chance. Put your hands where I can see them."													
+_Water	9	11	~r~Suspect:~w~ No, this isn't fair I said!													
+_Water	10	0	"~b~"" + GameHandler.ini_username + "":~w~ Do me a favor and keep your hands where I can see them. Is that your boat over there?"													
+_Water	10	1	~r~Suspect:~w~ ..Yes officer, it is. Is everything alright?													
+_Water	10	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
+_Water	10	3	"~r~Suspect:~w~ Can you tell me why you're acting like a dick?"""													
+_Water	10	4	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
+_Water	10	5	~r~Suspect:~w~ I was cruising around! I was enjoying my day off and just got done pulling in. What the hell is going on?!													
+_Water	10	6	"~b~"" + GameHandler.ini_username + "":~w~ Did you happen to hit someone while you were out?"													
+_Water	10	7	~r~Suspect:~w~ What?													
+_Water	10	8	"~b~"" + GameHandler.ini_username + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
+_Water	10	9	~r~Suspect:~w~ Maybe. I would like to talk to my lawyer.													
+_Water	10	10	"~b~"" + GameHandler.ini_username + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
+_Water	10	11	~r~Suspect:~w~ Fuck you, bitch. Catch me if you can!													
+_NoSuspect	11	0	Hey partner, looks like you found the car I was looking for.													
+_NoSuspect	11	1	Hi, yeah, i was doing my patrol round when i saw it there.													
+_NoSuspect	11	2	Anything that could lead us to a suspect?													
+_NoSuspect	11	3	Sorry, no. There was nobody on the way up here and nothing in the car.													
+_NoSuspect	11	4	Damn. Well you can leave i will take car about the rest.													
+_NoSuspect	11	5	Ok thanks, see ya.													
+_TrafficStop	12	0	Hey Partner, seems the BOLO brought success.													
+_TrafficStop	12	1	Hi, yes, i stopped the car because of its damage to the front wheel, and then saw the APB.													
+_TrafficStop	12	2	Yeah, well i will take over from here ok ?													
+_TrafficStop	12	3	Sure, i will back you up from here.													
+_TrafficStop	12	4	Thanks, then lets go													
+_TrafficStop	12	5	Please step out of the vehicle.													
+_TrafficStop	12	6	No, what did i do wrong? Why did you stop me?													
+_TrafficStop	12	7	Your car is seriously damaged. You can't continue. Please step out!													
+_TrafficStop	12	8	The Vehicle you drive has been stolen and was involed in a Hit and Run. You are under arrest. Show me you hands.													
+_TrafficStop	12	9	I would like to talk to my lawyer.													
+_TrafficStop	12	10	Seeya bitches…													
+																
+POSITIONS	ID	PositionType	Heading	Position	ModelName	Region ID										
+_NoSuspect	1	CAR_ABANDON	339.12f	824.21f, 1174.70f, 322.80f	NONE	1										
+_NoSuspect	1	CAR_UNIT	21.67f	811.89f, 1165.76f, 320.86f	PRANGER	1										
+_NoSuspect	1	PED_UNIT	314.15f	822.13f, 1170.82f, 322.74f	s_f_y_ranger_01	1										
+_TrafficStop	2	CAR_SUSPECT	25.86f	-19.13f, 1467.14f, 276.01f	NONE	1										
+_TrafficStop	2	CAR_UNIT	27.37f	-14.95f, 1460.64f, 275.73f	POLICE3	1										
+_TrafficStop	2	PED_SUSPECT	25.86f	-19.13f, 1467.14f, 276.01f	NONE	1										
+_TrafficStop	2	PED_UNIT	147.87f	-13.81f, 1456.97f, 275.97f	s_f_y_cop_01	1										
+_TrafficStop	2	PED_WAIT	30.69f	-16.12f, 1460.12f, 276.04f	NONE	1										
+_NoSuspect	3	CAR_ABANDON	356.00f	-377.45f, 1598.63f, 332.15f	NONE	1										
+_NoSuspect	3	CAR_UNIT	87.42f	-378.61f, 1570.95f, 349.76f	PRANGER	1										
+_NoSuspect	3	PED_UNIT	352.86f	-378.61f, 1574.93f, 348.78f	s_m_y_ranger_01	1										
+_TrafficStop	4	CAR_SUSPECT	87.38f	-484.55f, 135.82f, 63.39f	NONE	1										
+_TrafficStop	4	CAR_UNIT	88.13f	-475.76f, 135.54f, 63.47f	POLICE	1										
+_TrafficStop	4	PED_SUSPECT	87.38f	-484.55f, 135.82f, 63.39f	NONE	1										
+_TrafficStop	4	PED_UNIT	240.70f	-472.76f, 134.30f, 63.95f	s_m_y_cop_01	1										
+_TrafficStop	4	PED_WAIT	86.72f	-475.92f, 134.23f, 63.90f	NONE	1										
+_NoSuspect	5	CAR_ABANDON	132.03f	705.39f, 2551.40f, 71.87f	NONE	2										
+_NoSuspect	5	CAR_UNIT	94.02f	723.84f, 2562.07f, 74.16f	SHERIFF2	2										
+_NoSuspect	5	PED_UNIT	104.43f	714.44f, 2555.80f, 73.09f	s_m_y_sheriff_01	2										
+_TrafficStop	6	CAR_SUSPECT	271.77f	847.89f, 3526.71f, 33.77f	NONE	2										
+_TrafficStop	6	CAR_UNIT	260.66f	840.05f, 3525.83f, 33.59f	SHERIFF	2										
+_TrafficStop	6	PED_SUSPECT	271.77f	847.89f, 3526.71f, 33.77f	NONE	2										
+_TrafficStop	6	PED_UNIT	76.16f	836.97f, 3527.23f, 34.07f	s_f_y_sheriff_01	2										
+_TrafficStop	6	PED_WAIT	266.99f	840.36f, 3527.13f, 34.04f	NONE	2										
+_NoSuspect	7	CAR_ABANDON	317.65f	2683.32f, 4880.10f, 32.33f	NONE	2										
+_NoSuspect	7	CAR_UNIT	3.82f	2684.93f, 4860.31f, 32.43f	SHERIFF	2										
+_NoSuspect	7	PED_UNIT	2.84f	2678.73f, 4872.27f, 32.34f	s_m_y_sheriff_01	2										
+_TrafficStop	8	CAR_SUSPECT	10.65f	2938.55f, 4014.11f, 51.01f	NONE	2										
+_TrafficStop	8	CAR_UNIT	25.48f	2939.82f, 4006.98f, 25.48f	POLICE4	2										
+_TrafficStop	8	PED_SUSPECT	10.65f	2938.55f, 4014.11f, 51.01f	NONE	2										
+_TrafficStop	8	PED_UNIT	350.82f	2938.59f, 4006.51f, 51.39f	s_m_y_sheriff_01	2										
+_TrafficStop	8	PED_WAIT	170.31f	2941.35f, 4003.19f, 51.39f	NONE	2										
+_NoSuspect	9	CAR_ABANDON	226.68f	1553.97f, 6335.77f, 23.59f	NONE	3										
+_NoSuspect	9	CAR_UNIT	61.67f	1539.98f, 6346.65f, 23.52f	SHERIFF2	3										
+_NoSuspect	9	PED_UNIT	233.73f	1547.26f, 6340.16f, 23.99f	s_f_y_sheriff_01	3										
+_TrafficStop	10	CAR_SUSPECT	56.35f	2124.87f, 6093.23f, 50.95f	NONE	3										
+_TrafficStop	10	CAR_UNIT	41.83f	2131.15f, 6088.93f, 51.00f	SHERIFF2	3										
+_TrafficStop	10	PED_SUSPECT	56.35f	2124.87f, 6093.23f, 50.95f	NONE	3										
+_TrafficStop	10	PED_UNIT	212.96f	2133.62f, 6086.68f, 51.44f	s_f_y_sheriff_01	3										
+_TrafficStop	10	PED_WAIT	36.70f	2129.68f, 6088.43f, 51.38f	NONE	3										
+_NoSuspect	11	CAR_ABANDON	276.09f	-428.65f, 5440.29f, 73.00f	NONE	3										
+_NoSuspect	11	CAR_UNIT	134.03f	-460.66f, 5442.18f, 73.90f	PRANGER	3										
+_NoSuspect	11	PED_UNIT	266.27f	-453.81f, 5439.04f, 71.33f	s_m_y_ranger_01	3										
+_TrafficStop	12	CAR_SUSPECT	148.99f	-2311.99f, 4190.37f, 39.25f	NONE	3										
+_TrafficStop	12	CAR_UNIT	161.98f	-2308.31f, 4195.48f, 39.45f	SHERIFF	3										
+_TrafficStop	12	PED_SUSPECT	148.99f	-2311.99f, 4190.37f, 39.25f	NONE	3										
+_TrafficStop	12	PED_UNIT	302.93f	-2306.14f, 4198.79f, 40.19f	s_m_y_sheriff_01	3										
+_TrafficStop	12	PED_WAIT	136.78f	-2307.06f, 4194.98f, 39.96f	NONE	3										

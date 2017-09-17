@@ -1,0 +1,210 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".cs" #>
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+//LPC
+using LPCallouts.Internals;
+//LSPDFR
+using Rage;
+
+<#
+
+List<string[]> LOCATIONS = new List<string[]>();
+            List<string[]> OBJECTS = new List<string[]>();
+            List<string[]> HUMANS = new List<string[]>();
+            List<string[]> VEHICLES = new List<string[]>();
+            List<string[]> DIALOGS = new List<string[]>();
+			List<string[]> POSITIONS = new List<string[]>();
+            using (FileStream _contentfile = File.Open(@"P:\archive_c#\LPCallouts\ContentData\SuspectData.txt", FileMode.Open))
+            {
+                using (StreamReader _contentReader = new StreamReader(_contentfile))
+                {
+                    int blocktype = -1;
+                    while (!_contentReader.EndOfStream)
+                    {
+                        string a = _contentReader.ReadLine();
+                        string[] LineSplit = a.Split('\t');
+						bool isSet = false;
+                        switch(LineSplit[0])
+                        {
+                            case "LOCATIONS":
+                                blocktype = 1;
+								isSet=true;
+                                break;
+                            case "HUMANS":
+                                blocktype = 2;
+								isSet=true;
+                                break;
+                            case "VEHICLES":
+                                blocktype = 3;
+								isSet=true;
+                                break;
+                            case "DIALOGS":
+                                blocktype = 4;
+								isSet=true;
+                                break;
+							case "POSITIONS":
+                                blocktype = 5;
+								isSet=true;
+                                break;
+                        }
+                        
+                        if(!isSet && !LineSplit.All(t => t == ""))
+                        {
+                            switch(blocktype)
+                            {
+                                case 1:
+                                    LOCATIONS.Add(LineSplit);
+                                    break;
+                                case 2:
+                                    HUMANS.Add(LineSplit);
+                                    break;
+                                case 3:
+                                    VEHICLES.Add(LineSplit);
+                                    break;
+                                case 4:
+                                    DIALOGS.Add(LineSplit);
+                                    break;
+								case 5:
+                                    POSITIONS.Add(LineSplit);
+                                    break;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+#>
+
+namespace LPCallouts
+{
+	public class Suspects
+	{
+		public static List<Globals.SuspectLocation> SuspectLocations = new List<Globals.SuspectLocation>();
+        public static List<Globals.SuspectPerson> SuspectPeds = new List<Globals.SuspectPerson>();
+        public static List<Globals.SuspectCar> SuspectCars = new List<Globals.SuspectCar>();
+        public static List<Globals.SuspectDialog> SuspectDialogs = new List<Globals.SuspectDialog>();
+		public static List<Globals.SuspectPositions> SuspectPositions = new List<Globals.SuspectPositions>();
+
+		public static void GenerateContent()
+		{
+			try
+			{
+				#region Locations
+<#
+				foreach(string[] loc in LOCATIONS)
+				{
+#>
+				SuspectLocations.Add(new Globals.SuspectLocation
+				{
+					_region = <#=loc[0].Trim(new char[] { '\"', ' ', ',' })#>,
+					_callouttype = Globals.CalloutType.<#=loc[1].Trim(new char[] { '\"', ' ', ',' })#>,
+					_ped_position = new Vector3(<#=loc[2].Trim(new char[] { '\"', ' ', ',' })#>),
+					_ped_heading = <#=loc[3].Trim(new char[] { '\"', ' ', ',' })#>,
+					_veh_position = new Vector3(<#=loc[4].Trim(new char[] { '\"', ' ', ',' })#>),
+					_veh_heading = <#=loc[5].Trim(new char[] { '\"', ' ', ',' })#>,
+					_veh_color1 = Color.<#=loc[6].Trim(new char[] { '\"', ' ', ',' })#>,
+					_veh_color2 = Color.<#=loc[7].Trim(new char[] { '\"', ' ', ',' })#>,
+					_police_position = new Vector3(<#=loc[8].Trim(new char[] { '\"', ' ', ',' })#>),
+					_police_heading = <#=loc[9].Trim(new char[] { '\"', ' ', ',' })#>,
+				    _backup_position = new Vector3(<#=loc[10].Trim(new char[] { '\"', ' ', ',' })#>),
+					_backup_heading = <#=loc[11].Trim(new char[] { '\"', ' ', ',' })#>,
+					_backup_veh_model = "<#=loc[12].Trim(new char[] { '\"', ' ', ',' })#>",
+					_backup_ped_model = "<#=loc[13].Trim(new char[] { '\"', ' ', ',' })#>",
+					_searcharea = new Vector3(<#=loc[14].Trim(new char[] { '\"', ' ', ',' })#>),
+					_areaname = "<#=loc[15].Trim(new char[] { '\"', ' ', ',' })#>",
+					_audioarea = "<#=loc[16].Trim(new char[] { '\"', ' ', ',' })#>"
+				});
+				
+<#
+				}			
+#>
+				#endregion Locations
+
+				#region PedModels
+<#
+				foreach(string[] hum in HUMANS)
+				{
+#>
+				SuspectPeds.Add(new Globals.SuspectPerson
+				{
+					_type = Globals.HumanType.<#=hum[0].Trim(new char[] { '\"', ' ', ',' })#>,
+					_modelname = "<#=hum[1].Trim(new char[] { '\"', ' ', ',' })#>",
+					_animdir = "<#=hum[2].Trim(new char[] { '\"', ' ', ',' })#>",
+					_animname = "<#=hum[3].Trim(new char[] { '\"', ' ', ',' })#>",
+					_animflag = AnimationFlags.<#=hum[4].Trim(new char[] { '\"', ' ', ',' })#>
+				});
+<#
+				}
+#>
+				#endregion PedModels
+
+				#region VehicleModels
+<#
+				foreach(string[] car in VEHICLES)
+				{
+#>
+				SuspectCars.Add(new Globals.SuspectCar
+				{
+					_type = Globals.CarType.<#=car[0].Trim(new char[] { '\"', ' ', ',' })#>,
+					_modelname = "<#=car[1].Trim(new char[] { '\"', ' ', ',' })#>"
+				});
+<#
+				}
+#>
+				#endregion PedModels
+
+				#region Dialogs
+<#
+				foreach(string[] dlg in DIALOGS)
+				{
+#>
+				SuspectDialogs.Add(new Globals.SuspectDialog
+				{
+					_callouttype = Globals.CalloutType.<#=dlg[0].Trim(new char[] { '\"', ' ', ',' })#>,
+					_dialogid = <#=dlg[1].Trim(new char[] { '\"', ' ', ',' })#>,
+					_counter = <#=dlg[2].Trim(new char[] { '\"', ' ', ',' })#>,
+					_text = "<#=dlg[3].Trim(new char[] { '\"', ' ', ',' }).Replace("\"\"","\"")#>",
+				});
+<#
+				}
+#>
+				#endregion Dialogs
+
+				#region Positions
+<#
+				foreach(string[] pos in POSITIONS)
+				{
+#>
+				SuspectPositions.Add(new Globals.SuspectPositions
+				{
+					_callouttype = Globals.CalloutType.<#=pos[0].Trim(new char[] { '\"', ' ', ',' })#>,
+					_id = <#=pos[1].Trim(new char[] { '\"', ' ', ',' })#>,
+					_type =  Globals.PositionType.<#=pos[2].Trim(new char[] { '\"', ' ', ',' })#>,
+					_heading = <#=pos[3].Trim(new char[] { '\"', ' ', ',' })#>,
+					_position = new Vector3(<#=pos[4].Trim(new char[] { '\"', ' ', ',' })#>),
+					_modelname = "<#=pos[5].Trim(new char[] { '\"', ' ', ',' }).Replace("\"\"","\"")#>",
+					_region = <#=pos[6].Trim(new char[] { '\"', ' ', ',' })#>,
+				});
+<#
+				}
+#>
+				#endregion Positions
+
+			}
+			catch (Exception ex)
+            {
+                Game.DisplayNotification("~r~LPCallouts~w~ Content Error: ~y~SuspectDefintions~w~ could not be generated");
+                Game.LogTrivial(ex.ToString());
+            }
+	}
+	}
+}

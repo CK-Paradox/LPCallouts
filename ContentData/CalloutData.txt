@@ -1,0 +1,1675 @@
+LOCATIONS	Type	Area	Street	Position	SpeedZone_Radius	SpeedZone_Speed	Region	Dispatchmessage	Music
+1	DrifterScene	AREA_VINEWOOD_HILLS_01	Marlowe Drive	-1071.284f, 1172.085f, 215.472f	80f	8f	1	10-50 at	0
+2	DrifterScene	AREA_GRAPESEED_01	Union Road	2330.917f, 5213.484f, 59.487f	80f	8f	2	10-50 at	0
+3	DrifterScene	STREET_GREAT_OCEAN_HWY_01	US Route 1	-1289.924f, 5262.836f, 51.926f	80f	8f	3	10-50 at	0
+4	CyclistScene	AREA_VINEWOOD_HILLS_01	Mt.Haan Road	1204.949f, 1317.503f, 145f	80f	8f	1	Reported 10-33 at	0
+5	CyclistScene	AREA_THE_ALAMO_SEA_01	Calafia Road	-231.899f, 3879.420f, 37.520f	80f	8f	2	Reported 10-33 at	0
+6	CyclistScene	AREA_THE_CHILLIAD_MOUNTAIN_STATE_WILDERNESS_01	Cassidy Trail	-1289.563f, 4610.563f, 121.169f	80f	8f	3	Reported 10-33 at	0
+7	CornerCut	AREA_TONGVA_HILLS_01	Buen Vino Road	-2044.588f, 1935.916f, 187.063f	80f	8f	1	Officers report 10-50 at	0
+8	CornerCut	AREA_SAN_CHIANSKI_MOUNTAINS_01	Chianski Passage	3015.512f, 3387.339f, 73.763f	80f	8f	2	Officers report 10-50 at	0
+9	CornerCut	STREET_GREAT_OCEAN_HWY_01	US Route 1	-2047.778f, 4460.698f, 57.999f	80f	8f	3	Officers report 10-50 at	0
+10	TruckCrash	AREA_EL_BURRO_HEIGHTS_01	El Burro Blvd.	1902.545f, -1264.719f, 126.943f	80f	8f	1	Possible 10-57 at	0
+11	TruckCrash	STREET_ROUTE_68_01	US Route 68	-973.384f, 2755.694f, 25.413f	80f	8f	2	Possible 10-57 at	0
+12	TruckCrash	AREA_THE_CHILLIAD_MOUNTAIN_STATE_WILDERNESS_01	Cassidy Trail	-815.327f, 5263.136f, 87.946f	80f	8f	3	Possible 10-57 at	0
+13	Freeway	STREET_PALOMINO_FWY_01	US Route 15	1790.720f, -852.161f, 73.584f	80f	8f	1	We have 10-50 at	0
+14	Freeway	AREA_BRADDOCK_PASS_01 STREET_SENORA_FWY_01	US Route 13	2518.239f, 5523.961f, 44.725f	80f	8f	2	We have 10-50 at	0
+15	Freeway	STREET_DEL_PERRO_FWY_01	Interstate 2	-499.429f, -505.729f, 25.667f	80f	8f	1	We have 10-50 at	0
+16	Freeway	AREA_PROCOPIO_BEACH_01 STREET_GREAT_OCEAN_HWY_01	US Route 1	975.302f, 6499.112f, 21.012f	80f	8f	3	We have 10-50 at	0
+17	BeachScene	AREA_VESPUCCI_BEACH_01	Vespucci Beach	-1460.925f, -1491.310f, 2.034f	80f	8f	1	Lifegurards report a 10-33 at	0
+18	BeachScene	AREA_EL_BURRO_HEIGHTS_01	El Burro Beach	1265.187f, -2717.728f, 2.097f	80f	8f	1	Lifegurards report a 10-33 at	0
+19	RunOver	AREA_HAWICK_01	Spanish Ave	197.050f, -44.891f, 68.490f	80f	8f	1	Backup requested, 10-57 at	0
+20	RunOver	AREA_VESPUCCI_01	Magellan Ave	-1296.696f, -1138.873f, 5.432f	80f	8f	1	Backup requested, 10-57 at	0
+21	RunOver	AREA_DEL_PERRO_02	Cougar Ave	-1631.315f, -438.017f, 38.695f	80f	8f	1	Backup requested, 10-57 at	0
+22	RunOver	AREA_PILLBOX_HILL_01	San Andreas Ave	193.365f, -806.784f, 31.053f	80f	8f	1	Backup requested, 10-57 at	0
+23	RunOver	AREA_GRAPESEED_01	Main Street	1672.352f, 4842.334f, 41.774f	80f	8f	2	Backup requested, 10-57 at	0
+24	RunOver	AREA_MOUNT_CHILLIAD_01	North Calafia Way	849.619f, 4332.132f, 51.697f	80f	8f	2	Backup requested, 10-57 at	0
+25	RunOver	AREA_HARMONY_01	US Route 68	595.182f, 2731.190f, 42.018f	80f	8f	2	Backup requested, 10-57 at	0
+26	RunOver	AREA_GRAPESEED_01	East Joshua Road	2490.199f, 4087.419f, 38.028f	80f	8f	2	Backup requested, 10-57 at	0
+27	RunOver	AREA_PALETO_FOREST_01	Procopio Promenade	-721.776f, 5783.615f, 17.868f	80f	8f	3	Backup requested, 10-57 at	0
+28	RunOver	AREA_MOUNT_CHILLIAD_01	US Route 13	1695.102f, 6404.390f, 32.089f	80f	8f	3	Backup requested, 10-57 at	0
+29	RunOver	AREA_THE_CHILLIAD_MOUNTAIN_STATE_WILDERNESS_01	US Route 1	-1525.297f, 4920.376f, 66.648f	80f	8f	3	Backup requested, 10-57 at	0
+30	RunOver	AREA_PALETO_BAY_01	Cascabel Ave	-94.168f, 6430.299f, 31.356f	80f	8f	3	Backup requested, 10-57 at	0
+31	Disturbance	AREA_VINEWOOD_HILLS_01	North Sheldon Ave	-960.665f, 802.342f, 177.430f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_01.wav
+32	Disturbance	AREA_RICHMAN_01	Rockford Drive	-1957.251f, 351.642f, 90.761f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_02.wav
+33	Disturbance	AREA_VINEWOOD_HILLS_01	Whispymound Drive	28.611f, 564.187f, 178.758f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_03.wav
+34	Disturbance	AREA_MIRROR_PARK_01	W Mirror Drive	909.33f, -495.73f, 58.55f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_04.wav
+35	Disturbance	AREA_PACIFIC_BLUFFS_01	Interstate 2	-1898.226f, -556.283f, 11.741f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_05.wav
+36	Disturbance	AREA_BANHAM_CANYON_01	US Route 1	-3025.912f, 718.948f, 22.857f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_06.wav
+37	Disturbance	AREA_PALETO_BAY_01	Procopio Drive	-228.124f, 6414.138f, 31.355f	80f	8f	3	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_07.wav
+									
+OBJECTS	HitModel	ModelName	Heading	Position					
+1	TRUE	prop_mp_cone_03	 99.459f	-1040.806f, 1182.763f, 216.031f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1043.510f, 1182.324f, 215.921f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1046.864f, 1181.791f, 215.780f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1050.913f, 1181.065f, 215.599f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1054.713f, 1180.270f, 215.422f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1058.081f, 1179.316f, 215.252f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1061.680f, 1178.175f, 215.062f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1065.587f, 1176.875f, 214.850f					
+1	TRUE	prop_mp_cone_03	 99.459f	-1069.410f, 1175.882f, 214.634f					
+2	TRUE	prop_mp_cone_03	128.012f	2340.113f, 5225.933f, 58.979f					
+2	TRUE	prop_mp_cone_03	128.012f	2337.552f, 5222.913f, 58.960f					
+2	TRUE	prop_mp_cone_03	128.012f	2335.175f, 5219.979f, 58.950f					
+2	TRUE	prop_mp_cone_03	128.012f	2332.913f, 5218.246f, 58.938f					
+2	TRUE	prop_mp_cone_03	128.012f	2330.367f, 5216.373f, 58.924f					
+2	TRUE	prop_mp_cone_03	128.012f	2328.202f, 5214.682f, 58.914f					
+2	TRUE	prop_mp_cone_03	128.012f	2326.055f, 5213.000f, 58.905f					
+2	TRUE	prop_mp_cone_03	128.012f	2323.768f, 5211.207f, 58.898f					
+2	TRUE	prop_mp_cone_03	128.012f	2319.862f, 5209.357f, 58.879f					
+3	TRUE	prop_mp_cone_03	155.706f	-1283.026f, 5270.815f, 50.479f					
+3	TRUE	prop_mp_cone_03	155.706f	-1283.888f, 5268.502f, 50.576f					
+3	TRUE	prop_mp_cone_03	155.706f	-1284.801f, 5266.769f, 50.664f					
+3	TRUE	prop_mp_cone_03	155.706f	-1285.964f, 5264.557f, 50.777f					
+3	TRUE	prop_mp_cone_03	155.706f	-1287.355f, 5261.302f, 50.935f					
+3	TRUE	prop_mp_cone_03	155.706f	-1290.270f, 5257.699f, 51.183f					
+3	TRUE	prop_mp_cone_03	155.706f	-1292.982f, 5255.065f, 51.431f					
+3	TRUE	prop_mp_cone_03	155.706f	-1295.172f, 5252.679f, 51.669f					
+3	TRUE	prop_mp_cone_03	155.706f	-1297.993f, 5249.367f, 51.994f					
+4	TRUE	prop_roadcone01a	191.394f	1223.192f, 1300.234f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1224.539f, 1295.803f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1225.719f, 1291.308f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1226.683f, 1286.505f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1227.254f, 1281.574f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1227.725f, 1275.996f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1211.605f, 1314.603f, 143.5f					
+4	TRUE	prop_roadcone01a	191.394f	1214.003f, 1312.392f, 143.5f					
+4	TRUE	prop_roadcone01a	191.394f	1216.788f, 1309.806f, 142.5f					
+4	TRUE	prop_roadcone01a	191.394f	1219.312f, 1306.938f, 142.5f					
+5	TRUE	prop_roadcone02a	350.322f	-231.900f, 3875.040f, 36.889f					
+5	TRUE	prop_roadcone02a	350.322f	-231.700f, 3878.419f, 36.631f					
+5	TRUE	prop_roadcone02a	350.322f	-231.859f, 3881.216f, 36.524f					
+5	TRUE	prop_roadcone02a	350.322f	-231.699f, 3883.954f, 36.416f					
+5	TRUE	prop_roadcone02a	350.322f	-231.751f, 3887.103f, 36.423f					
+5	TRUE	prop_roadcone02a	350.322f	-231.476f, 3890.135f, 36.420f					
+5	TRUE	prop_roadcone02a	350.322f	-222.974f, 3890.081f, 36.702f					
+5	TRUE	prop_roadcone02a	350.322f	-223.061f, 3887.224f, 36.700f					
+5	TRUE	prop_roadcone02a	350.322f	-223.028f, 3884.574f, 36.694f					
+5	TRUE	prop_roadcone02a	350.322f	-223.064f, 3881.370f, 36.733f					
+6	TRUE	prop_roadcone02a	301.989f	-1304.682f, 4618.526f, 117.057f					
+6	TRUE	prop_roadcone02a	301.989f	-1303.465f, 4619.642f, 116.875f					
+6	TRUE	prop_roadcone02a	301.989f	-1302.223f, 4620.642f, 116.475f					
+6	TRUE	prop_roadcone02a	301.989f	-1300.020f, 4621.812f, 116.996f					
+6	TRUE	prop_roadcone02a	301.989f	-1298.890f, 4622.862f, 117.280f					
+6	TRUE	prop_roadcone02a	301.989f	-1245.958f, 4614.029f, 130.446f					
+6	TRUE	prop_roadcone02a	301.989f	-1244.962f, 4612.869f, 130.385f					
+6	TRUE	prop_roadcone02a	301.989f	-1243.819f, 4611.540f, 130.256f					
+6	TRUE	prop_roadcone02a	301.989f	-1242.980f, 4610.563f, 130.397f					
+6	TRUE	prop_roadcone02a	301.989f	-1241.744f, 4609.129f, 130.815f					
+7	TRUE	prop_roadcone02a	76.788f	-2011.501f, 1921.370f, 185.5f					
+7	TRUE	prop_roadcone02a	76.788f	-2015.077f, 1922.078f, 185.5f					
+7	TRUE	prop_roadcone02a	76.788f	-2019.623f, 1922.931f, 185.5f					
+7	TRUE	prop_roadcone02a	76.788f	-2024.985f, 1923.965f, 185.5f					
+7	TRUE	prop_roadcone02a	76.788f	-2030.752f, 1925.325f, 185.5f					
+7	TRUE	prop_roadcone02a	76.788f	-2035.248f, 1926.934f, 186f					
+7	TRUE	prop_roadcone02a	76.788f	-2039.782f, 1928.948f, 186f					
+7	TRUE	prop_roadcone02a	76.788f	-2045.627f, 1932.491f, 186f					
+8	TRUE	prop_mp_cone_03	226.600f	3009.770f, 3389.580f, 72.441f					
+8	TRUE	prop_mp_cone_03	226.600f	3013.500f, 3386.681f, 72.760f					
+8	TRUE	prop_mp_cone_03	226.600f	3017.679f, 3382.841f, 73.180f					
+8	TRUE	prop_mp_cone_03	226.600f	3020.521f, 3380.441f, 73.441f					
+8	TRUE	prop_mp_cone_03	226.600f	3023.257f, 3378.357f, 73.685f					
+8	TRUE	prop_mp_cone_03	226.600f	3026.279f, 3376.092f, 73.963f					
+8	TRUE	prop_mp_cone_03	226.600f	3029.919f, 3373.048f, 74.280f					
+8	TRUE	prop_mp_cone_03	226.600f	3033.528f, 3370.115f, 74.557f					
+9	TRUE	prop_mp_cone_03	226.600f	-2074.077f, 4449.037f, 58.123f					
+9	TRUE	prop_mp_cone_03	226.600f	-2070.408f, 4450.271f, 57.891f					
+9	TRUE	prop_mp_cone_03	226.600f	-2066.139f, 4452.290f, 57.617f					
+9	TRUE	prop_mp_cone_03	226.600f	-2062.811f, 4453.991f, 57.410f					
+9	TRUE	prop_mp_cone_03	226.600f	-2059.576f, 4455.631f, 57.238f					
+9	TRUE	prop_mp_cone_03	226.600f	-2056.677f, 4457.335f, 57.086f					
+9	TRUE	prop_mp_cone_03	226.600f	-2053.018f, 4459.554f, 56.903f					
+9	TRUE	prop_mp_cone_03	226.600f	-2049.332f, 4462.107f, 56.743f					
+10	TRUE	prop_roadcone02c	273.653f	1912.471f, -1286.550f, 129.482f					
+10	TRUE	prop_roadcone02c	273.653f	1912.158f, -1282.678f, 128.903f					
+10	TRUE	prop_roadcone02c	273.653f	1911.570f, -1279.442f, 128.417f					
+10	TRUE	prop_roadcone02c	273.653f	1910.883f, -1275.452f, 127.805f					
+10	TRUE	prop_roadcone02c	273.653f	1910.144f, -1271.446f, 127.182f					
+10	TRUE	prop_roadcone02c	273.653f	1909.376f, -1267.600f, 126.560f					
+10	TRUE	prop_roadcone02c	273.653f	1908.995f, -1263.783f, 125.908f					
+10	TRUE	prop_roadcone02c	273.653f	1908.486f, -1259.526f, 125.180f					
+10	TRUE	prop_roadcone02c	273.653f	1907.726f, -1254.351f, 124.283f					
+10	TRUE	prop_roadcone02c	273.653f	1907.236f, -1250.419f, 123.588f					
+10	TRUE	prop_roadcone02c	273.653f	1898.615f, -1278.038f, 127.916f					
+10	TRUE	prop_roadcone02c	273.653f	1898.886f, -1280.223f, 128.239f					
+10	TRUE	prop_roadcone02c	273.653f	1899.218f, -1282.391f, 128.553f					
+10	TRUE	prop_roadcone02c	273.653f	1899.738f, -1284.930f, 128.937f					
+10	TRUE	prop_roadcone02c	273.653f	1900.054f, -1287.129f, 129.247f					
+10	TRUE	prop_roadcone02c	273.653f	1900.348f, -1289.664f, 129.592f					
+11	TRUE	prop_mp_cone_01	 100.164f	-937.073f, 2763.698f, 24.187f					
+11	TRUE	prop_mp_cone_01	 100.164f	-941.029f, 2762.754f, 24.280f					
+11	TRUE	prop_mp_cone_01	 100.164f	-944.203f, 2762.021f, 24.352f					
+11	TRUE	prop_mp_cone_01	 100.164f	-947.882f, 2761.171f, 24.418f					
+11	TRUE	prop_mp_cone_01	 100.164f	-952.107f, 2760.101f, 24.486f					
+11	TRUE	prop_mp_cone_01	 100.164f	-955.981f, 2759.248f, 24.522f					
+11	TRUE	prop_mp_cone_01	 100.164f	-996.708f, 2757.493f, 24.545f					
+11	TRUE	prop_mp_cone_01	 100.164f	-961.130f, 2758.320f, 24.545f					
+11	TRUE	prop_mp_cone_01	 100.164f	-964.918f, 2757.668f, 24.547f					
+11	TRUE	prop_mp_cone_01	 100.164f	-969.373f, 2756.903f, 24.526f					
+11	TRUE	prop_mp_cone_01	 100.164f	-974.326f, 2755.976f, 24.479f					
+11	TRUE	prop_mp_cone_01	 100.164f	-978.928f, 2754.969f, 24.413f					
+11	TRUE	prop_mp_cone_01	 100.164f	-982.706f, 2754.744f, 24.350f					
+11	TRUE	prop_mp_cone_01	 100.164f	-986.435f, 2755.088f, 24.276f					
+11	TRUE	prop_mp_cone_01	 100.164f	-990.475f, 2755.210f, 24.185f					
+11	TRUE	prop_mp_cone_01	 100.164f	-994.525f, 2755.421f, 24.094f					
+12	TRUE	prop_mp_cone_01	200.931f	-847.244f, 5265.395f, 85.806f					
+12	TRUE	prop_mp_cone_01	200.931f	-847.091f, 5263.264f, 85.841f					
+12	TRUE	prop_mp_cone_01	200.931f	-846.903f, 5261.711f, 85.863f					
+12	TRUE	prop_mp_cone_01	200.931f	-846.698f, 5260.026f, 85.861f					
+12	TRUE	prop_mp_cone_01	200.931f	-845.896f, 5253.608f, 85.861f					
+12	TRUE	prop_mp_cone_01	200.931f	-846.526f, 5258.603f, 85.836f					
+12	TRUE	prop_mp_cone_01	200.931f	-846.371f, 5257.329f, 85.826f					
+12	TRUE	prop_mp_cone_01	200.931f	-846.177f, 5255.765f, 85.811f					
+12	TRUE	prop_mp_cone_01	200.931f	-758.048f, 5266.953f, 91.344f					
+12	TRUE	prop_mp_cone_01	200.931f	-757.112f, 5264.577f, 91.469f					
+12	TRUE	prop_mp_cone_01	200.931f	-755.882f, 5261.359f, 91.764f					
+12	TRUE	prop_mp_cone_01	200.931f	-755.084f, 5259.270f, 92.030f					
+12	TRUE	prop_mp_cone_01	200.931f	-754.239f, 5257.059f, 92.283f					
+12	TRUE	prop_mp_cone_01	200.931f	-753.123f, 5254.755f, 92.669f					
+12	TRUE	prop_mp_cone_01	200.931f	-751.980f, 5253.051f, 92.975f					
+12	TRUE	prop_mp_cone_01	200.931f	-750.400f, 5250.958f, 93.446f					
+13	TRUE	prop_mp_cone_02	304.887f	1778.495f, -852.458f, 71.902f					
+13	TRUE	prop_mp_cone_02	304.887f	1781.375f, -851.981f, 72.047f					
+13	TRUE	prop_mp_cone_02	304.887f	1784.758f, -851.954f, 72.307f					
+13	TRUE	prop_mp_cone_02	304.887f	1789.258f, -851.176f, 72.610f					
+13	TRUE	prop_mp_cone_02	304.887f	1793.686f, -849.214f, 72.909f					
+13	TRUE	prop_mp_cone_02	304.887f	1798.126f, -846.093f, 73.222f					
+13	TRUE	prop_mp_cone_02	304.887f	1802.314f, -842.988f, 73.545f					
+13	TRUE	prop_mp_cone_02	304.887f	1807.342f, -839.245f, 73.933f					
+13	TRUE	prop_mp_cone_02	304.887f	1811.109f, -836.408f, 74.240f					
+13	TRUE	prop_mp_cone_02	304.887f	1814.606f, -833.964f, 74.517f					
+13	TRUE	prop_mp_cone_02	304.887f	1818.075f, -831.166f, 74.813f					
+13	TRUE	prop_mp_cone_02	304.887f	1821.634f, -828.664f, 75.106f					
+13	TRUE	prop_mp_cone_02	304.887f	1825.500f, -825.722f, 75.445f					
+13	TRUE	prop_mp_cone_02	304.887f	1830.865f, -821.552f, 75.922f					
+13	TRUE	prop_mp_cone_02	304.887f	1834.354f, -818.831f, 76.242f					
+13	TRUE	prop_mp_cone_02	304.887f	1837.943f, -816.358f, 76.554f					
+13	TRUE	prop_mp_cone_02	304.887f	1842.144f, -813.250f, 76.934f					
+13	TRUE	prop_mp_cone_02	304.887f	1845.759f, -810.501f, 77.273f					
+13	TRUE	prop_mp_cone_02	304.887f	1849.279f, -807.825f, 77.603f					
+13	TRUE	prop_mp_cone_02	304.887f	1853.005f, -804.994f, 77.957f					
+14	TRUE	prop_mp_cone_02	130.072f	2527.803f, 5475.347f, 43.652f					
+14	TRUE	prop_mp_cone_02	130.072f	2527.333f, 5481.275f, 43.662f					
+14	TRUE	prop_mp_cone_02	130.072f	2527.628f, 5486.286f, 43.690f					
+14	TRUE	prop_mp_cone_02	130.072f	2527.214f, 5492.589f, 43.713f					
+14	TRUE	prop_mp_cone_02	130.072f	2526.806f, 5498.460f, 43.726f					
+14	TRUE	prop_mp_cone_02	130.072f	2525.339f, 5504.960f, 43.743f					
+14	TRUE	prop_mp_cone_02	130.072f	2523.352f, 5510.686f, 43.761f					
+14	TRUE	prop_mp_cone_02	130.072f	2521.448f, 5515.582f, 43.776f					
+14	TRUE	prop_mp_cone_02	130.072f	2519.510f, 5522.218f, 43.795f					
+14	TRUE	prop_mp_cone_02	130.072f	2518.088f, 5526.086f, 43.806f					
+14	TRUE	prop_mp_cone_02	130.072f	2516.553f, 5530.674f, 43.818f					
+14	TRUE	prop_mp_cone_02	130.072f	2514.897f, 5535.162f, 43.830f					
+14	TRUE	prop_mp_cone_02	130.072f	2513.074f, 5539.551f, 43.842f					
+14	TRUE	prop_mp_cone_02	130.072f	2510.354f, 5547.135f, 43.860f					
+14	TRUE	prop_mp_cone_02	130.072f	2508.694f, 5550.833f, 43.869f					
+14	TRUE	prop_mp_cone_02	130.072f	2486.226f, 5550.962f, 43.864f					
+14	TRUE	prop_mp_cone_02	130.072f	2486.576f, 5546.141f, 43.855f					
+14	TRUE	prop_mp_cone_02	130.072f	2488.082f, 5541.285f, 43.847f					
+14	TRUE	prop_mp_cone_02	130.072f	2489.287f, 5535.738f, 43.844f					
+14	TRUE	prop_mp_cone_02	130.072f	2490.895f, 5530.459f, 43.835f					
+15	TRUE	prop_mp_cone_02	130.072f	-449.439f, -511.812f, 24.200f					
+15	TRUE	prop_mp_cone_02	130.072f	-453.726f, -510.078f, 24.247f					
+15	TRUE	prop_mp_cone_02	130.072f	-456.791f, -508.758f, 24.290f					
+15	TRUE	prop_mp_cone_02	130.072f	-459.292f, -507.680f, 24.325f					
+15	TRUE	prop_mp_cone_02	130.072f	-462.059f, -506.487f, 24.364f					
+15	TRUE	prop_mp_cone_02	130.072f	-465.076f, -505.187f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-467.780f, -504.022f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-470.868f, -502.690f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-474.158f, -501.272f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-477.017f, -500.039f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-479.857f, -499.599f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-483.519f, -499.532f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-487.744f, -499.559f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-491.661f, -499.552f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-495.542f, -499.770f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-500.985f, -499.699f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-506.149f, -499.613f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-511.794f, -499.467f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-516.699f, -499.457f, 24.399f					
+15	TRUE	prop_mp_cone_02	130.072f	-521.594f, -499.602f, 24.399f					
+16	TRUE	prop_mp_cone_02	87.707f	999.281f, 6501.523f, 20.066f					
+16	TRUE	prop_mp_cone_02	87.707f	995.976f, 6499.474f, 20.069f					
+16	TRUE	prop_mp_cone_02	87.707f	992.568f, 6497.406f, 20.062f					
+16	TRUE	prop_mp_cone_02	87.707f	989.305f, 6495.425f, 20.060f					
+16	TRUE	prop_mp_cone_02	87.707f	985.432f, 6493.075f, 20.061f					
+16	TRUE	prop_mp_cone_02	87.707f	981.451f, 6492.018f, 20.065f					
+16	TRUE	prop_mp_cone_02	87.707f	976.748f, 6492.095f, 20.071f					
+16	TRUE	prop_mp_cone_02	87.707f	972.723f, 6492.250f, 20.078f					
+16	TRUE	prop_mp_cone_02	87.707f	967.989f, 6492.258f, 20.087f					
+16	TRUE	prop_mp_cone_02	87.707f	963.894f, 6492.260f, 20.096f					
+16	TRUE	prop_mp_cone_02	87.707f	959.541f, 6492.261f, 20.107f					
+16	TRUE	prop_mp_cone_02	87.707f	955.820f, 6492.409f, 20.118f					
+16	TRUE	prop_mp_cone_02	87.707f	951.829f, 6492.610f, 20.131f					
+16	TRUE	prop_mp_cone_02	87.707f	948.185f, 6492.730f, 20.144f					
+16	TRUE	prop_mp_cone_02	87.707f	943.749f, 6492.859f, 20.162f					
+16	TRUE	prop_mp_cone_02	87.707f	940.076f, 6492.995f, 20.178f					
+16	TRUE	prop_mp_cone_02	87.707f	936.121f, 6493.126f, 20.197f					
+16	TRUE	prop_mp_cone_02	87.707f	932.535f, 6493.167f, 20.217f					
+16	TRUE	prop_mp_cone_02	87.707f	928.709f, 6493.282f, 20.238f					
+16	TRUE	prop_mp_cone_02	87.707f	924.925f, 6493.444f, 20.262f					
+31	FALSE	prop_hifi_01	20f	-1017.889f, 771.0f, 170.3f					
+31	FALSE	prop_hifi_01	20f	-1014.034f, 772.2f, 170.3f					
+31	FALSE	prop_office_desk_01	200f	-1016.105f, 771.7f, 170.3f					
+31	FALSE	prop_dj_deck_02	20f	-1016.3f, 771.4f, 171f					
+32	FALSE	prop_hifi_01	10f	-1926.191f, 397.574f, 95.483f					
+32	FALSE	prop_hifi_01	10f	-1930.007f, 397f, 95.483f					
+32	FALSE	prop_office_desk_01	10f	-1927.977f, 397f, 95.483f					
+32	FALSE	prop_dj_deck_02	10f	-1928.277f, 397f, 96.207f					
+33	FALSE	prop_hifi_01	210.396f	25.195f, 532.376f, 169.6f					
+33	FALSE	prop_hifi_01	111.776f	22.283f, 533.875f, 169.6f					
+33	FALSE	prop_office_desk_01	296.470f	23.760f, 532.702f, 169.6f					
+33	FALSE	prop_dj_deck_02	296.470f	23.560f, 532.702f, 170.3f					
+34	FALSE	prop_hifi_01	8.90f	893.99f, -476.19f, 58.10f					
+34	FALSE	prop_hifi_01	34.01f	899.30f, -474.26f, 58.50f					
+34	FALSE	prop_office_desk_01	25.00f	895.03f, -475.76f, 58.05f					
+34	FALSE	prop_dj_deck_02	25.00f	894.58f, -475.97f, 58.75f					
+35	FALSE	prop_hifi_01	216.423f	-1904.309f, -577.434f, 21.9f					
+35	FALSE	prop_hifi_01	227.252f	-1906.014f, -579.238f, 21.9f					
+35	FALSE	prop_office_desk_01	231f	-1905.265f, -578.224f, 21.9f					
+35	FALSE	prop_dj_deck_02	231f	-1905.0f, -578.0f, 22.6f					
+36	FALSE	prop_hifi_01	112f	-3007.525f, 753.328f, 26.6f					
+36	FALSE	prop_hifi_01	112f	-3009.030f, 757.051f, 26.6f					
+36	FALSE	prop_office_desk_01	112f	-3007.979f, 755.160f, 26.6f					
+36	FALSE	prop_dj_deck_02	112f	-3007.679f, 754.8f, 27.3f					
+37	FALSE	prop_hifi_01	45f	-204.305f, 6382.048f, 30.833f					
+37	FALSE	prop_hifi_01	160.628f	-200.740f, 6383.517f, 30.833f					
+37	FALSE	prop_office_desk_01	45f	-203.132f, 6383.193f, 30.833f					
+37	FALSE	prop_dj_deck_02	45f	-203.332f, 6382.993f, 31.533f					
+									
+HUMANS	Type	ModelName	Heading	Position	AnimDir	AnimName	AnimFlag	Id	
+1	COP	Model.Ped1	247.183f	-1045.254f, 1183.144f, 216.830f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	1	
+1	COP	Model.Ped2	276.67f	-1063.37f, 1178.48f, 215.98f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	2	
+1	CIVILIAN	a_m_y_ktown_02	21.609f	-1052.018f, 1183.869f, 216.535f	friends@frt@ig_1	trevor_impatient_wait_4	Loop	3	
+1	CIVILIAN	s_m_y_garbage	292.99f	-1060.13f, 1183.09f, 216.38f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	4	
+1	MEDIC	Model.Ped3	198.840f	-1052.047f, 1184.679f, 216.602f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+2	COP	Model.Ped1	263.418f	2337.813f, 5225.198f, 59.880f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	1	
+2	COP	Model.Ped2	80.129f	2317.369f, 5216.044f, 59.661f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	2	
+2	CIVILIAN	a_m_y_eastsa_02	271.579f	2321.593f, 5214.175f, 59.696f	friends@frt@ig_1	trevor_impatient_wait_4	Loop	3	
+2	CIVILIAN	s_m_m_dockwork_01	 134.358f	2316.845f, 5218.127f, 59.903f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	4	
+2	MEDIC	Model.Ped3	79.519f	2323.364f, 5213.459f, 59.814f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+3	COP	Model.Ped1	7.199f	-1293.762f, 5258.086f, 52.278f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	1	
+3	COP	Model.Ped2	275.440f	-1285.550f, 5267.719f, 51.595f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	2	
+3	CIVILIAN	a_m_y_indian_01	237.264f	-1293.895f, 5259.494f, 52.221f	friends@frt@ig_1	trevor_impatient_wait_4	Loop	3	
+3	CIVILIAN	s_m_m_trucker_01	 344.882f	-1300.590f, 5255.784f, 52.698f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	4	
+3	MEDIC	Model.Ped3	72.873f	-1292.280f, 5258.943f, 52.168f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+4	COP	Model.Ped1	114.838f	1204.078f, 1317.481f, 144.922f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+4	COP	Model.Ped2	182.015f	1212.726f, 1311.980f, 144.223f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	2	
+4	CIVILIAN	a_m_m_malibu_01	286.359f	1203.031f, 1316.959f, 145.020f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+4	CIVILIAN	a_f_m_bevhills_01	66.182f	1232.041f, 1309.477f, 143.741f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	4	
+4	CIVILIAN	u_m_y_cyclist_01	44.732f	1212.212f, 1308.882f, 144.207f	missheistfbi3b_ig8_2	cpr_loop_victim	Loop	5	
+4	MEDIC	Model.Ped3	316.921f	1212.079f, 1308.352f, 144.215f	missheistfbi3b_ig8_2	cpr_loop_paramedic	Loop	6	
+4	MEDIC	Model.Ped3	116.964f	1213.333f, 1308.708f, 144.122f	mini@cpr@char_a@cpr_str	cpr_kol_idle	Loop	7	
+4	MEDIC	Model.Ped3	191.010f	1212.071f, 1310.278f, 144.228f	amb@medic@standing@kneel@idle_a	idle_b	Loop	8	
+4	COP	Model.Ped4	15.699f	1216.588f, 1294.832f, 143.495f	missbigscore2aig_3	wait_for_van_c	Loop	9	
+5	COP	Model.Ped1	307.651f	-221.438f, 3882.257f, 37.604f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+5	COP	Model.Ped2	182.015f	-238.790f, 3861.241f, 33.330f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	2	
+5	CIVILIAN	a_m_y_downtown_01	104.445f	-220.274f, 3883.289f, 37.469f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+5	CIVILIAN	a_f_m_ktown_01	164.291f	-235.399f, 3873.515f, 37.226f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	4	
+5	CIVILIAN	a_m_y_motox_01	172.926f	-235.640f, 3857.292f, 32.700f	missheistfbi3b_ig8_2	cpr_loop_victim	Loop	5	
+5	MEDIC	Model.Ped3	81.120f	-234.889f, 3857.426f, 32.612f	missheistfbi3b_ig8_2	cpr_loop_paramedic	Loop	6	
+5	MEDIC	Model.Ped3	112.678f	-234.884f, 3858.355f, 32.464f	mini@cpr@char_a@cpr_str	cpr_kol_idle	Loop	7	
+5	MEDIC	Model.Ped3	325.482f	-236.297f, 3855.736f, 32.498f	amb@medic@standing@kneel@idle_a	idle_b	Loop	8	
+5	COP	Model.Ped4	208.101f	-249.378f, 3880.697f, 39.830f	missbigscore2aig_3	wait_for_van_c	Loop	9	
+6	COP	Model.Ped1	201.035f	-1291.771f, 4616.263f, 120.495f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+6	COP	Model.Ped2	238.811f	-1282.680f, 4609.482f, 122.673f	amb@world_human_cop_idles@male@idle_a	idle_a	Loop	2	
+6	CIVILIAN	s_m_y_construct_01	84.842f	-1272.138f, 4606.448f, 125.035f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+6	CIVILIAN	s_m_y_construct_02	98.471f	-1272.063f, 4607.672f, 125.039f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	4	
+6	CIVILIAN	a_m_y_dhill_01	171.093f	-1278.969f, 4606.341f, 123.613f	missheistfbi3b_ig8_2	cpr_loop_victim	Loop	5	
+6	MEDIC	Model.Ped3	268.178f	-1279.491f, 4606.726f, 123.491f	missheistfbi3b_ig8_2	cpr_loop_paramedic	Loop	6	
+6	MEDIC	Model.Ped3	220.507f	-1279.054f, 4607.395f, 123.475f	mini@cpr@char_a@cpr_str	cpr_kol_idle	Loop	7	
+6	MEDIC	Model.Ped3	72.509f	-1277.918f, 4606.016f, 123.837f	amb@medic@standing@kneel@idle_a	idle_b	Loop	8	
+6	COP	Model.Ped4	257.246f	-1293.051f, 4615.092f, 120.096f	missbigscore2aig_3	wait_for_van_c	Loop	9	
+7	COP	Model.Ped1	175.786f	-2019.386f, 1925.350f, 186.261f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	1	
+7	COP	Model.Ped2	354.733f	-2018.811f, 1949.172f, 173.838f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	2	
+7	CIVILIAN	s_m_m_hairdress_01	101.643f	-2013.544f, 1926.649f, 185.797f	amb@world_human_stupor@male@idle_a	idle_a	Loop	3	
+7	CIVILIAN	a_f_y_bevhills_04	251.113f	-2025.760f, 1928.252f, 186.045f	mini@hookers_spvanilla	idle_wait	Loop	4	
+7	CIVILIAN	s_m_y_garbage	294.281f	-2029.477f, 1946.693f, 179.308f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+7	MEDIC	Model.Ped3	16.158f	-2044.184f, 1945.188f, 187.254f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	6	
+7	MEDIC	Model.Ped3	29.219f	-2013.375f, 1925.699f, 185.922f	amb@medic@standing@kneel@idle_a	idle_b	Loop	7	
+7	FIREMAN	Model.Ped4	273.578f	-2029.136f, 1948.219f, 179.179f	missfbi_s4mop	guard_idle_a	Loop	8	
+7	FIREMAN	Model.Ped4	190.180f	-2044.264f, 1946.008f, 187.360f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	9	
+8	COP	Model.Ped1	29.103f	3011.251f, 3386.991f, 73.559f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	1	
+8	COP	Model.Ped2	309.816f	3021.733f, 3368.067f, 74.887f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	2	
+8	CIVILIAN	u_f_y_comjane	65.111f	3024.616f, 3373.269f, 74.888f	amb@world_human_stupor@male@idle_a	idle_a	Loop	3	
+8	CIVILIAN	s_m_m_chemsec_01	156.232f	3011.987f, 3380.560f, 73.836f	amb@world_human_stand_guard@male@base	base	Loop	4	
+8	CIVILIAN	s_m_m_trucker_01	236.486f	3017.656f, 3374.783f, 74.374f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+8	MEDIC	Model.Ped3	309.557f	3010.960f, 3379.623f, 73.883f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	6	
+8	MEDIC	Model.Ped3	327.989f	3023.985f, 3372.323f, 74.865f	amb@medic@standing@kneel@idle_a	idle_b	Loop	7	
+8	FIREMAN	Model.Ped4	261.262f	3017.045f, 3373.650f, 74.439f	missfbi_s4mop	guard_idle_a	Loop	8	
+8	FIREMAN	Model.Ped4	359.973f	3012.075f, 3379.056f, 73.946f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	9	
+9	COP	Model.Ped1	88.574f	-2060.425f, 4452.528f, 58.249f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	1	
+9	COP	Model.Ped2	190.201f	-2038.521f, 4463.636f, 57.309f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	2	
+9	CIVILIAN	a_m_y_eastsa_01	135.727f	-2043.423f, 4463.065f, 57.479f	amb@world_human_stupor@male@idle_a	idle_a	Loop	3	
+9	CIVILIAN	a_m_m_business_01	254.275f	-2066.818f, 4461.703f, 58.524f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	4	
+9	CIVILIAN	s_m_m_trucker_01	10.977f	-2037.682f, 4459.802f, 57.253f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	5	
+9	MEDIC	Model.Ped3	213.936f	-2043.973f, 4463.666f, 57.488f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	6	
+9	MEDIC	Model.Ped3	343.107f	-2043.842f, 4461.840f, 57.502f	amb@medic@standing@kneel@idle_a	idle_b	Loop	7	
+9	FIREMAN	Model.Ped4	2.539f	-2061.173f, 4451.427f, 58.298f	missfbi_s4mop	guard_idle_a	Loop	8	
+9	FIREMAN	Model.Ped4	68.000f	-2036.810f, 4460.365f, 57.271f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	9	
+10	COP	Model.Ped1	2.450f	1899.544f, -1286.181f, 129.992f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+10	COP	Model.Ped2	197.247f	1914.843f, -1303.829f, 132.613f	amb@world_human_cop_idles@female@idle_a	idle_c	Loop	2	
+10	CIVILIAN	s_m_m_gaffer_01	188.900f	1899.125f, -1284.800f, 129.768f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+10	MEDIC	Model.Ped3	37.861f	1908.185f, -1240.848f, 122.851f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	4	
+10	FIREMAN	Model.Ped4	332.846f	1912.811f, -1253.557f, 125.852f	amb@code_human_police_investigate@idle_b	idle_f	Loop	5	
+10	FIREMAN	Model.Ped4	220.724f	1915.884f, -1243.342f, 124.570f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	6	
+10	FIREMAN	Model.Ped4	47.740f	1910.844f, -1264.521f, 127.174f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	7	
+11	COP	Model.Ped1	271.738f	-967.705f, 2746.983f, 25.430f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+11	COP	Model.Ped2	256.132f	-955.957f, 2760.349f, 25.441f	amb@world_human_cop_idles@female@idle_a	idle_c	Loop	2	
+11	CIVILIAN	s_m_m_gaffer_01	92.619f	-966.272f, 2747.096f, 25.435f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+11	MEDIC	Model.Ped3	26.750f	-985.295f, 2756.408f, 25.223f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	4	
+11	FIREMAN	Model.Ped4	77.311f	-977.856f, 2764.493f, 25.223f	amb@code_human_police_investigate@idle_b	idle_f	Loop	5	
+11	FIREMAN	Model.Ped4	1.578f	-989.375f, 2762.535f, 24.430f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	6	
+11	FIREMAN	Model.Ped4	141.563f	-980.000f, 2768.768f, 24.193f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	7	
+12	COP	Model.Ped1	86.023f	-814.402f, 5265.119f, 87.988f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+12	COP	Model.Ped2	326.637f	-846.794f, 5265.902f, 86.694f	amb@world_human_cop_idles@female@idle_a	idle_c	Loop	2	
+12	CIVILIAN	s_m_y_construct_02	253.527f	-815.892f, 5265.535f, 87.934f	missmic_4premierejimwaitbef_prem	wait_idle_b	Loop	3	
+12	MEDIC	Model.Ped3	72.551f	-821.031f, 5263.485f, 87.717f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	4	
+12	FIREMAN	Model.Ped4	241.283f	-843.735f, 5275.688f, 77.264f	amb@code_human_police_investigate@idle_b	idle_f	Loop	5	
+12	FIREMAN	Model.Ped4	190.855f	-837.199f, 5277.416f, 78.891f	amb@world_human_guard_patrol@male@idle_b	idle_e	Loop	6	
+12	FIREMAN	Model.Ped4	188.637f	-841.179f, 5278.418f, 76.899f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	7	
+13	COP	Model.Ped1	355.067f	1802.023f, -838.791f, 74.501f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+13	COP	Model.Ped2	130.733f	1783.484f, -850.578f, 73.112f	missheist_agency2aig_1	direct_traffic_a	Loop	2	
+13	COP	Model.Ped3	329.200f	1816.196f, -844.985f, 74.978f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	3	
+13	CIVILIAN	a_m_m_eastsa_02	168.912f	1812.726f, -830.722f, 75.360f	misscarsteal3	racer_argue_01_a	Loop	4	
+13	CIVILIAN	s_f_y_sweatshop_01	169.445f	1802.269f, -836.781f, 74.501f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_c	Loop	5	
+13	CIVILIAN	s_m_y_strvend_01	158.342f	1816.877f, -843.788f, 74.987f	missfbi3_party_d	stand_talk_loop_a_male1	Loop	6	
+13	CIVILIAN	s_m_y_dockwork_01	165.076f	1814.224f, -826.630f, 75.509f	amb@medic@standing@kneel@idle_a	idle_a	Loop	7	
+13	CIVILIAN	s_m_m_dockwork_01	37.157f	1803.564f, -850.751f, 74.052f	missmic2@enemy	smoking_loop	Loop	8	
+13	MEDIC	Model.Ped4	297.624f	1798.295f, -840.991f, 74.207f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	9	
+13	MEDIC	Model.Ped4	299.376f	1812.120f, -832.190f, 75.319f	missbigscore2aig_3	wait_for_van_c	Loop	10	
+13	MEDIC	Model.Ped4	319.331f	1826.737f, -819.553f, 76.554f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	11	
+13	FIREMAN	Model.Ped5	118.253f	1799.496f, -840.309f, 74.302f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	12	
+13	FIREMAN	Model.Ped5	39.784f	1813.372f, -832.104f, 75.409f	amb@code_human_police_investigate@idle_b	idle_f	Loop	13	
+13	FIREMAN	Model.Ped5	73.266f	1816.777f, -829.963f, 75.680f	missfbi_s4mop	guard_idle_a	Loop	14	
+14	COP	Model.Ped1	36.047f	2519.739f, 5509.815f, 44.680f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+14	COP	Model.Ped2	210.891f	2524.369f, 5493.109f, 44.622f	missheist_agency2aig_1	direct_traffic_b	Loop	2	
+14	COP	Model.Ped3	42.714f	2491.518f, 5540.463f, 44.751f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	3	
+14	CIVILIAN	a_m_m_eastsa_02	140.688f	2513.784f, 5524.726f, 44.718f	misscarsteal3	racer_argue_01_a	Loop	4	
+14	CIVILIAN	s_f_y_sweatshop_01	220.101f	2518.532f, 5511.224f, 44.678f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_c	Loop	5	
+14	CIVILIAN	s_m_y_strvend_01	211.410f	2501.609f, 5519.229f, 44.636f	missfbi3_party_d	stand_talk_loop_a_male1	Loop	6	
+14	CIVILIAN	s_m_y_dockwork_01	239.571f	2506.589f, 5523.658f, 44.707f	amb@medic@standing@kneel@idle_a	idle_a	Loop	7	
+14	CIVILIAN	s_m_m_dockwork_01	142.712f	2526.825f, 5527.298f, 44.663f	missmic2@enemy	smoking_loop	Loop	8	
+14	MEDIC	Model.Ped4	339.308f	2513.207f, 5523.220f, 44.704f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	9	
+14	MEDIC	Model.Ped4	7.828f	2517.471f, 5514.229f, 44.687f	missbigscore2aig_3	wait_for_van_c	Loop	10	
+14	MEDIC	Model.Ped4	204.957f	2505.178f, 5540.857f, 44.750f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	11	
+14	FIREMAN	Model.Ped5	7.178f	2505.342f, 5539.651f, 44.745f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	12	
+14	FIREMAN	Model.Ped5	31.394f	2502.487f, 5517.872f, 44.643f	amb@code_human_police_investigate@idle_b	idle_f	Loop	13	
+14	FIREMAN	Model.Ped5	191.833f	2517.201f, 5515.741f, 44.694f	missfbi_s4mop	guard_idle_a	Loop	14	
+15	COP	Model.Ped1	109.052f	-481.921f, -507.975f, 25.240f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+15	COP	Model.Ped2	278.669f	-466.122f, -506.249f, 25.297f	missheist_agency2aig_1	direct_traffic_c	Loop	2	
+15	COP	Model.Ped3	68.883f	-497.564f, -503.545f, 25.323f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	3	
+15	CIVILIAN	g_m_y_ballasout_01	73.470f	-492.038f, -509.855f, 25.178f	misscarsteal3	racer_argue_01_a	Loop	4	
+15	CIVILIAN	a_f_y_business_01	312.475f	-483.343f, -508.941f, 25.208f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_c	Loop	5	
+15	CIVILIAN	a_m_m_prolhost_01	249.949f	-499.148f, -502.606f, 25.323f	missfbi3_party_d	stand_talk_loop_a_male1	Loop	6	
+15	CIVILIAN	s_m_y_dockwork_01	242.674f	-497.091f, -511.143f, 25.139f	amb@medic@standing@kneel@idle_a	idle_a	Loop	7	
+15	CIVILIAN	s_m_m_dockwork_01	261.913f	-488.322f, -511.814f, 25.123f	missmic2@enemy	smoking_loop	Loop	8	
+15	MEDIC	Model.Ped4	15.182f	-482.000f, -508.991f, 25.206f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	9	
+15	MEDIC	Model.Ped4	232.883f	-493.649f, -508.698f, 25.216f	missbigscore2aig_3	wait_for_van_c	Loop	10	
+15	MEDIC	Model.Ped4	256.470f	-502.939f, -508.109f, 25.235f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	11	
+15	FIREMAN	Model.Ped5	213.073f	-482.541f, -507.815f, 25.245f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	12	
+15	FIREMAN	Model.Ped5	282.008f	-493.308f, -509.993f, 25.173f	amb@code_human_police_investigate@idle_b	idle_f	Loop	13	
+15	FIREMAN	Model.Ped5	236.253f	-487.674f, -510.800f, 25.146f	missfbi_s4mop	guard_idle_a	Loop	14	
+16	COP	Model.Ped1	136.961f	942.029f, 6521.069f, 18.851f	missheist_agency3aig_24	agent01_conversation	Loop	1	
+16	COP	Model.Ped2	261.237f	986.322f, 6495.624f, 20.987f	amb@code_human_police_crowd_control@idle_a	idle_a	Loop	2	
+16	COP	Model.Ped3	121.511f	935.589f, 6495.197f, 21.125f	amb@world_human_cop_idles@male@idle_b	idle_d	Loop	3	
+16	CIVILIAN	a_m_y_beachvesp_02	351.793f	941.026f, 6520.223f, 18.868f	misscarsteal3	racer_argue_01_a	Loop	4	
+16	CIVILIAN	u_f_y_comjane	171.736f	947.529f, 6504.476f, 21.073f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_c	Loop	5	
+16	CIVILIAN	u_m_o_taphillbilly	298.579f	934.069f, 6494.307f, 21.132f	missfbi3_party_d	stand_talk_loop_a_male1	Loop	6	
+16	CIVILIAN	s_m_y_dockwork_01	307.480f	941.506f, 6531.092f, 17.847f	amb@medic@standing@kneel@idle_a	idle_a	Loop	7	
+16	CIVILIAN	s_m_m_dockwork_01	37.936f	968.497f, 6497.731f, 21.016f	missmic2@enemy	smoking_loop	Loop	8	
+16	MEDIC	Model.Ped4	321.095f	946.707f, 6503.089f, 21.089f	amb@world_human_stand_guard@male@idle_a	idle_a	Loop	9	
+16	MEDIC	Model.Ped4	223.176f	939.801f, 6521.517f, 18.881f	missbigscore2aig_3	wait_for_van_c	Loop	10	
+16	MEDIC	Model.Ped4	336.603f	931.115f, 6504.478f, 21.135f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	11	
+16	FIREMAN	Model.Ped5	106.773f	932.536f, 6505.038f, 21.143f	missfbi3_party_d	stand_talk_loop_b_male2	Loop	12	
+16	FIREMAN	Model.Ped5	108.702f	940.505f, 6521.731f, 18.898f	amb@code_human_police_investigate@idle_b	idle_f	Loop	13	
+16	FIREMAN	Model.Ped5	352.787f	943.426f, 6530.157f, 18.029f	missfbi_s4mop	guard_idle_a	Loop	14	
+17	COP	Model.Ped1	312.822f	-1463.149f, -1492.240f, 1.950f	rcmnigel1a	stop	Loop	1	
+17	COP	Model.Ped2	297.238f	-1465.749f, -1486.366f, 2.119f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	2	
+17	MEDIC	Model.Ped3	220.117f	-1472.865f, -1489.028f, 1.887f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	3	
+17	MEDIC	Model.Ped3	251.737f	-1469.333f, -1496.855f, 1.568f	amb@medic@standing@kneel@idle_a	idle_b	Loop	4	
+17	LIFEGUARD	Model.Ped4	135.303f	-1467.284f, -1496.907f, 1.615f	missheistfbi3b_ig8_2	cpr_loop_paramedic	Loop	5	
+17	LIFEGUARD	Model.Ped5	9.677f	-1467.292f, -1498.046f, 1.556f	mini@cpr@char_a@cpr_str	cpr_kol	Loop	6	
+17	CIVILIAN	a_m_y_surfer_01	41.107f	-1467.893f, -1497.106f, 1.590f	missheistfbi3b_ig8_2	cpr_loop_victim	Loop	7	
+17	CIVILIAN	a_m_m_beach_02	149.623f	-1465.390f, -1483.716f, 2.145f			Loop	8	
+17	CIVILIAN	a_f_m_beach_01	147.280f	-1463.935f, -1486.130f, 2.131f			Loop	9	
+17	CIVILIAN	a_f_y_beach_01	124.484f	-1461.344f, -1489.882f, 2.078f			Loop	10	
+17	CIVILIAN	a_m_m_beach_01	116.920f	-1459.970f, -1492.092f, 2.025f			Loop	11	
+17	CIVILIAN	a_m_o_beach_01	152.253f	-1464.090f, -1484.451f, 2.144f			Loop	12	
+17	CIVILIAN	a_f_m_beach_01	151.926f	-1462.800f, -1487.491f, 2.125f			Loop	13	
+17	CIVILIAN	a_f_y_beach_01	146.163f	-1461.323f, -1488.213f, 2.126f			Loop	14	
+17	CIVILIAN	a_m_y_beach_03	129.842f	-1460.766f, -1491.386f, 2.035f			Loop	15	
+17	CIVILIAN	a_m_y_beach_03	119.287f	-1460.065f, -1493.355f, 1.972f			Loop	16	
+17	WITNESS	a_f_y_tourist_01	216.191f	-1783.165f, -1199.729f, 13.017f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	17	
+17	WITNESS	a_f_y_tourist_01	201.801f	-1254.212f, -1904.781f, 5.863f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	18	
+17	WITNESS	a_f_y_tourist_01	193.073f	-1675.625f, -1171.587f, 13.017f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	19	
+17	WITNESS	a_f_y_tourist_01	50.958f	-1740.568f, -1102.670f, 13.017f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	20	
+17	WITNESS	a_f_y_tourist_01	52.155f	-1846.002f, -1173.469f, 13.017f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	21	
+17	WITNESS	a_f_y_tourist_01	155.461f	-1849.602f, -1250.102f, 8.616f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	22	
+18	COP	Model.Ped1	17.710f	1274.629f, -2722.163f, 2.148f	rcmnigel1a	stop	Loop	1	
+18	COP	Model.Ped2	37.769f	1266.767f, -2724.749f, 1.984f	amb@code_human_police_crowd_control@idle_a	idle_b	Loop	2	
+18	MEDIC	Model.Ped3	210.175f	1269.823f, -2727.625f, 2.028f	missfbi3_party_d	stand_talk_loop_b_male1	Loop	3	
+18	MEDIC	Model.Ped3	351.441f	1272.213f, -2731.932f, 2.033f	amb@medic@standing@kneel@idle_a	idle_b	Loop	4	
+18	LIFEGUARD	Model.Ped4	221.339f	1272.043f, -2730.370f, 2.112f	missheistfbi3b_ig8_2	cpr_loop_paramedic	Loop	5	
+18	LIFEGUARD	Model.Ped5	161.654f	1273.091f, -2729.893f, 2.078f	mini@cpr@char_a@cpr_str	cpr_kol	Loop	6	
+18	CIVILIAN	a_m_y_surfer_01	113.175f	1272.253f, -2730.773f, 2.130f	missheistfbi3b_ig8_2	cpr_loop_victim	Loop	7	
+18	CIVILIAN	a_m_m_beach_02	208.367f	1266.940f, -2722.531f, 2.072f			Loop	8	
+18	CIVILIAN	a_f_m_beach_01	214.328f	1265.886f, -2723.347f, 2.010f			Loop	9	
+18	CIVILIAN	a_f_y_yoga_01	230.171f	1264.719f, -2724.260f, 2.104f			Loop	10	
+18	CIVILIAN	a_m_y_yoga_01	219.611f	1265.589f, -2722.501f, 2.131f			Loop	11	
+18	CIVILIAN	a_m_y_runner_01	161.147f	1275.973f, -2719.987f, 2.214f			Loop	12	
+18	CIVILIAN	a_f_m_beach_01	187.381f	1274.750f, -2719.916f, 2.220f			Loop	13	
+18	CIVILIAN	a_f_y_runner_01	207.004f	1273.467f, -2720.441f, 2.188f			Loop	14	
+18	CIVILIAN	a_m_y_beach_03	212.635f	1272.244f, -2721.139f, 2.151f			Loop	15	
+18	CIVILIAN	a_m_y_beach_03	109.700f	1281.195f, -2724.900f, 2.108f			Loop	16	
+18	WITNESS	s_m_m_dockwork_01	23.647f	1250.628f, -2895.162f, 9.319f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	17	
+18	WITNESS	s_m_y_dockwork_01	198.691f	1234.048f, -2909.682f, 21.328f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	18	
+18	WITNESS	s_m_m_dockwork_01	261.453f	1237.406f, -2904.665f, 25.330f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	19	
+18	WITNESS	s_m_y_dockwork_01	246.932f	1205.794f, -2907.271f, 5.877f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	20	
+18	WITNESS	s_m_m_dockwork_01	120.470f	1168.521f, -2905.627f, 5.902f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	21	
+18	WITNESS	s_m_y_dockwork_01	 89.332f	1109.213f, -2906.215f, 11.920f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	22	
+18	WITNESS	s_m_m_dockwork_01	151.001f	1076.741f, -2866.708f, 11.260f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	23	
+18	WITNESS	s_m_y_dockwork_01	84.083f	1023.377f, -2880.157f, 39.157f	missheistdockssetup1ig_3@talk	oh_hey_vin_dockworker	Loop	24	
+19	COP	Model.Ped1	69.211f	200.255f, -44.686f, 68.622f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+19	MEDIC	Model.Ped2	79.750f	197.526f, -43.519f, 68.612f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+19	MEDIC	Model.Ped2	225.227f	197.130f, -42.182f, 68.619f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+19	CIVILIAN	a_m_m_malibu_01	151.146f	197.359f, -42.956f, 68.615f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+19	CIVILIAN	a_f_m_bevhills_01	117.156f	199.412f, -41.386f, 68.616f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+20	COP	Model.Ped1	316.511f	-1295.551f, -1133.740f, 5.950f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+20	MEDIC	Model.Ped2	353.372f	-1293.053f, -1132.944f, 6.047f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+20	MEDIC	Model.Ped2	167.718f	-1293.242f, -1131.550f, 6.123f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+20	CIVILIAN	a_m_m_malibu_01	38.648f	-1293.310f, -1132.346f, 6.080f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+20	CIVILIAN	a_f_m_bevhills_01	106.374f	-1290.537f, -1131.504f, 6.115f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+21	COP	Model.Ped1	186.626f	-1626.141f, -438.084f, 39.083f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+21	MEDIC	Model.Ped2	23.920f	-1623.751f, -441.058f, 39.148f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+21	MEDIC	Model.Ped2	131.585f	-1624.085f, -439.869f, 39.192f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+21	CIVILIAN	a_m_m_malibu_01	57.561f	-1624.287f, -440.484f, 39.150f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+21	CIVILIAN	a_f_m_bevhills_01	46.871f	-1622.699f, -442.870f, 39.035f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+22	COP	Model.Ped1	344.854f	193.315f, -808.402f, 31.049f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+22	MEDIC	Model.Ped2	280.870f	194.006f, -805.536f, 31.077f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+22	MEDIC	Model.Ped2	106.391f	195.349f, -804.413f, 31.138f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+22	CIVILIAN	a_m_m_malibu_01	338.786f	194.553f, -805.031f, 31.108f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+22	CIVILIAN	a_f_m_bevhills_01	106.190f	198.907f, -804.221f, 31.173f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+23	COP	Model.Ped1	153.127f	1665.017f, 4827.325f, 41.967f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+23	MEDIC	Model.Ped2	74.948f	1664.896f, 4823.325f, 42.095f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+23	MEDIC	Model.Ped2	227.621f	1663.303f, 4823.837f, 42.091f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+23	CIVILIAN	a_m_m_hillbilly_02	333.822f	1664.149f, 4823.726f, 42.103f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+23	CIVILIAN	a_f_y_soucent_03	304.726f	1663.073f, 4820.381f, 42.030f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+24	COP	Model.Ped1	341.414f	857.154f, 4329.255f, 51.632f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+24	MEDIC	Model.Ped2	261.425f	856.984f, 4332.509f, 51.608f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+24	MEDIC	Model.Ped2	141.060f	858.547f, 4332.593f, 51.524f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+24	CIVILIAN	a_m_y_hiker_01	20.510f	857.833f, 4332.220f, 51.571f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+24	CIVILIAN	a_f_y_hiker_01	51.664f	859.647f, 4331.102f, 51.492f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+25	COP	Model.Ped1	282.473f	597.592f, 2728.514f, 41.955f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+25	MEDIC	Model.Ped2	119.912f	601.363f, 2728.033f, 41.939f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+25	MEDIC	Model.Ped2	328.414f	599.939f, 2727.104f, 41.922f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+25	CIVILIAN	a_f_m_soucent_02	222.644f	600.552f, 2727.641f, 41.932f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+25	CIVILIAN	a_m_m_mexcntry_01	207.749f	598.577f, 2731.507f, 42.014f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+26	COP	Model.Ped1	91.468f	2501.580f, 4089.218f, 38.555f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+26	MEDIC	Model.Ped2	104.623f	2498.835f, 4086.781f, 38.240f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+26	MEDIC	Model.Ped2	274.998f	2496.976f, 4086.108f, 37.997f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+26	CIVILIAN	a_m_m_stlat_02	157.597f	2497.785f, 4086.350f, 38.102f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+26	CIVILIAN	a_f_o_indian_01	227.729f	2482.414f, 4099.885f, 38.136f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+27	COP	Model.Ped1	299.509f	-716.951f, 5780.007f, 17.786f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+27	MEDIC	Model.Ped2	240.404f	-714.327f, 5782.686f, 17.630f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+27	MEDIC	Model.Ped2	56.277f	-712.321f, 5782.108f, 17.471f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+27	CIVILIAN	a_m_m_stlat_02	123.029f	-713.338f, 5782.300f, 17.554f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+27	CIVILIAN	s_m_m_linecook	37.169f	-712.173f, 5780.002f, 17.490f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+28	COP	Model.Ped1	65.716f	1691.903f, 6416.239f, 32.543f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+28	MEDIC	Model.Ped2	57.557f	1690.037f, 6415.783f, 32.452f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+28	MEDIC	Model.Ped2	205.343f	1688.683f, 6416.980f, 32.403f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+28	CIVILIAN	g_old_man1a	94.885f	1688.914f, 6416.330f, 32.400f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+28	CIVILIAN	g_m_y_famdnf_01	161.233f	1689.169f, 6418.535f, 32.477f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+29	COP	Model.Ped1	332.007f	-1524.650f, 4911.681f, 66.501f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+29	MEDIC	Model.Ped2	305.674f	-1522.202f, 4912.700f, 66.552f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+29	MEDIC	Model.Ped2	129.455f	-1520.695f, 4914.453f, 66.605f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+29	CIVILIAN	a_f_y_hiker_01	354.345f	-1521.479f, 4913.495f, 66.578f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+29	CIVILIAN	a_m_y_hiker_01	 84.624f	-1520.197f, 4913.415f, 66.593f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+30	COP	Model.Ped1	326.544f	-93.242f, 6424.377f, 31.480f	amb@code_human_police_investigate@idle_a	idle_b	Loop	1	
+30	MEDIC	Model.Ped2	222.646f	-91.304f, 6431.102f, 31.356f	amb@medic@standing@kneel@idle_a	idle_a	Loop	2	
+30	MEDIC	Model.Ped2	81.405f	-89.854f, 6430.356f, 31.416f	amb@medic@standing@kneel@idle_a	idle_c	Loop	3	
+30	CIVILIAN	a_m_m_salton_02	321.037f	-90.865f, 6430.393f, 31.380f	missfbi5ig_0	lyinginpain_loop_steve	Loop	4	
+30	CIVILIAN	a_m_o_tramp_01	11.816f	-89.408f, 6425.795f, 31.490f	missmic_4premierejimwaitbef_prem	wait_idle_c	Loop	5	
+31	CALLER	u_f_m_miranda	206.907f	-960.665f, 802.342f, 177.430f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+31	OWNER	u_m_y_party_01	348.353f	-1013.762f, 769.201f, 171.379f	missheistdockssetup1ig_10@laugh	laugh_pipe_worker3	Loop	2	
+31	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+31	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+31	CIVILIAN	a_f_y_beach_01	44.218f	-1017.721f, 767.009f, 171.379f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+31	CIVILIAN	a_f_y_bevhills_04	230.554f	-1018.566f, 767.691f, 171.379f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+31	CIVILIAN	a_f_y_genhot_01	325.328f	-1021.614f, 762.994f, 171.209f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+31	CIVILIAN	a_f_m_beach_01	151.961f	-1021.043f, 763.940f, 171.209f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+31	CIVILIAN	a_m_y_beachvesp_01	139.456f	-1017.546f, 761.940f, 171.209f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+31	CIVILIAN	a_m_y_ktown_02	327.063f	-1018.493f, 760.897f, 171.209f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+31	CIVILIAN	g_f_y_vagos_01	233.589f	-1018.615f, 761.821f, 171.209f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+31	CIVILIAN	a_m_y_sunbathe_01	302.562f	-1014.214f, 769.843f, 171.379f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+31	CIVILIAN	a_f_y_yoga_01	139.488f	-1013.412f, 770.337f, 171.379f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+31	CIVILIAN	a_f_y_hipster_01	248.501f	-1015.146f, 761.698f, 171.379f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+31	CIVILIAN	a_m_y_breakdance_01	82.764f	-1014.543f, 761.484f, 171.379f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+31	CIVILIAN	a_m_y_beach_03	255.492f	-1015.181f, 765.879f, 171.209f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+31	CIVILIAN	ig_kerrymcintosh	20.203f	-1017.662f, 760.687f, 171.209f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+31	CIVILIAN	s_f_y_bartender_01	77.524f	-1014.113f, 765.580f, 171.205f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+31	CIVILIAN	a_m_y_musclbeac_02	251.524f	-1016.672f, 755.775f, 171.372f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+31	CIVILIAN	a_f_y_vinewood_02	138.668f	-1015.689f, 755.930f, 171.373f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+32	CALLER	player_zero	35.770f	-1929.474f, 404.458f, 96.296f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+32	OWNER	a_m_m_bevhills_02	97.078f	-1930.707f, 351.684f, 93.790f	amb@world_human_stand_impatient@male@no_sign@idle_a	idle_a	Loop	2	
+32	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+32	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+32	CIVILIAN	ig_tracydisanto	332.951f	-1928.032f, 407.560f, 96.507f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+32	CIVILIAN	ig_amandatownley	121.483f	-1927.476f, 408.363f, 96.507f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+32	CIVILIAN	a_f_y_genhot_01	224.758f	-1928.137f, 408.774f, 96.507f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+32	CIVILIAN	a_f_m_beach_01	289.478f	-1922.948f, 404.930f, 96.295f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+32	CIVILIAN	player_one	183.013f	-1929.633f, 405.758f, 96.296f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+32	CIVILIAN	player_two	224.720f	-1930.741f, 405.586f, 96.296f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+32	CIVILIAN	g_f_y_vagos_01	176.610f	-1921.840f, 406.044f, 96.294f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+32	CIVILIAN	ig_jimmydisanto	277.074f	-1931.681f, 398.949f, 96.507f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+32	CIVILIAN	a_f_y_yoga_01	355.609f	-1921.779f, 404.551f, 96.296f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+32	CIVILIAN	a_m_y_beach_03	302.541f	-1926.650f, 405.770f, 96.295f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+32	CIVILIAN	a_m_y_stwhi_02	116.956f	-1921.008f, 405.604f, 96.295f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+32	CIVILIAN	ig_kerrymcintosh	93.812f	-1931.283f, 399.001f, 96.507f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+32	CIVILIAN	s_f_y_bartender_01	124.518f	-1925.393f, 406.580f, 96.293f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+32	CIVILIAN	a_f_y_hipster_01	77.359f	-1925.369f, 405.631f, 96.294f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+32	CIVILIAN	a_m_y_musclbeac_02	272.495f	-1930.303f, 402.160f, 96.298f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+32	CIVILIAN	a_f_y_vinewood_02	 84.559f	-1929.097f, 402.076f, 96.298f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+33	CALLER	a_f_y_business_01	18.305f	45.667f, 557.108f, 180.082f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+33	OWNER	player_one	240.523f	22.709f, 523.712f, 170.228f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	2	
+33	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_l	StayInEndFrame	3	
+33	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_l	None	4	
+33	CIVILIAN	ig_tanisha	45.052f 	23.207f, 523.001f, 170.228f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+33	CIVILIAN	ig_tonya	133.974f	19.481f, 523.285f, 170.228f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+33	CIVILIAN	ig_jewelass	315.423f	18.797f, 522.177f, 170.228f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+33	CIVILIAN	a_f_y_genhot_01	127.537f	24.051f, 520.757f, 170.228f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+33	CIVILIAN	ig_lamardavis	1.912f	22.216f, 522.738f, 170.228f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+33	CIVILIAN	ig_stretch	309.209f	23.532f, 520.163f, 170.228f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+33	CIVILIAN	a_m_y_beach_03	265.187f	23.483f, 520.753f, 170.228f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+33	CIVILIAN	a_m_y_soucent_02	111.322f	21.299f, 519.769f, 170.228f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+33	CIVILIAN	csb_anita	261.347f	20.236f, 519.893f, 170.228f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+33	CIVILIAN	csb_denise_friend	240.606f	22.550f, 518.116f, 170.228f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+33	CIVILIAN	csb_g	169.163f	23.072f, 518.354f, 170.228f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+33	CIVILIAN	s_m_y_strvend_01	318.828f	17.869f, 532.361f, 170.628f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+33	CIVILIAN	g_f_y_ballas_01	138.504f	18.447f, 532.846f, 170.628f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+33	CIVILIAN	g_f_y_families_01	150.164f	15.696f, 523.886f, 170.228f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+33	CIVILIAN	u_m_m_rivalpap	6.594f	15.659f, 522.867f, 170.228f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+33	CIVILIAN	a_f_y_scdressy_01	314.433f	14.669f, 523.149f, 170.228f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+34	CALLER	a_f_m_eastsa_02	172.24f	943.75f, -463.71f, 61.40f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+34	OWNER	ig_terry	83.11f	896.17f, -471.54f, 59.02f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	2	
+34	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+34	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+34	CIVILIAN	g_f_y_lost_01	248.43f	894.74f, -471.02f, 59.09f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+34	CIVILIAN	ig_paige	276.77f	898.69f, -469.97f, 59.02f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+34	CIVILIAN	g_f_y_lost_01	127.67f	900.22f, -469.60f, 59.02f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+34	CIVILIAN	ig_ashley	49.50f	900.19f, -470.66f, 59.02f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+34	CIVILIAN	g_m_y_lost_01	336.55f	891.60f, -474.47f, 59.02f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+34	CIVILIAN	g_m_y_lost_02	204.40f	891.50f, -473.32f, 59.02f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+34	CIVILIAN	g_m_y_lost_03	11.18f	889.06f, -474.34f, 59.02f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+34	CIVILIAN	g_m_y_lost_02	227.97f	888.05f, -473.47f, 59.01f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+34	CIVILIAN	g_f_y_lost_01	186.82f	889.15f, -473.16f, 59.01f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+34	CIVILIAN	g_f_y_lost_01	236.36f	892.80f, -478.56f, 59.02f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+34	CIVILIAN	g_m_y_lost_03	71.57f	894.56f, -478.71f, 59.02f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+34	CIVILIAN	g_f_y_lost_01	1.74f	893.42f, -479.35f, 59.07f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	16	
+34	CIVILIAN	g_f_y_lost_01	159.90f	890.34f, -475.75f, 59.11f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	17	
+34	CIVILIAN	g_f_y_lost_01	342.11f	889.81f, -477.75f, 59.02f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+34	CIVILIAN	g_m_y_lost_01	72.15f	890.88f, -477.01f, 59.02f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+34	CIVILIAN	g_f_y_lost_01	249.58f	889.32f, -476.80f, 59.02f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+35	CALLER	csb_screen_writer	290.232f	-1910.714f, -551.493f, 11.834f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+35	OWNER	csb_anita	311.631f	-1907.520f, -576.176f, 22.892f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	2	
+35	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+35	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+35	CIVILIAN	a_f_y_bevhills_04	164.953f	-1907.227f, -575.065f, 22.947f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+35	CIVILIAN	a_f_y_bevhills_03	111.073f	-1906.405f, -575.679f, 22.893f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+35	CIVILIAN	a_f_y_genhot_01	170.563f	-1913.281f, -577.529f, 22.892f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+35	CIVILIAN	a_f_y_bevhills_02	109.572f	-1912.398f, -578.217f, 22.892f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+35	CIVILIAN	a_m_y_busicas_01	26.155f 	-1911.307f, -580.418f, 19.097f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+35	CIVILIAN	a_m_y_business_02	110.824f	-1909.350f, -570.377f, 22.970f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+35	CIVILIAN	a_f_y_bevhills_01	199.487f	-1911.692f, -579.548f, 19.097f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+35	CIVILIAN	a_m_y_gay_01	55.370f 	-1908.116f, -581.577f, 22.892f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+35	CIVILIAN	s_f_y_movprem_01	282.740f	-1910.308f, -570.489f, 22.970f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+35	CIVILIAN	u_f_y_hotposh_01	228.278f	-1909.074f, -580.910f, 22.892f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+35	CIVILIAN	a_m_y_business_01	9.976f 	-1911.095f, -576.259f, 22.892f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+35	CIVILIAN	a_m_y_business_03	201.301f	-1911.382f, -575.198f, 22.892f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+35	CIVILIAN	u_f_y_poppymich	84.869f 	-1910.442f, -575.455f, 22.892f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+35	CIVILIAN	a_f_y_business_01	75.738f 	-1908.076f, -572.487f, 22.970f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+35	CIVILIAN	csb_groom	217.318f	-1908.905f, -571.865f, 22.970f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+35	CIVILIAN	a_f_y_business_04	283.449f	-1909.162f, -572.654f, 22.970f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+36	CALLER	ig_bankman	110.177f	-2996.339f, 706.599f, 28.497f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+36	OWNER	csb_oscar	9.366f	-2998.194f, 758.405f, 26.687f	amb@world_human_stand_impatient@male@no_sign@idle_a	idle_a	Loop	2	
+36	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+36	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+36	CIVILIAN	a_f_y_beach_01	321.923f	-2991.818f, 757.664f, 25.829f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+36	CIVILIAN	a_f_y_beach_01	145.825f	-2991.071f, 758.777f, 26.009f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+36	CIVILIAN	a_f_y_genhot_01	97.246f 	-2997.290f, 758.940f, 26.687f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+36	CIVILIAN	a_f_y_scdressy_01	194.420f	-2979.225f, 753.805f, 26.687f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+36	CIVILIAN	a_m_y_beach_03	13.763f 	-2978.800f, 752.192f, 26.687f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+36	CIVILIAN	a_m_y_beach_01	183.165f	-2998.140f, 759.674f, 26.687f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+36	CIVILIAN	a_f_y_bevhills_01	37.735f 	-2977.912f, 752.087f, 26.687f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+36	CIVILIAN	a_m_m_stlat_02	57.349f 	-2998.809f, 767.977f, 27.028f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+36	CIVILIAN	a_f_y_beach_01	242.653f	-2999.935f, 768.591f, 27.028f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+36	CIVILIAN	a_f_y_beach_01	181.714f	-2996.275f, 764.604f, 26.687f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+36	CIVILIAN	a_m_y_musclbeac_02	30.555f 	-2995.667f, 763.468f, 26.687f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+36	CIVILIAN	a_m_y_musclbeac_02	348.357f	-2996.476f, 763.670f, 26.687f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+36	CIVILIAN	ig_maryann	29.389f 	-3001.218f, 762.021f, 27.028f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+36	CIVILIAN	s_f_y_movprem_01	209.892f	-3001.797f, 762.999f, 27.028f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+36	CIVILIAN	ig_tylerdix	267.097f	-2989.087f, 768.452f, 26.687f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+36	CIVILIAN	s_f_y_shop_mid	87.919f 	-2987.952f, 768.332f, 26.687f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+37	CALLER	a_m_o_genstreet_01	285.574f	-236.757f, 6418.600f, 31.267f	amb@world_human_stand_impatient@female@no_sign@idle_a	idle_a	Loop	1	
+37	OWNER	ig_lifeinvad_01	108.206f	-198.603f, 6377.505f, 31.837f	amb@world_human_stand_impatient@male@no_sign@idle_a	idle_a	Loop	2	
+37	OWNER_IN	NONE	0f	0f,0f,0f	reaction@points@	intro_90_r	StayInEndFrame	3	
+37	OWNER_OUT	NONE	0f	0f,0f,0f	reaction@points@	outro_90_r	None	4	
+37	CIVILIAN	a_f_y_hipster_01	202.493f	-199.231f, 6378.705f, 31.837f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	5	
+37	CIVILIAN	a_f_y_hipster_02	257.262f 	-200.130f, 6377.689f, 31.837f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	6	
+37	CIVILIAN	a_f_y_eastsa_02	307.764f 	-199.706f, 6376.670f, 31.837f	amb@world_human_partying@female@partying_beer@base	base	Loop	7	
+37	CIVILIAN	g_f_y_vagos_01	260.184f	-196.571f, 6384.506f, 33.085f	amb@world_human_drinking@beer@female@idle_a	idle_a	Loop	8	
+37	CIVILIAN	g_m_y_armgoon_02	193.225f	-195.813f, 6385.329f, 33.085f	amb@world_human_partying@male@partying_beer@base	base	Loop	9	
+37	CIVILIAN	a_m_m_salton_03	118.622f	-199.146f, 6380.066f, 31.837f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	10	
+37	CIVILIAN	a_f_y_vinewood_02	293.141f	-200.582f, 6379.230f, 31.837f	amb@world_human_drinking@beer@female@idle_a	idle_c	Loop	11	
+37	CIVILIAN	a_m_m_salton_01	148.616f 	-194.767f, 6377.514f, 31.853f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	12	
+37	CIVILIAN	a_f_y_indian_01	303.409f 	-196.076f, 6376.754f, 31.844f	amb@world_human_drinking@beer@female@idle_a	idle_e	Loop	13	
+37	CIVILIAN	a_f_y_hippie_01	3.730f 	-194.956f, 6376.164f, 31.848f	amb@world_human_drinking@beer@female@idle_a	idle_d	Loop	14	
+37	CIVILIAN	a_m_m_soucent_03	44.353f 	-202.718f, 6378.177f, 31.837f	amb@world_human_partying@male@partying_beer@idle_a	idle_a	Loop	15	
+37	CIVILIAN	a_m_m_stlat_02	224.343f 	-203.686f, 6379.178f, 31.837f	amb@world_human_partying@male@partying_beer@idle_a	idle_b	Loop	16	
+37	CIVILIAN	a_f_y_hipster_01	129.471f 	-202.146f, 6379.727f, 31.837f	amb@world_human_partying@female@partying_beer@idle_a	idle_a	Loop	17	
+37	CIVILIAN	a_f_y_soucent_02	251.977f 	-193.808f, 6378.434f, 31.860f	amb@world_human_partying@female@partying_beer@idle_a	idle_b	Loop	18	
+37	CIVILIAN	csb_fos_rep	136.665f 	-192.600f, 6379.120f, 31.865f	amb@world_human_drinking@beer@male@idle_a	idle_c	Loop	19	
+37	CIVILIAN	a_f_y_soucent_03	56.839f 	-192.528f, 6377.919f, 31.864f	amb@world_human_partying@female@partying_beer@base	base	Loop	20	
+									
+VEHICLES	Type	ModelName	Heading	Position	Id	pitch	roll	yaw	
+1	POLICE	Model.Vehicle1	103.066f	-1049.494f, 1183.143f, 216.239f	1	0f	0f	0f	
+1	EMS	Model.Vehicle2	99.448f	-1038.006f, 1184.424f, 216.850f	2	0f	0f	0f	
+1	CIV	BISON	121.31f	-1064.50f, 1191.51f, 221.93f	3	0f	180f	0f	
+1	TRUCK	FLATBED	119.384f	-1076.920f, 1174.091f, 215.276f	4	0f	0f	0f	
+2	POLICE	Model.Vehicle1	120.915f	2342.582f, 5228.750f, 59.463f	1	0f	0f	0f	
+2	EMS	Model.Vehicle2	 127.667f	2318.881f, 5210.524f, 59.500f	2	0f	0f	0f	
+2	CIV	HABANERO	108.796f	2314.432f, 5216.966f, 59.343f	3	0f	180f	0f	
+2	TRUCK	FLATBED	292.429f	2325.760f, 5219.547f, 59.869f	4	0f	0f	0f	
+3	POLICE	Model.Vehicle1	136.50f	-1295.90f, 5253.83f, 52.18f	1	0f	0f	0f	
+3	EMS	Model.Vehicle2	109.360f	-1290.711f, 5262.526f, 51.700f	2	0f	0f	0f	
+3	CIV	TAXI	 129.990f	-1298.578f, 5258.469f, 52.113f	3	0f	180f	0f	
+3	TRUCK	FLATBED	145.937f	-1305.541f, 5246.211f, 53.581f	4	0f	0f	0f	
+4	POLICE	Model.Vehicle1	232.389f	1207.343f, 1315.722f, 144.374f	1	0f	0f	0f	
+4	EMS	Model.Vehicle2	76.179f	1217.441f, 1304.354f, 143.584f	2	0f	0f	0f	
+4	AIRUNIT	Model.Vehicle3	47.795f	1220.011f, 1294.865f, 142.4f	3	0f	0f	0f	
+4	CIV	ISSI2	239.403f	1199.866f, 1320.879f, 144.887f	4	0f	0f	0f	
+4	CIV	JACKAL	24.509f	1232.801f, 1306.366f, 143.276f	5	0f	0f	0f	
+4	CIV	TRIBIKE3	195.253f	1214.313f, 1310.214f, 143.698f	6	0f	0f	0f	
+5	POLICE	Model.Vehicle1	158.662f	-234.211f, 3892.026f, 37.085f	1	0f	0f	0f	
+5	EMS	Model.Vehicle2	359.814f	-233.593f, 3883.720f, 37.230f	2	0f	0f	0f	
+5	AIRUNIT	Model.Vehicle3	311.359f	-252.012f, 3878.350f, 40.253f	3	10f	0f	0f	
+5	CIV	RANCHERXL	309.132f	-218.913f, 3886.984f, 37.144f	4	0f	0f	0f	
+5	CIV	RHAPSODY	176.705f	-232.742f, 3910.579f, 37.260f	5	0f	0f	0f	
+5	CIV	SANCHEZ	177.015f	-235.064f, 3863.109f, 34.354f	6	0f	0f	0f	
+6	POLICE	Model.Vehicle1	191.002f	-1302.890f, 4614.000f, 118.588f	1	0f	0f	0f	
+6	EMS	Model.Vehicle2	264.445f	-1276.187f, 4610.320f, 123.799f	2	0f	0f	0f	
+6	AIRUNIT	Model.Vehicle3	351.910f	-1292.021f, 4609.761f, 120.000f	3	-5f	-7f	0f	
+6	TRUCK	BULLDOZER	293.354f	-1251.239f, 4608.118f, 130.681f	4	0f	0f	0f	
+6	TRUCK	TIPTRUCK	234.813f	-1267.600f, 4604.927f, 126.168f	5	0f	0f	0f	
+6	CIV	SCORCHER	359.133f	-1281.937f, 4610.486f, 122.751f	6	0f	0f	0f	
+7	POLICE	Model.Vehicle1	49.237f	-2018.984f, 1927.090f, 185.982f	1	0f	0f	0f	
+7	EMS	Model.Vehicle2	22.707f	-2011.968f, 1926.712f, 185.506f	2	0f	0f	0f	
+7	FIRE	Model.Vehicle3	168.832f	-2046.508f, 1948.092f, 188.234f	3	0f	0f	0f	
+7	CIV	WASHINGTON	318.817f	-2018.404f, 1953.719f, 173.204f	4	0f	0f	0f	
+7	CIV	GRESLEY	68.160f	-2028.124f, 1927.155f, 186.449f	5	0f	0f	0f	
+7	TRUCK	TOWTRUCK	128.701f	-2043.193f, 1935.710f, 186.804f	6	0f	0f	0f	
+8	POLICE	Model.Vehicle1	218.565f	3007.410f, 3390.121f, 72.806f	1	0f	0f	0f	
+8	EMS	Model.Vehicle2	240.045f	3028.339f, 3370.805f, 74.937f	2	0f	0f	0f	
+8	FIRE	Model.Vehicle3	212.652f	3008.332f, 3374.985f, 74.032f	3	0f	0f	0f	
+8	CIV	ASTEROPE	211.117f	3021.993f, 3370.316f, 74.306f	4	0f	0f	0f	
+8	CIV	DILETTANTE2	55.813f	3011.717f, 3382.808f, 73.234f	5	0f	0f	0f	
+8	TRUCK	TOWTRUCK2	27.221f	3017.760f, 3377.907f, 73.914f	6	0f	0f	0f	
+9	POLICE	Model.Vehicle1	287.023f	-2076.445f, 4446.418f, 58.594f	1	0f	0f	0f	
+9	EMS	Model.Vehicle2	306.518f	-2040.326f, 4466.304f, 57.097f	2	0f	0f	0f	
+9	FIRE	Model.Vehicle3	253.030f	-2049.768f, 4447.828f, 56.847f	3	0f	0f	0f	
+9	CIV	SCHAFTER2	296.298f	-2039.690f, 4461.199f, 56.648f	4	0f	0f	0f	
+9	CIV	BALLER	115.739f	-2067.070f, 4463.200f, 58.488f	5	0f	0f	0f	
+9	TRUCK	TOWTRUCK	111.629f	-2049.652f, 4456.173f, 57.628f	6	0f	0f	0f	
+10	POLICE	Model.Vehicle1	343.210f	1915.990f, -1297.256f, 131.552f	1	0f	0f	0f	
+10	POLICE	Model.Vehicle2	171.465f	1907.896f, -1227.316f, 119.798f	2	0f	0f	0f	
+10	EMS	Model.Vehicle3	0.829f	1907.715f, -1245.740f, 123.509f	3	0f	0f	0f	
+10	TRUCK	BENSON	158.134f	1917.884f, -1248.013f, 125.768f	4	0f	270f	0f	
+10	CIV	PONY	24.509f	1897.318f, -1288.881f, 130.060f	5	0f	0f	0f	
+10	FIRE	Model.Vehicle4	8.318f	1913.163f, -1267.820f, 128.163f	6	0f	0f	0f	
+11	POLICE	Model.Vehicle1	108.490f	-953.869f, 2762.304f, 24.995f	1	0f	0f	0f	
+11	POLICE	Model.Vehicle2	282.794f	-972.625f, 2745.046f, 25.142f	2	0f	0f	0f	
+11	EMS	Model.Vehicle3	103.581f	-981.562f, 2758.325f, 25.060f	3	0f	0f	0f	
+11	TRUCK	POUNDER	83.735f	-987.599f, 2763.984f, 26.440f	4	0f	90f	0f	
+11	CIV	UTILLITRUCK3	264.371f	-960.006f, 2746.664f, 25.363f	5	0f	0f	0f	
+11	FIRE	Model.Vehicle4	88.218f	-961.865f, 2763.821f, 25.514f	6	0f	0f	0f	
+12	POLICE	Model.Vehicle1	269.599f	-839.594f, 5258.758f, 86.385f	1	0f	0f	0f	
+12	POLICE	Model.Vehicle2	18.878f	-760.623f, 5261.601f, 91.410f	2	0f	0f	0f	
+12	EMS	Model.Vehicle3	91.695f	-820.835f, 5265.771f, 87.111f	3	0f	0f	0f	
+12	TRUCK	HAULER	88.861f	-838.739f, 5274.097f, 78.747f	4	0f	90f	0f	
+12	CIV	TRAILERLOGS	39.782f	-831.430f, 5268.207f, 81.139f	5	0f	0f	0f	
+12	FIRE	Model.Vehicle4	290.486f	-806.317f, 5262.846f, 88.413f	6	0f	0f	0f	
+13	POLICE	Model.Vehicle1	286.309f	1786.665f, -850.312f, 73.176f	1	0f	0f	0f	
+13	POLICE	Model.Vehicle2	303.249f	1813.979f, -846.053f, 74.272f	2	0f	0f	0f	
+13	EMS	Model.Vehicle3	300.558f	1793.742f, -844.599f, 73.600f	3	0f	0f	0f	
+13	EMS	Model.Vehicle3	304.019f	1826.977f, -822.001f, 76.295f	4	0f	0f	0f	
+13	FIRE	Model.Vehicle5	306.283f	1807.452f, -836.713f, 74.994f	5	0f	0f	0f	
+13	CIV	SERRANO	257.500f	1813.468f, -829.652f, 74.924f	6	0f	180f	0f	
+13	CIV	INGOT	314.080f	1798.749f, -838.393f, 73.930f	7	0f	0f	0f	
+13	CIV	BLISTA	309.813f	1820.828f, -840.307f, 75.166f	8	0f	0f	0f	
+13	TRUCK	FLATBED	308.691f	1820.475f, -822.857f, 76.125f	9	0f	0f	0f	
+13	TRUCK	TOWTRUCK	300.552f	1802.212f, -853.532f, 73.861f	10	0f	0f	0f	
+14	POLICE	Model.Vehicle1	14.871f	2524.150f, 5498.210f, 44.194f	1	0f	0f	0f	
+14	POLICE	Model.Vehicle2	209.364f	2493.192f, 5536.108f, 44.086f	2	0f	0f	0f	
+14	EMS	Model.Vehicle3	16.062f	2518.510f, 5518.033f, 44.440f	3	0f	0f	0f	
+14	AIRUNIT	Model.Vehicle4	219.358f	2502.169f, 5541.096f, 43.770f	4	0f	0f	0f	
+14	FIRE	Model.Vehicle5	33.644f	2515.485f, 5504.484f, 44.676f	5	0f	0f	0f	
+14	CIV	PRIMO	83.378f	2510.140f, 5522.511f, 44.204f	6	0f	180f	0f	
+14	CIV	REGINA	27.298f	2513.537f, 5519.205f, 44.380f	7	0f	0f	0f	
+14	CIV	FUGITIVE	198.934f	2499.869f, 5518.604f, 44.354f	8	0f	0f	0f	
+14	TRUCK	FLATBED	220.434f	2499.467f, 5526.640f, 44.785f	9	0f	0f	0f	
+14	TRUCK	TOWTRUCK	17.744f	2526.591f, 5531.026f, 44.640f	10	0f	0f	0f	
+15	POLICE	Model.Vehicle1	65.423f	-472.314f, -505.942f, 24.958f	1	0f	0f	0f	
+15	POLICE	Model.Vehicle2	87.681f	-497.433f, -501.307f, 25.139f	2	0f	0f	0f	
+15	EMS	Model.Vehicle3	86.373f	-478.963f, -510.782f, 24.882f	3	0f	0f	0f	
+15	EMS	Model.Vehicle3	72.725f	-500.902f, -506.146f, 25.026f	4	0f	0f	0f	
+15	FIRE	Model.Vehicle5	80.495f	-485.336f, -503.996f, 25.394f	5	0f	0f	0f	
+15	CIV	FACTION	95.981f	-494.282f, -511.936f, 24.595f	6	0f	180f	0f	
+15	CIV	BALLER	157.271f	-485.993f, -510.918f, 24.631f	7	0f	0f	0f	
+15	CIV	JACKAL	90.209f	-505.738f, -501.612f, 24.788f	8	0f	0f	0f	
+15	TRUCK	FLATBED	88.162f	-505.849f, -511.388f, 25.237f	9	0f	0f	0f	
+15	TRUCK	TOWTRUCK	51.786f	-492.222f, -506.642f, 25.244f	10	0f	0f	0f	
+16	POLICE	Model.Vehicle1	98.642f	986.878f, 6497.579f, 20.353f	1	0f	0f	0f	
+16	POLICE	Model.Vehicle2	86.302f	940.859f, 6494.330f, 20.462f	2	0f	0f	0f	
+16	EMS	Model.Vehicle3	64.212f	944.642f, 6500.654f, 20.824f	3	0f	0f	0f	
+16	AIRUNIT	Model.Vehicle4	232.257f	928.211f, 6503.833f, 20.258f	4	0f	0f	0f	
+16	FIRE	Model.Vehicle5	51.898f	959.018f, 6510.366f, 21.125f	5	0f	0f	0f	
+16	CIV	PRAIRIE	36.367f	944.332f, 6531.506f, 17.286f	6	0f	180f	0f	
+16	CIV	YOUGA	75.851f	949.970f, 6505.972f, 20.605f	7	0f	0f	0f	
+16	CIV	PENUMBRA	91.166f	931.336f, 6495.219f, 20.601f	8	0f	0f	0f	
+16	TRUCK	FLATBED	81.392f	933.571f, 6524.186f, 19.318f	9	0f	0f	0f	
+16	TRUCK	TOWTRUCK	85.651f	972.486f, 6495.400f, 20.970f	10	0f	0f	0f	
+17	POLICE	Model.Vehicle1	103.529f	-1469.534f, -1484.073f, 1.645f	1	0f	0f	0f	
+17	POLICE	Model.Vehicle2	149.921f	-1456.508f, -1493.975f, 1.625f	2	0f	0f	0f	
+17	EMS	Model.Vehicle3	164.831f	-1475.311f, -1493.202f, 1.337f	3	0f	0f	0f	
+17	EMS	Model.Vehicle4	5.663f	-1464.719f, -1489.411f, 1.559f	4	0f	0f	0f	
+17	EMS	Model.Vehicle5	155.153f	-1461.632f, -1498.331f, 1.353f	5	0f	0f	0f	
+18	POLICE	Model.Vehicle1	223.057f	1259.571f, -2720.845f, 1.765f	1	0f	0f	0f	
+18	POLICE	Model.Vehicle2	214.492f	1279.570f, -2721.151f, 1.825f	2	0f	0f	0f	
+18	EMS	Model.Vehicle3	195.861f	1270.882f, -2725.300f, 1.844f	3	0f	0f	0f	
+18	EMS	Model.Vehicle4	196.313f	1264.145f, -2728.974f, 1.400f	4	0f	0f	0f	
+18	EMS	Model.Vehicle5	143.615f	1276.552f, -2728.071f, 1.528f	5	0f	0f	0f	
+19	POLICE	Model.Vehicle1	71.618f	201.245f, -47.310f, 68.225f	1	0f	0f	0f	
+19	EMS	Model.Vehicle2	50.293f	192.137f, -41.139f, 68.238f	2	0f	0f	0f	
+20	POLICE	Model.Vehicle1	64.414f	-1287.977f, -1134.500f, 5.794f	1	0f	0f	0f	
+20	EMS	Model.Vehicle2	358.204f	-1295.550f, -1125.820f, 6.049f	2	0f	0f	0f	
+21	POLICE	Model.Vehicle1	337.598f	-1624.427f, -434.905f, 38.932f	1	0f	0f	0f	
+21	EMS	Model.Vehicle2	220.558f	-1621.928f, -447.045f, 38.601f	2	0f	0f	0f	
+22	POLICE	Model.Vehicle1	353.453f	192.238f, -805.462f, 30.547f	1	0f	0f	0f	
+22	EMS	Model.Vehicle2	340.074f	198.180f, -796.702f, 31.204f	2	0f	0f	0f	
+23	POLICE	Model.Vehicle1	125.912f	1663.164f, 4828.806f, 41.614f	1	0f	0f	0f	
+23	EMS	Model.Vehicle2	185.990f	1666.736f, 4817.709f, 41.686f	2	0f	0f	0f	
+24	POLICE	Model.Vehicle1	356.389f	858.809f, 4326.983f, 50.942f	1	0f	0f	0f	
+24	EMS	Model.Vehicle2	205.469f	855.992f, 4338.159f, 51.377f	2	0f	0f	0f	
+25	POLICE	Model.Vehicle1	334.299f	596.711f, 2725.525f, 41.295f	1	0f	0f	0f	
+25	EMS	Model.Vehicle2	76.221f	602.201f, 2732.125f, 41.751f	2	0f	0f	0f	
+26	POLICE	Model.Vehicle1	185.920f	2501.489f, 4094.654f, 37.819f	1	0f	0f	0f	
+26	EMS	Model.Vehicle2	258.531f	2498.874f, 4082.164f, 38.041f	2	0f	0f	0f	
+27	POLICE	Model.Vehicle1	291.038f	-717.183f, 5776.953f, 17.335f	1	0f	0f	0f	
+27	EMS	Model.Vehicle2	246.050f	-707.627f, 5780.820f, 17.066f	2	0f	0f	0f	
+28	POLICE	Model.Vehicle1	85.662f	1695.542f, 6415.463f, 32.026f	1	0f	0f	0f	
+28	EMS	Model.Vehicle2	7.288f	1686.275f, 6421.746f, 32.100f	2	0f	0f	0f	
+29	POLICE	Model.Vehicle1	341.797f	-1524.389f, 4907.434f, 65.985f	1	0f	0f	0f	
+29	EMS	Model.Vehicle2	144.985f	-1517.592f, 4920.370f, 66.350f	2	0f	0f	0f	
+30	POLICE	Model.Vehicle1	312.544f	-98.823f, 6423.154f, 30.988f	1	0f	0f	0f	
+30	EMS	Model.Vehicle2	274.477f	-81.841f, 6428.882f, 31.220f	2	0f	0f	0f	
+31	CIV	WINDSOR2	291.573f	-1000.132f, 785.339f, 171.131f	1	0f	0f	0f	
+31	CIV	JACKAL	206.850f	-998.377f, 792.699f, 171.598f	2	0f	0f	0f	
+31	CIV	FELON2	35.148f	-995.638f, 788.295f, 171.835f	3	0f	0f	0f	
+31	CIV	F620	220.886f	-991.897f, 783.610f, 172.315f	4	0f	0f	0f	
+31	CIV	GRESLEY	224.036f	-987.817f, 779.246f, 173.338f	5	0f	0f	0f	
+31	CIV	CAVALCADE	38.762f	-988.223f, 791.421f, 172.810f	6	0f	0f	0f	
+31	CIV	NINEF2	41.683f	-984.905f, 787.070f, 172.973f	7	0f	0f	0f	
+32	CIV	BUFFALO2	278.449f	-1944.181f, 384.616f, 96.027f	1	0f	0f	0f	
+32	CIV	BODHI2	278.369f	-1950.282f, 384.080f, 95.233f	2	0f	0f	0f	
+32	CIV	ALPHA	85.040f	-1956.279f, 383.580f, 94.091f	3	0f	0f	0f	
+32	CIV	COMET2	277.910f	-1949.348f, 400.593f, 95.906f	4	0f	0f	0f	
+32	CIV	CARBONIZZARE	276.591f	-1955.606f, 399.694f, 95.798f	5	0f	0f	0f	
+32	CIV	JESTER	6.867f	-1958.000f, 393.515f, 95.169f	6	0f	0f	0f	
+32	CIV	MAMBA	5.169f	-1959.660f, 406.132f, 96.374f	7	0f	0f	0f	
+33	CIV	NIGHTSHADE	307.126f 	0.458f, 542.591f, 173.553f	1	0f	0f	0f	
+33	CIV	BUFFALO2	237.035f 	16.414f, 549.334f, 175.924f	2	0f	0f	0f	
+33	CIV	TAMPA	245.350f 	15.084f, 546.495f, 175.541f	3	0f	0f	0f	
+33	CIV	VIRGO	122.161f 	10.931f, 550.032f, 175.535f	4	0f	0f	0f	
+33	CIV	KHAMELION	80.773f 	11.170f, 544.563f, 175.087f	5	0f	0f	0f	
+33	CIV	BANSHEE	300.822f 	15.868f, 553.347f, 176.390f	6	0f	0f	0f	
+33	CIV	DUBSTA2	121.673f 	4.622f, 545.994f, 174.506f	7	0f	0f	0f	
+34	CIV	SLAMVAN2	203.97f	912.66f, -484.59f, 58.67f	1	0f	0f	0f	
+34	CIV	TORNADO6	25.44f	915.15f, -490.21f, 58.73f	2	0f	0f	0f	
+34	CIV	DAEMON	205.08f	912.51f, -492.51f, 58.42f	3	0f	0f	0f	
+34	CIV	INNOVATION	206.61f	911.43f, -492.90f, 58.40f	4	0f	0f	0f	
+34	CIV	HEXER	203.47f	910.29f, -493.25f, 58.37f	5	0f	0f	0f	
+34	CIV	SOVEREIGN	75.40f	910.86f, -479.36f, 58.49f	6	0f	0f	0f	
+34	CIV	SANCTUS	205.57f	907.59f, -479.88f, 58.53f	7	0f	0f	0f	
+34	CIV	ZOMBIEB	113.71f	909.73f, -489.99f, 58.45f	8	0f	0f	0f	
+34	CIV	DEFILER	70.11f	909.67f, -477.18f, 58.53f	9	0f	0f	0f	
+34	CIV	BAGGER	74.53f	910.14f, -478.19f, 58.50f	10	0f	0f	0f	
+35	CIV	COMET2	231.618f 	-1893.725f, -565.024f, 11.346f	1	0f	0f	0f	
+35	CIV	COQUETTE3	113.386f 	-1904.042f, -558.801f, 11.222f	2	0f	0f	0f	
+35	CIV	ROCOTO	142.470f 	-1901.548f, -560.752f, 11.665f	3	0f	0f	0f	
+35	CIV	SURANO	201.991f 	-1897.735f, -562.150f, 11.410f	4	0f	0f	0f	
+35	CIV	SUPERD	229.922f 	-1891.122f, -563.038f, 11.239f	5	0f	0f	0f	
+35	CIV	VACCA	233.298f 	-1896.131f, -559.021f, 11.247f	6	0f	0f	0f	
+35	CIV	VOLTIC	220.988f 	-1899.927f, -555.999f, 11.323f	7	0f	0f	0f	
+36	CIV	VERLIERER2	284.633f 	-3018.389f, 741.100f, 27.093f	1	0f	0f	0f	
+36	CIV	KHAMELION	286.336f 	-3017.818f, 738.280f, 26.840f	2	0f	0f	0f	
+36	CIV	CHEETAH	272.798f 	-3024.027f, 740.000f, 25.862f	3	0f	0f	0f	
+36	CIV	T20	269.865f 	-3024.455f, 737.059f, 25.881f	4	0f	0f	0f	
+36	CIV	ADDER	263.501f 	-3030.598f, 737.108f, 24.035f	5	0f	0f	0f	
+36	CIV	OSIRIS	258.816f 	-3030.403f, 740.378f, 23.947f	6	0f	0f	0f	
+36	CIV	ZENTORNO	230.975f 	-3035.830f, 740.402f, 22.258f	7	0f	0f	0f	
+37	CIV	HOTKNIFE	217.850f 	-190.215f, 6389.914f, 31.179f	1	0f	0f	0f	
+37	CIV	VOODOO	224.829f 	-193.624f, 6394.687f, 31.362f	2	0f	0f	0f	
+37	CIV	GAUNTLET2	226.167f 	-195.581f, 6392.640f, 31.445f	3	0f	0f	0f	
+37	CIV	BUCCANEER2	214.131f 	-199.891f, 6397.063f, 31.049f	4	0f	0f	0f	
+37	CIV	DOMINATOR2	225.075f 	-198.753f, 6400.061f, 31.152f	5	0f	0f	0f	
+37	CIV	BRAWLER	218.096f 	-203.639f, 6404.204f, 31.713f	6	0f	0f	0f	
+37	CIV	SANDKING2	205.913f 	-207.967f, 6410.284f, 31.378f	7	0f	0f	0f	
+									
+DIALOGS	ContactId	Counter	Text						
+1	1	0	Hey Partner. What happened here?						
+1	1	1	Hey Officer, thanks for responding. Guy flipped his car. He said that another driver drifted around the corner, hit his vehicle, and ended up flipping.						
+1	1	2	Ouch.Do you have any information on a possible suspect or suspects vehicle ?						
+1	1	3	I can't tell you. I had to get EMS and the tow service here. Try talking to the ~y~Victim~w~ over by my vehicle. He could probably tell you what you need to know.						
+1	1	4	Okay. Thanks for the information.						
+1	1	5	That is all I can tell you.						
+1	2	0	"Hey bud. I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "".Are you okay ?"						
+1	2	1	Yes officer. Luckily I didn't get hurt! That fucking drifter...						
+1	2	2	Okay. Can you tell me what happened? Do you know what type of vehicle it was?						
+1	2	3	~w~ drifted around the corner and was in the middle of the road. As I was coming around, he hit me, made my vehicle flip, and sped off.						
+1	2	4	Did you see the ~y~						
+1	2	5	You bet I did! It was ~y~						
+1	2	6	Thanks for you help. It is extremely useful in this investigation.						
+1	2	7	Its a good thing that I remembered the plate! Get this son of a bitch...						
+1	2	8	Sorry, but that's all I can tell you.						
+2	1	0	Hey. You requested backup. How can I help?						
+2	1	1	"Hi "" + GameHandler.ini_username + "", this crash seems to be a Hit and Run. There are tire skids in the middle of the road."						
+2	1	2	So another vehicle caused the crash?						
+2	1	3	According to the victim, it seems so. Best is that you ask him yourself. He probably can give you more information.						
+2	1	4	OK. I will talk to him.						
+2	1	5	That is all I can tell you						
+2	2	0	"Hi, I'm "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Is everything fine?"						
+2	2	1	Hello officer. Yes I'm fine but pretty pissed.						
+2	2	2	I can imagine that. Can you tell me what happened?						
+2	2	3	~w~ drifted around the corner and was in the middle of the road when I was coming around. I took a hit and lost control of my car and crashed.						
+2	2	4	Did you see the ~y~						
+2	2	5	Luckily, I did. It was ~y~						
+2	2	6	Perfect. Thanks. With your help we can easily identify this person.						
+2	2	7	I deserve justice for that. Hope this guy goes to prison						
+2	2	8	Sorry, but that's all I can tell you.						
+3	1	0	Hi. What happened to the taxi driver?						
+3	1	1	Hey, nice to see you. Well, the guy does not really want to talk to the police. So I don't have much.						
+3	1	2	Hm. Does he has an active warrant? Tell me what you have						
+3	1	3	I already checked that, he is clean. Seems to be a Hit and Run. But try talking to him yourself. It was really hard get something out of him.						
+3	1	4	Okay. Thanks for the information.						
+3	1	5	That is all I can tell you.						
+3	2	0	"Hello Sir, I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Is everything okay"						
+3	2	1	Hey, yes I'm fine.						
+3	2	2	Sir, is it possible for you to describe what happened?						
+3	2	3	~w~ hit me. 						
+3	2	4	Did you see the ~y~						
+3	2	5	I shouldn't tell you... I hate cops... they suck. But... it was ~y~						
+3	2	6	Thank you. Why do you hate the police						
+3	2	7	That is none of your business. Get this asshole and leave me alone.						
+3	2	8	Leave me alone.						
+4	1	0	Hey Officer. What happened here?						
+4	1	1	Hello Officer. Thanks for responding. The only thing I know is that we have a hit and run between a motorist and a bicyclist.						
+4	1	2	Okay. Do you have any information on a possible vehicle or suspect?						
+4	1	3	No, I was focussing on getting Paramedics here and trying to save the victim. Can you try talking to the ~y~witnesses~w~ and I'll control the scene?						
+4	1	4	Sure.						
+4	1	5	That is all I have for you!						
+4	2	0	Hello sir, are you okay?						
+4	2	1	Hello Officer. Yes, I'm fine. That poor guy, I hope he's okay!						
+4	2	2	Did you see how this accident happened?						
+4	2	3	No, unfortunately. I was the second person to arrive. The woman over there was the first person on scene.						
+4	2	4	Okay, thanks for your help.						
+4	2	5	Glad to help, officer.						
+4	2	6	Sorry, but I don't know anything else.						
+4	3	0	Hello. Are you the one who called 911?						
+4	3	1	Yes officer. I saw the accident and decided to pull over and call for an ambulance!						
+4	3	2	Can you tell me what happened?						
+4	3	3	~w~ went speeding around this turn and hit the cyclist, and didn't even stop! They kept on going!						
+4	3	4	PLACEHOLDER						
+4	3	5	PLACEHOLDER						
+4	3	6	Thanks for your information. Your help is extremely useful in this investigation.						
+4	3	7	No problem! Glad to help the police any day of the week.						
+4	3	8	Sorry, but that's all I can tell you.						
+5	1	0	Hey Partner. What happened here?						
+5	1	1	Hi. Thanks for responding. Seems to be a Hit and Run.						
+5	1	2	Okay. Do you have any information on a possible vehicle or suspect?						
+5	1	3	I can't tell you. Paramedics were already performing CPR when we arrived. Talk to this person here. Maybe he knows more						
+5	1	4	Thanks, I will so.						
+5	1	5	That is all I have for you!						
+5	2	0	Hello sir, are you okay?						
+5	2	1	Hello Officer. Yes, I'm fine. Is the biker okay?						
+5	2	2	I don't have any information about his condition. Did you see how this accident happened?						
+5	2	3	Yes, that's the reason why I had to pull into the grass. A car overtook me on the bridge.						
+5	2	4	Do you have a description on a license plate number of the car?						
+5	2	5	Sorry, everything went so fast, I can't remember either the car or a plate.						
+5	2	6	Try talking to the woman. She stopped and called for the EMS, maybe she knows more.						
+5	3	0	Hello. Are you the one who called 911?						
+5	3	1	Yes officer. I saw the accident and decided to pull over and call for an ambulance!						
+5	3	2	Can you tell me what happened?						
+5	3	3	~w~ overtook the car on the bridge! The biker had to swerve to avoid hitting this idiot and went off.						
+5	3	4	PLACEHOLDER						
+5	3	5	PLACEHOLDER						
+5	3	6	Thanks for your information. Your help is extremely useful in this investigation.						
+5	3	7	No problem! Glad to help the police any day of the week.						
+5	3	8	Sorry, but that's all I can tell you.						
+6	1	0	Hello Ranger, you called for backup. How can I help						
+6	1	1	Hi. Thanks for responding up here. The construction workers called 911 when they found this driver on the road.						
+6	1	2	Okay. Cars aren't supposed to be on this road, so do we know what caused it?						
+6	1	3	According to them, a car did cause it. Ask for yourself.						
+6	1	4	Up here? What the hell is a car doing up here? I will talk to the workers, see if they can tell me anything else about it.						
+6	1	5	That is all I have for you!						
+6	2	0	"Hello Guys. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Please describe what happened."						
+6	2	1	Hi Officer. Will the biker be okay?. It looks bad for him, doesn't it?						
+6	2	2	Paramedics try to stabilize him. We need to see. Please focus on the accident. What happened?						
+6	2	3	Ah yes sorry. We are performing roadwork here, 'cause the rain washed away parts of this trail. We found him unconscious. 						
+6	2	4	Do you know anything that could cause his crash?						
+6	2	5	There is one guy who is frequently up here with his car off-roading. But I can't tell you anything about the car.						
+6	2	6	Try talking to my buddy here. He might know something I don't.						
+6	3	0	Hello. Your buddy said you might know something about a possible vehicle?						
+6	3	1	Yes officer. I didn't see the accident, but when I came up here with my truck, a car was going down.						
+6	3	2	Can you tell me something about the driver? Car?						
+6	3	3	~w~ came rushing down the hill. It looked like he was fleeing from something. Then we found the victim.						
+6	3	4	PLACEHOLDER						
+6	3	5	PLACEHOLDER						
+6	3	6	Thanks for your information. Your help is extremely useful in this investigation.						
+6	3	7	No problem! Glad that we were up here. Hope the guy makes it.						
+6	3	8	Sorry, but that's all I can tell you.						
+7	1	0	Hello Officer, did you request backup?						
+7	1	1	Yes, I did. We have a hit and run. Until now, the victim was in shock, and I haven't been able to talk to him. Can you attempt to speak to the victim while I assist the paramedics?						
+7	1	2	Yeah, no problem. Hopefully he can tell us something.						
+7	1	3	Will do. Good luck, officer!						
+7	1	4	That is all I have for you!						
+7	2	0	Hello Sir, I'm a police officer. Can you tell me anything you remember about the accident? Car, person driving, anything?						
+7	2	1	Uuhh, I don't feel good... I think that... oh... I can't tell you anything…						
+7	2	2	He appears to be suffering from a pretty serious concussion.						
+7	2	3	Huh, he could be suffering from short term memory loss. Sir, are you sure you can't remember anything? Just the slightest thing can help.						
+7	2	4	I think.. I think I'm gunna pass out..						
+7	2	5	Officer, he just blacked out. The lady over there made the 911 call. Try talking to her!						
+7	2	6	That is all I have for you.						
+7	3	0	"Hello Ma'am. I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "".Did you see what happened here?"						
+7	3	1	Hi Officer. Yes, I did. A car cut the corner at a high rate of speed and hit the poor man. Is he going to be okay?						
+7	3	2	He should be. Do you have a description of the vehicle or the driver?						
+7	3	3	. Dang, that person must be desperate…						
+7	3	4	Did you see the license plate of the 						
+7	3	5	I believe so. I think it was 						
+7	3	6	Thanks for your help. Your information is extremely useful in this investigation.						
+7	3	7	Glad to help!						
+8	1	0	Hey Partner, did you request backup? How can I help?						
+8	1	1	Hi bud, thanks for the fast response. We have a hit and run. I haven't been able to talk to the victim. Can you attempt to speak to her while I secure the scene?						
+8	1	2	Yeah, sure. Hopefully she remembers something.						
+8	1	3	I don't think so, she seems to be pretty messed up after the crash.						
+8	1	4	That is all I can tell you!						
+8	2	0	Hi Ma'am, I'm a police officer. Do you remember anything about the accident? A car, person driving, anything?						
+8	2	1	Ehmm.. sorry officer.. I ... I don't know.. where am I?						
+8	2	2	She is suffering from a pretty serious concussion caused by an airbag failing to open.						
+8	2	3	She must have hit her head very hard on the dashboard. Miss, are you sure you can't remember anything?						
+8	2	4	What time is it? What happend? Where am I ?						
+8	2	5	Officer, please stop questioning. Try talking to the security guard over there. He called 911.						
+8	2	6	That is all I have for you.						
+8	3	0	"Hello Sir. I'm officer "" + GameHandler.ini_username + "" of the "" + GameHandler._dialog_dept.Remove(1, 7) +  "".Do you know what happened?"						
+8	3	1	Hi Officer. Yes, I saw the accident. I was driving to the labs when a car came into the other lane. How is the woman doing?						
+8	3	2	She is facing memory loss. Do you have a description of the vehicle or the driver?						
+8	3	3	. The car came here often.. always at a high rate of speed.						
+8	3	4	Do you remember the license plate of the 						
+8	3	5	Yep. I wrote it down. It was 						
+8	3	6	Thanks for your help. Your information is extremely useful in this investigation.						
+8	3	7	Did you know that I always wanted to be a cop... anyway, glad to help!						
+9	1	0	Hi, you called in backup. What can I do for you?						
+9	1	1	Hi buddy. Do me a favor and talk to the victim and witness. I was busy getting the scene save and calling in EMS						
+9	1	2	Sure, no problem. The victim looks disoriented. Hope he remembers something 						
+9	1	3	Yeah, he hit the barrier pretty hard. You'll see.						
+9	1	4	That is all I can tell you!						
+9	2	0	"Hi Sir, I'm a police officer form the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you remember anything?"						
+9	2	1	What? .. What time is it?.. Who are you?						
+9	2	2	The crash must be hard. As soon as he is stable we will take him to hospital.						
+9	2	3	Sir, can you tell me anything...? Can you tell me who was driving, or a color of the car?						
+9	2	4	Who...? What...? 						
+9	2	5	Believe me. That makes no sense. He definitely has a concussion. Try to get info from the witness there.						
+9	2	6	That is all I have for you.						
+9	3	0	"Hello Sir. I'm officer "" + GameHandler.ini_username + "" of the  "" + GameHandler._dialog_dept.Remove(1, 7) +  "" . Do you know what happened?"						
+9	3	1	Hello. Yes, that is why I stopped and called 9-1-1?	 					
+9	3	2	Can you explain what happened?						
+9	3	3	The driver was on the wrong side of the road with a high rate of speed.						
+9	3	4	Do you remember the license plate of the 						
+9	3	5	I do. It was 						
+9	3	6	Thanks for your time and for stopping. Not everybody shows respect these days.						
+9	3	7	I appreciate hearing this from a police officer!						
+10	1	0	Hey Marcus, nice to see ya. What do we have here?						
+10	1	1	"Hey "" + GameHandler.ini_username + "", it appears to be a Hit and Run."						
+10	1	2	Are there any injuries?						
+10	1	3	Yes. The truck driver ended up rolling his truck and got injured. He's currently getting help in the ambulance, and will most likely spend the night in the hospital.						
+10	1	4	Damn. Do you know what caused it?						
+10	1	5	The craftsman here told me that a guy overtook the truck at a high rate of speed, but feel free to ask him for yourself.						
+10	1	6	Okie Dokie.						
+10	1	7	That is all i have for you!						
+10	2	0	Hey Sir. Can you tell me exactly what you saw?						
+10	2	1	Yes, I can. Some idiot overtook the truck in the turn and I was also coming around. The truck swerved and ended up flipping, while I just hit the fence here.						
+10	2	2	Oh boy. Doesn't appear you have too much damage... Can you tell me anything about the vehicle and driver?						
+10	2	3	I'm not into cars, but the vehicle appeared to be a ~y~						
+10	2	4	Okay. What about the license plate? Did you see that?						
+10	2	5	I believe it was ~y~						
+10	2	6	Okay. Thanks for your help. Give this officer a statement and you will be free to leave.						
+10	2	7	Okay Officer. Thanks.						
+10	2	8	Sorry, but that's all I can tell you.,						
+11	1	0	Hey Frank, long time no see. What happend here?						
+11	1	1	"Hey "" + GameHandler.ini_username + "", Seems like a Hit and Run."						
+11	1	2	Is anyone injured?						
+11	1	3	I'm afraid so. The driver of the truck rolled his vehicle and got injured. Paramedics are taking care about him in the ambulance. He will be sent to the hospital.						
+11	1	4	It's been a while since I saw an accident like this. Do we know the cause?						
+11	1	5	The worker here told me that a vehicle went into the truck's lane and made him swerve to avoid the oncoming car, however you could talk to him.						
+11	1	6	Sure, I'll see hat he tells me.						
+11	1	7	That is all I can tell you!						
+11	2	0	Hello Sir, my partner told me you know what happened.						
+11	2	1	Yes, Officer. A stupid asshole overtook me and the truck swerved and ended up in the woods.I immedialty called 911.						
+11	2	2	Thank you for that. Do you remember anything about the vehicle or driver?						
+11	2	3	Yes actually, I own the same vehicle. It was a ~y~						
+11	2	4	Okay. Did you see the license plate?						
+11	2	5	I think it was ~y~						
+11	2	6	Thanks for your help. Give this officer a detailed statement and you will be free to leave.						
+11	2	7	Okay Officer. Thanks.						
+11	2	8	Sorry, but that's all I can tell you.,						
+12	1	0	Hi Partner. Wow. That's a deep fall! Let me guess: Drunk Driver.						
+12	1	1	"Hey "" + GameHandler.ini_username + "", Nope. Actually it is a Hit and Run."						
+12	1	2	Really. On this road? What happened?						
+12	1	3	The driver of the Log truck rolled his vehicle and got injured by evading a speeding car. He will be sent to the hospital.						
+12	1	4	Do we know anything about this car?						
+12	1	5	His co-driver told me that this vehicle nearly lost control, however you could talk to him.						
+12	1	6	Yep. I will take over here okay?						
+12	1	7	Sure thanks. Its yours.						
+12	2	0	Hey. Can you repeat for me that what you told my partner?						
+12	2	1	Yes, Officer. A stupid asshole came down the hill with an insane speed. My buddy had to go off the road not to hit him.						
+12	2	2	Can you remember that car?						
+12	2	3	Yeah, I do. It was a ~y~						
+12	2	4	Okay. Did you see the license plate?						
+12	2	5	Yes i also remember this. It was ~y~						
+12	2	6	Thanks for your help. Please stay here until the recovery crane has arrived.						
+12	2	7	Okay Officer. Thanks.						
+12	2	8	Sorry, but that's all I can tell you.,						
+13	1	0	Hi, what the hell happened here?						
+13	1	1	"Hey Officer "" + GameHandler.ini_username + "", thanks for the fast response. According to the first infos I have, it seems to be a Hit and Run"						
+13	1	2	Did you already talk to victims and witnesses?						
+13	1	3	No sorry, i was helping securing the scene and keep the traffic flow.						
+13	1	4	Okay, then i will talk to the involved people to gain information about a possible suspect.						
+13	1	5	Thanks, meanwhile i will take care about the traffic, see ya later.						
+13	2	0	"Hi, my name is "" + GameHandler.ini_username  + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+13	2	1	Oh my god, i hope she will be ok, they just have taken her to the hospital..						
+13	2	2	Calm down, everything will be fine. I need you to tell me what happened. Can you do that for me?						
+13	2	3	I think so, but it all happened so fast... it wasn't my fault.. i needed to pull away...						
+13	2	4	From what did you pull away. Did a car cut you? Please be more precise.						
+13	2	5	Yes, it switched to my lane without noticing me. I think it was a 						
+13	2	6	Are you sure about this?						
+13	2	7	No I'm not.. please ask the others.. maybe the can tell you more.						
+13	2	8	Okay, thanks again. Just keep calm, she will be ok						
+13	3	0	"Hello, "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you okay? Can i ask you some questions?"						
+13	3	1	Hi, yeah sure, go ahead						
+13	3	2	The guy that flipped the car told me that he was cut by a car which switched the lane, is this correct?						
+13	3	3	Yes. I had to brake hard to stop my car. But i touched the barriers anyway. Now look at my car						
+13	3	4	Sorry for that. Can you remember a licence plate or a the car type or maybe the color?						
+13	3	5	Not really, I was focusing not to crash.						
+13	3	6	"Thanks for your time, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
+13	4	0	"Hey there, I'm officer "" + GameHandler.ini_username + "". It seems that your car is fine. Why are you here?"						
+13	4	1	Hi, i was the one that called 9-1-1. And i decided to stay cause i have wrote down the car that caused this mess.						
+13	4	2	Perfect. So you can tell me the licence plate of the 						
+13	4	3	Yes i can tell you, but it wasn't a 						
+13	4	4	Ok, then what car was it?						
+13	4	5	It was a 						
+13	4	6	Thanks for helping out, it will help to identify this reckless driver. You can leave now						
+13	4	7	Okay. Bye						
+14	1	0	Hey Partner. This crash looks serious. Do you know what happened?						
+14	1	1	"Hi "" + GameHandler.ini_username + "", Yeah, its a miracle that there is not more damage.Looks like a Hit and Run, but I'm not sure"						
+14	1	2	How do you know. Have you already talked to involved people?						
+14	1	3	Unfortunately not. I took care about getting EMS and the fire team here.						
+14	1	4	Okay, then I will start questioning to see if we get a cause or maybe a suspect.						
+14	1	5	Meanwhile I will contact dispatch and give them an update about the status here.						
+14	2	0	"Hello, I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you able to answer some questions?"						
+14	2	1	Oh hi, ehm... yes maybe... they just took my wife to the hospital with the helicopter. They said that she has internal chest injuries.						
+14	2	2	Damn, sad to hear that. But she is in god hands. Can you tell me what happened?						
+14	2	3	I was driving on the second lane at suddenly the guy on the first one pulled over.I reacted and flipped the car.						
+14	2	4	Do you remember a car type or license plate of this vehicle?						
+14	2	5	I'm really not sure. Maybe it was a 						
+14	2	6	Did the person set the indicator, or did he just pull to your side?						
+14	2	7	No. He just pulled to my lane without any notice						
+14	2	8	"Thanks for your info. Maybe "" + GameHandler._dialog_dept.Remove(1, 7) + "" will contact you again."						
+14	3	0	"Hi, "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you the second involved person of this crash?"						
+14	3	1	Hi yes, I was driving behind the car that flipped.						
+14	3	2	So can you describe the situation that caused this accident?						
+14	3	3	Sure. A vehicle pulled into the guys car with any notice.. One happened to the other and BAAM.						
+14	3	4	Do you remember a licence plate or a the car type or maybe the color?						
+14	3	5	No sorry.						
+14	3	6	"Thanks for your time, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
+14	4	0	"Hello, my name is officer "" + GameHandler.ini_username + "". Can you tell me what you doing here?"						
+14	4	1	Hello officer. I saw exactly what happened from the other side.						
+14	4	2	Okay. The victims sad that a vehicle pulled on the other lane and caused the crash. It was a 						
+14	4	3	Then they must be wrong. It was definitely not a 						
+14	4	4	Interesting. So then please update me.						
+14	4	5	Yes sure. I memorized it. It was a 						
+14	4	6	Thanks for your help. You can leave now						
+14	4	7	Bye						
+15	1	0	Wow. Its been a while since a crash happened here. What's going on?						
+15	1	1	"Hey "" + GameHandler.ini_username + "". You're right. No issue here a long time."						
+15	1	2	Did you already make contact with the involved people?						
+15	1	3	Nope. You're the higher ranked cop here. Please take care of it.						
+15	1	4	Always the same excuse. This id getting old. Well okay, I will do it.						
+15	1	5	Thank you very much. I will keep traffic off your back						
+15	2	0	"Hey, my name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you okay?"						
+15	2	1	Yes I fine, just some bruising. But my daughter is injured. EMS is now talking her to the hospital						
+15	2	2	Sorry to hear that. Is it possible for you to answer some questions regarding the crash?						
+15	2	3	Well I hope I remember something. Its all a bit blurred from the impact. I will try.						
+15	2	4	How did this happen? Was any other vehicle involved in this accident?						
+15	2	5	Yes, another car switched to my lane and I had to brake hard. But it wasn't enough. I think it was a 						
+15	2	6	Please take a time and think about your answer.						
+15	2	7	Well sorry. I can't tell if my answer is correct.. please question the others.. maybe they know.						
+15	2	8	Okay, thanks anyway.						
+15	3	0	"Hello, "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can I talk to you for a second?"						
+15	3	1	Hi, sure, go ahead						
+15	3	2	The guy that flipped his car told me that the crash was caused by a third car, is this correct?						
+15	3	3	Yep. As you can see, I tried to stop but failed.						
+15	3	4	Can you remember a licence plate or a the car type or maybe the color?						
+15	3	5	No sorry. My eyes where focused on car in front of me... sorry						
+15	3	6	"Okay, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
+15	4	0	"Hey there, I'm officer "" + GameHandler.ini_username + "". Are you the 911 caller?"						
+15	4	1	Yes I called the police. I was driving a little bit behind those two when the accident happened						
+15	4	2	There seems to be a third car which was causing the accident. Did you see the licence plate of the						
+15	4	3	Yes, but the car wasn't a 						
+15	4	4	Then the others must be wrong. Which type was it?						
+15	4	5	It was a 						
+15	4	6	Thanks for your help, appreciate it. You can leave now						
+15	4	7	Okay. Goodbye						
+16	1	0	Hi, How can I assist?						
+16	1	1	"Hello "" + GameHandler.ini_username + "", did dispatch inform you?"						
+16	1	2	No, just send me here. So what happened here						
+16	1	3	Its a Hit and Run. But I just shortly talked to the witnesses. Bring yourself up-to-date by talking to the involved ones.						
+16	1	4	Okay, I will do so.						
+16	1	5	I will make sure that we don't get a traffic jam here.						
+16	2	0	"Hi, I'm office "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+16	2	1	Shit... my head hurts.. where is my girlfriend..?						
+16	2	2	She left in the helicopter. She need to get to the hospital as quickly as possible.						
+16	2	3	Fuck, were is that fucking bastard..						
+16	2	4	What bastard, Please tell me what happened.						
+16	2	5	A car pushed my off the road. I think it was a 						
+16	2	6	I will get out a BOLO for that car model. Give me a second.						
+16	2	7	No stop... I don't know .Maybe it was a different one.Does anyone of the others know ?						
+16	2	8	I will ask them. For know please stay here. Paramedics will take a look at you						
+16	3	0	"Hello, "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you have any injuries?"						
+16	3	1	Just some small bruisings. Nothing really mentionable.						
+16	3	2	The other involved person told me that he was forced of the road by another car. Is that true?						
+16	3	3	Yes. I was directly behind him, maybe a little bit to near... ah whatever.						
+16	3	4	For know I don't care about that. Can you remember a licence plate or a the car type or maybe the color?						
+16	3	5	Sorry. No.						
+16	3	6	"Okay thanks, "" + GameHandler._dialog_dept.Remove(1, 7) + "" will contact you later."						
+16	4	0	"Hi, my name is "" + GameHandler.ini_username + "" form the "" + GameHandler._dialog_dept.Remove(1, 7) + "" . Are you okay?"						
+16	4	1	Hello officer, yes I'm okay and luckily I don't have any damage cause I could stop in time.						
+16	4	2	The other two told me that someone forced them off the road. Car type is a 						
+16	4	3	That's true. I was driving behind them. But the car wasn't a 						
+16	4	4	Well... please tell my then.						
+16	4	5	It was a 						
+16	4	6	Thank for you help. You can leave now						
+16	4	7	Okay. Bye						
+17	1	0	Hi. How can I help?						
+17	1	1	Hi Officer. We actually don't know what happened right now.						
+17	1	2	Okay... Strange. Did anyone see anything?						
+17	1	3	No. The lifeguards found him about 10 minutes ago, just stranded here.						
+17	1	4	Okay. I'll question some people here and see if they know anything.						
+17	1	5	That is all I can tell you!						
+17	2	0	Hey, did you see what happened?						
+17	2	1	Nope. I saw a crowd forming, and I wanted to check out what was going on.						
+17	2	2	Huh. Okay then...						
+17	2	3	Sorry.						
+17	3	0	Hey there. Do you know what happened?						
+17	3	1	Unfortunately, I have no clue. I was just walking and saw him laying there. I tried asking if he was okay, but he didn't answer, so I called 911.						
+17	3	2	Okay then. Why don't you and your buddies clear the scene. We'll take it from here.						
+17	3	3	Okay... Damn, hope he makes it.						
+17	4	0	Hello. You are the one that called 911, correct?						
+17	4	1	Yes officer. Sorry for calling so late, I'm from Europe and not used to the emergency system in America.						
+17	4	2	It's okay. Can you tell me what you saw?						
+17	4	3	~w~ speedboat that hit the surfer.They didn't bother stopping. They hit him and kept on going!						
+17	4	4	Do you know the direction the boat was heading?						
+17	4	5	I believe the boat was heading to 						
+17	4	6	Okay. Thank you for your information. Is there anything else you can tell us?						
+17	4	7	No... unfortunately that's it. Sorry!						
+17	5	1	A tourist has reported a crime which is maybe connected to your injured surfer.						
+18	1	0	Hi, everything under control here?						
+18	1	1	Hi Officer. We are busy keeping the crowd away from the scene						
+18	1	2	What happened here?						
+18	1	3	The civilians found him 10 minutes ago and called in the lifeguards. I don't have more for you.						
+18	1	4	Okay. Thanks for the info. I'll try to find out if somebody knows anything.						
+18	1	5	That is all I know!						
+18	2	0	"Hello. My name is "" + GameHandler.ini_username + "". I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know what happened?"						
+18	2	1	No sorry. I just wanted to know what was going on here.						
+18	2	2	Okay. Please stay away from the scene...						
+18	2	3	Okay.						
+18	3	0	"Hey there. "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened here?"						
+18	3	1	Yes. We were training here at the beach when I noticed the body in the sand. We tried to talk to him but he didn't answer, so I called 911.						
+18	3	2	Anything else?						
+18	3	3	Nope. Sorry.						
+18	4	0	Hello. Are you the worker that called 911?						
+18	4	1	Yeah officer. That's me.						
+18	4	2	Good. Can you describe what you have seen?						
+18	4	3	~w~ speedboat that hit the surfer. I think they didn't see him but they hit him and kept on going!						
+18	4	4	Do you have any idea where the boat went?						
+18	4	5	You're lucky man. Yesterday I saw the exact same boat in the city. It was in 						
+18	4	6	Thank you. That will make our jobs a lot easier.						
+18	4	7	Nice to know that I could help you!						
+18	5	1	A dock worker has reported a hit and run matching your scene location.						
+19	1	0	Hey Officer. What happened here?						
+19	1	1	Hey Partner, thanks for coming out. I just got here, but it appears to be a Hit and Run.						
+19	1	2	Do we have a witness?						
+19	1	3	Try talking to the lady over there. She might know something.						
+19	1	4	Will do. Thanks for helping out.						
+19	1	5	That is all I have for you!						
+19	2	0	Hey Ma'am. Did you call the ambulance?						
+19	2	1	Yes I did, officer!						
+19	2	2	Thank you for that. Can you tell me what happened?						
+19	2	3	~w~ ran on the curb and hit the man as he attempted to cross the road!						
+19	2	4	Okay. Did you see the vehicle's license plate?						
+19	2	5	I did... but I only remember the last 3 digits. They are ~y~						
+19	2	6	Okay. Thanks for your help. Give this officer a statement and you will be free to go on your way.						
+19	2	7	Thank you officer. Will do.						
+19	2	8	Sorry, but that's all I can tell you.,						
+20	1	0	Hey Officer. What happened here?						
+20	1	1	Hey Partner, thanks for coming out. I just got here, but it appears to be a Hit and Run.						
+20	1	2	Do we have a witness?						
+20	1	3	Try talking to the lady over there. She might know something.						
+20	1	4	Will do. Thanks for helping out.						
+20	1	5	That is all I have for you!						
+20	2	0	Hey Ma'am. Did you call the ambulance?						
+20	2	1	Yes I did, officer!						
+20	2	2	Thank you for that. Can you tell me what happened?						
+20	2	3	~w~ ran on the curb and hit the man as he attempted to cross the road!						
+20	2	4	Okay. Did you see the vehicle's license plate?						
+20	2	5	I did... but I only remember the last 3 digits. They are ~y~						
+20	2	6	Okay. Thanks for your help. Give this officer a statement and you will be free to go on your way.						
+20	2	7	Thank you officer. Will do.						
+20	2	8	Sorry, but that's all I can tell you.,						
+21	1	0	Hey Officer. What happened here?						
+21	1	1	Hey Partner, thanks for coming out. I just got here, but it appears to be a Hit and Run.						
+21	1	2	Do we have a witness?						
+21	1	3	Try talking to the lady over there. She might know something.						
+21	1	4	Will do. Thanks for helping out.						
+21	1	5	That is all I have for you!						
+21	2	0	Hey Ma'am. Did you call the ambulance?						
+21	2	1	Yes I did, officer!						
+21	2	2	Thank you for that. Can you tell me what happened?						
+21	2	3	~w~ ran on the curb and hit the man as he attempted to cross the road!						
+21	2	4	Okay. Did you see the vehicle's license plate?						
+21	2	5	I did... but I only remember the last 3 digits. They are ~y~						
+21	2	6	Okay. Thanks for your help. Give this officer a statement and you will be free to go on your way.						
+21	2	7	Thank you officer. Will do.						
+21	2	8	Sorry, but that's all I can tell you.,						
+22	1	0	Hey Officer. What happened here?						
+22	1	1	Hey Partner, thanks for coming out. I just got here, but it appears to be a Hit and Run.						
+22	1	2	Do we have a witness?						
+22	1	3	Try talking to the lady over there. She might know something.						
+22	1	4	Will do. Thanks for helping out.						
+22	1	5	That is all I have for you!						
+22	2	0	Hey Ma'am. Did you call the ambulance?						
+22	2	1	Yes I did, officer!						
+22	2	2	Thank you for that. Can you tell me what happened?						
+22	2	3	~w~ ran on the curb and hit the man as he attempted to cross the road!						
+22	2	4	Okay. Did you see the vehicle's license plate?						
+22	2	5	I did... but I only remember the last 3 digits. They are ~y~						
+22	2	6	Okay. Thanks for your help. Give this officer a statement and you will be free to go on your way.						
+22	2	7	Thank you officer. Will do.						
+22	2	8	Sorry, but that's all I can tell you.,						
+23	1	0	Hi Chloe. First deployment today?						
+23	1	1	"Hey "" + GameHandler.ini_username + "", nice to see you. Yes the first one today."						
+23	1	2	So what do we have here?						
+23	1	3	Seems to be a Hit and Run. Talk to the Woman over there she will update you.						
+23	1	4	Okay. Ehm.. Let go for a drink when your shift is over.						
+23	1	5	Sure why not... see ya later.						
+23	2	0	"Hello Ma'am. I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "".Can you describe what happened?"						
+23	2	1	Hi, yes this is my boyfriend who got hit!						
+23	2	2	Oh, I didn't know. So why is he hurt?						
+23	2	3	~w~ came out of this alleyway and hit him!						
+23	2	4	Can you tell me the vehicle's license plate?						
+23	2	5	Only partly. I remember the last 3 digits. They are ~y~						
+23	2	6	I will run that in the Police computer and see what's popping up. I have no more question						
+23	2	7	Alright then. Bye						
+23	2	8	Sorry,but t hat's all I can tell you.,						
+24	1	0	Hey. How can assist?						
+24	1	1	Hi buddy, please help me with accident. It a Hit and Run.						
+24	1	2	Okay? How do you know that?						
+24	1	3	The woman is the guys wife. She told me that. But ask her yourself.						
+24	1	4	Will do so. Anything else?						
+24	1	5	Nope. That is all I know!						
+24	2	0	"Hello Miss. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". What happened?"						
+24	2	1	Hello officer! Some stupid dude ran him over.						
+24	2	2	Can you describe the vehicle or do you know the type?						
+24	2	3	~w~ came around with a high rate of speed. I think he lost control, that is why he hit my husband!						
+24	2	4	Okay. Do you remember the vehicle's license plate?						
+24	2	5	I already thought about that, but I just remember the last 3 digits. They are ~y~						
+24	2	6	Thanks. That's more then in the most cases. Maybe we get a hit.						
+24	2	7	Thank you officer. Please get this bastard.						
+24	2	8	I don't know anything more. Sorry.,						
+25	1	0	Hi, you requested backup. How can i help?						
+25	1	1	Hey Partner, thanks for coming. I just arrived, but it looks that this accident wasn't self-inflicted.						
+25	1	2	Okay, Do we have a witness who maybe knows something?						
+25	1	3	Yes. One of the shop owners came out when i got here. Talk to him.						
+25	1	4	At least something. I will question him.						
+25	1	5	That is all I have for you!						
+25	2	0	"Hi Sir. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you want to tell me anything?"						
+25	2	1	"Yes, officer "" + GameHandler.ini_username + "". I called 911!"						
+25	2	2	Thank you. Can you tell me what happened to the woman?						
+25	2	3	~w~ parked out and hit the woman in reverse and then just left the area.						
+25	2	4	Did you see the vehicle's license plate?						
+25	2	5	I was still in my shop so i don't know the complete plate. Only the last 3 digits. They are ~y~						
+25	2	6	Okay. Thanks for your help. My partner will maybe ask you also some questions.						
+25	2	7	Okay.						
+25	2	8	Sorry, but that's all I can tell you.,						
+26	1	0	Hello Officer, what can i do for you?						
+26	1	1	Hi, thanks for the response. It appears to be a Hit and Run.						
+26	1	2	How do you know this?						
+26	1	3	I shorty talked to the victim. But there is maybe witness. Talk to the Woman in front the Liquor store.						
+26	1	4	Sure. I will try to find out more about the accident.						
+26	1	5	That is all I have for you!						
+26	2	0	"Hello Miss. I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know anything about the accident?"						
+26	2	1	Yes, officer i do. I'm the owner of this store and i ran out as i saw a car ran over this guy!						
+26	2	2	Can you tell me how this happened?						
+26	2	3	~w~ was driving down Joshua road when it suddenly came on the sidewalk and hit the guy!						
+26	2	4	Well did you maybe see the vehicle's license plate?						
+26	2	5	It all went very fast, so I only remember the last 3 digits. They are ~y~						
+26	2	6	That is more then enough. It will definitely help to find out the driver. You can leave now.						
+26	2	7	Thank you officer.						
+26	2	8	Sorry, but that's all I can tell you.,						
+27	1	0	Hey, how i can assist?						
+27	1	1	"Oh hi "" + GameHandler.ini_username + "". I thought you are on vacation?"						
+27	1	2	Well, someone got sick so i canceled it. What happened here?						
+27	1	3	Sad to hear. The Visitor here got hit by car. The cook of this place can tell you more.						
+27	1	4	Okay. I will ask him.						
+27	1	5	That is all I have for you!						
+27	2	0	"Hello Sir. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+27	2	1	"Sure, officer "" + GameHandler.ini_username + "". I saw the accident and called 9-1-1."						
+27	2	2	Thanks. So what happened to your visitor?						
+27	2	3	~w~ just ran him over. The car came out this parking place.						
+27	2	4	Do you have surveillance cameras to maybe get the license plate?						
+27	2	5	Yes, but they are not working. But I remember the last 3 digits of the car. It was ~y~						
+27	2	6	Please fix your cameras. I would make my job easier, but at least we have 3 numbers. That's all thanks						
+27	2	7	I will do so officer.						
+27	2	8	Sorry, but that's all I can tell you.,						
+28	1	0	Hello. Whats going on?						
+28	1	1	Hi. I just arrived a minute ago, so i can't tell.						
+28	1	2	Okay. Have you spoken to anybody?						
+28	1	3	I just wanted to do that. But now you are here. So can you take over?						
+28	1	4	Sure i will do so. Maybe make some notes about the scene.						
+28	1	5	I'm writing down some notes about the scene!						
+28	2	0	"Hello Sir. I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Did you see how this man got hurt?"						
+28	2	1	Hello officer! Yes i did. I called 9-1-1 form the phone booth.						
+28	2	2	Okay. Then please describe how this happened						
+28	2	3	~w~ came from the petrol pump. The guy crossed the exit and the car ran over him. It didn't stop. I immediately left the place						
+28	2	4	Can you remember the vehicle's license plate?						
+28	2	5	Damn no. Maybe the last 3 digits. They could be ~y~						
+28	2	6	Okay. I will try to run this in our system. Maybe we get a hit. Thanks for your cooperation.						
+28	2	7	No problem, anytime.						
+28	2	8	Sorry, but that's all I can tell you.,						
+29	1	0	Hey Ranger. What can i do for you?						
+29	1	1	Hello officer, thanks for responding. I was coming back to the station when i found them here.						
+29	1	2	Do you know what happened?						
+29	1	3	To be honest, i didn't ask. Its your jurisdiction and i was busy getting EMS here and providing first aid.						
+29	1	4	Fair enough. I will ask the man some questions.						
+29	1	5	That is all I have for you!						
+29	2	0	"Hey Sir. My name is "" + GameHandler.ini_username + "". Can you tell what happened?"						
+29	2	1	Hi officer. I'm glad that the ranger came bye and called the EMS.						
+29	2	2	Okay. Please focus on my questions. What happened?						
+29	2	3	~w~ was driving crazy down here. We wanted to go for a hike and then it suddenly appeared and hit my girl!						
+29	2	4	Did you see the vehicle's license plate?						
+29	2	5	I tried to. But in only saw the last 3 digits. It was ~y~						
+29	2	6	"Thanks for that. For now thats enough. Maybe "" + GameHandler._dialog_dept.Remove(1, 7) + "" will contact you later."						
+29	2	7	Okay. Thank you officer.						
+29	2	8	Sorry, but that's all I can tell you.,						
+30	1	0	Hey buddy. What happened here?						
+30	1	1	Hi. Appears to be a Hit and Run. Paramedics told me that.						
+30	1	2	Do we have a witness?						
+30	1	3	Yeah, its the gas station owner. He told the paramedics that i was a Hit and Run.						
+30	1	4	Okay then i will ask him.						
+30	1	5	That is all I have for you!						
+30	2	0	Hey Sir. Are you the one that called the police.						
+30	2	1	No officer, it was one of my customers. But he already left.						
+30	2	2	Thats not good. Did you maybe saw what happened?						
+30	2	3	~w~ left the gas station and hit the man. I didn't saw it, but i was told.!						
+30	2	4	Hm. Did the customer see a license plate?						
+30	2	5	No. But I did see the last 3 digits. They are ~y~						
+30	2	6	Okay that's good. Thanks for your help. Please give this officer a statement for the record.						
+30	2	7	Will do.						
+30	2	8	Sorry, but that's all I can tell you.,						
+31	1	0	Hello Ma'am, are you the one that called in a disturbance?						
+31	1	1	Hello Officer. Yes I did. Can you hear that loud music?						
+31	1	2	Yes. How long have they been playing their music that loudly?						
+31	1	3	It's been going on for at least 4 hours now. Can you please stop it? It is coming from that house.						
+31	1	4	I'll do my best to have them shut it off. Thanks for letting us know about it.						
+31	1	5	Thank you Officer.						
+31	2	0	Hello everybody. Who is the owner of this property?						
+31	2	1	Hello Officer. This is my house... Is there a problem?						
+31	2	2	Hi, we have a complaint from one of your neighbours regarding the loud music. What's your name sir?						
+31	2	3	I'm not telling you that! We're having a party, they should expect to hear us!						
+31	2	4	Alright sir, well I need you to turn down the volume.						
+31	2	5	Fine... If you say so. Give me a second...						
+31	2	6	Better now?						
+31	2	7	Yes, thank you for your cooperation. Have a fun rest of your time.						
+31	2	8	Whatever party killer...						
+31	3	0	Sir, do you think its necessary for me to have to come back again?						
+31	3	1	Oh hey officer. Sorry, I guess one of my friends turned the volume up. I'll go turn it down.						
+31	3	2	Well this is my second time here. I don't care about excuses. Turn off the music.						
+31	3	3	Why? Havn't you had fun as a teen? Quit complaining, we're having fun!						
+31	3	4	I warned you already. Turn it off now.						
+31	3	5	No. You can't make me. Im sick of you trying to ruin my party.						
+31	3	6	There are two ways this will end. First, you turn off the music and continue your party.						
+31	3	7	Second, if you refuse to cooperate, the party ends and I will take you in for disturbing the peace. Its your choice.						
+31	4	0	Alright then... I will turn off the music.						
+31	4	1	Happy now?						
+31	4	2	Wise decision my friend. Regardless of this action, have a nice day.						
+31	4	3	Leave my property. The people around here suck...						
+31	5	0	Fuckin' pig!						
+31	5	1	Okay bud, put your hands where I can see them. You are going to jail for disturbing the peace.						
+31	5	2	Wow, I can't believe this. Clearly someone doesn't know how to have fun!						
+32	1	0	Excuse me sir, are you the one that called regarding the loud music?						
+32	1	1	Hi Officer. Yes, I was the one that called the police.						
+32	1	2	I'm assuming you are talking about the music that I'm hearing in background?						
+32	1	3	Yes. Those party-goers are always partying, and us neighbors are always suffering! Can you shut it down please?						
+32	1	4	Certainly. I will take to the owner and ask them to lower the volume.						
+32	1	5	Thank you so much officer.						
+32	2	0	"Hi. I'm officer "" + GameHandler.ini_username + "". Who is responsible for this party?"						
+32	2	1	That's me. Michael De Santa. Is there a problem officer?						
+32	2	2	Yes Mr. De Santa. Sorry to interrupt but people in your neighborhood are complaining about the loud music.						
+32	2	3	Oh come on, this is a celebration party for my daughter Tracy. She finally got a job on TV.						
+32	2	4	Well that's nice to hear Michael, but I need you to turn down the volume.						
+32	2	5	Alright then, give me second...						
+32	2	6	Are you satisfied with it now?						
+32	2	7	Thank you Mr. De Santa. I appreciate your cooperation. Have a nice party.						
+32	2	8	It won't be as fun...						
+32	3	0	Can I talk to you for again Mr. De Santa?						
+32	3	1	What now?						
+32	3	2	Why is the music so loud again?						
+32	3	3	Do you really want an answer for that?						
+32	3	4	Basically I don't care. Turn off the music, or I will take you to jail.						
+32	3	5	What the fuck? Why are you acting like a pussy?						
+32	3	6	I asked you kindly to turn off the music, and now you have no choice.						
+32	3	7	Turn off the music before I take you in.						
+32	4	0	Okay okay, don't lose yourself.						
+32	4	1	Happy now?						
+32	4	2	If I have to come back again, you're going right to the station. Goodbye Mr. De Santa.						
+32	4	3	Whatever dude. Go back to your group therapy...knuckle head						
+32	5	0	The hell I will!						
+32	5	1	Then I will take you down to the station for disturbing the peace. Let me see your hands.						
+32	5	2	This is stupid. I'm gunna call my lawyer you son of a bitch!						
+33	1	0	Hello. Did you call 911 reporting loud music?						
+33	1	1	Hello Officer. Yes. They have been playing it for a few hours. Enough is enough!						
+33	1	2	I agree. Has the volume always been this loud?						
+33	1	3	There were a few minutes it was quiet, but its been like this for hours.						
+33	1	4	Okay. I'll make contact with the house owner and ask them to turn down the volume.						
+33	1	5	Thank you for taking this seriously.						
+33	2	0	Hello. Can I talk to the house owner for minute?						
+33	2	1	Yo dog, I'm Franklin Clinton. This is my crib, whats going on?						
+33	2	2	Hello Mr. Clinton, we got a complaint regarding your loud music.						
+33	2	3	What? This ain't too loud. People still can talk to each other...						
+33	2	4	Regardless, please turn down the volume.						
+33	2	5	Fine, if I have to...						
+33	2	6	Is this okay for my officer friend?						
+33	2	7	Yes it is. Thanks for your cooperation.						
+33	2	8	Thank you officer!						
+33	3	0	Hey Mr. Clinton, come back over here please.						
+33	3	1	Hey yo. What'cha doing here again?						
+33	3	2	I'm back because the music is too loud again.						
+33	3	3	I think its the same volume as when you left. The dude complaining must have a pack of damaged ears.						
+33	3	4	Sir, you need to turn off the volume now.						
+33	3	5	What? No, I'll just turn it down. It doesn't have to be turned off!						
+33	3	6	Sir, please don't make this harder than it has to be.						
+33	3	7	Turn off the music, before I take you to jail for disturbing the peace.						
+33	4	0	Eh, if the cop says to turn it off, I guess I have to turn it off...						
+33	4	1	Silence has arrived. Are you happy?						
+33	4	2	I hope you keep it like this. Thank you.						
+33	4	3	Sorry for causing you the hassle, officer.						
+33	5	0	You know what, go suck a mighty...						
+33	5	1	Okay, put your hands where I can see them. You are being placed under arrest for disturbing the peace.						
+33	5	2	Jail ain't gunna do nothing, pig!						
+34	1	0	Hi Ma'am. Did you called 911 because of a disturbing noise?						
+34	1	1	Hi Officer. Yes I called the cops. The party is too wild. They are throwing beer bottles and doing other bizarre things..						
+34	1	2	Did they throw anything out into the streets or at your houses?						
+34	1	3	Luckily they didn't. Its the house over there with The Lost van.						
+34	1	4	Seems to be a biker party. Why don't you go back inside while we handle the party.						
+34	1	5	Thank you.						
+34	2	0	Hi everyone. Who is the owner here?						
+34	2	1	That would be me. What can I do for the pig in a uniform?						
+34	2	2	Your music is too loud. I'm going to have to ask you to turn it down.						
+34	2	3	Nah, I don't hear any music.						
+34	2	4	Do you want to cooperate, or should I take you to jail for disturbing the peace?						
+34	2	5	If thats how you want to be, let me go turn it down.						
+34	2	6	Don't think that you have won.						
+34	2	7	Alright bud, thanks for cooperating. Don't make me have to come out again.						
+34	2	8	Seeya pig in a uniform!						
+34	3	0	Sir, come over here for a minute.						
+34	3	1	Whats going on pig in a uniform? Want to join us?						
+34	3	2	No. You need to turn off the music and stop the party.						
+34	3	3	Nah! I don't hear any music, and I don't think any of my brothers or sisters do.						
+34	3	4	It'll take some time to write down all the violations I see here. I think it will be a hefty fine, unless you would like to cooperate.						
+34	3	5	Whats your fucking problem pig in a uniform?						
+34	3	6	My problem is that you feel the need to not listen.						
+34	3	7	Last chance. Turn off the music, or you will go to jail for disturbing the peace.						
+34	4	0	This time I will listen.						
+34	4	1	Next time I won't.						
+34	4	2	Next time I'll put you to jail if you don't cooperate. Have a great day.						
+34	4	3	Fucking pigs in a uniform. You did not win this battle.						
+34	5	0	You motherfucking pig in a uniform. I won't do a thing that you're saying!						
+34	5	1	Show me your hands. You are currently being placed under arrest for disturbing the peace.						
+34	5	2	That is why I hate cops.						
+35	1	0	Hello Ma'am. You have called the police because of a loud party?						
+35	1	1	Hi Officer. Do you here the music? It is now the third time that this bitch has a party like this.						
+35	1	2	No need to insult your neighbour. Did you talk to her?						
+35	1	3	No i won't talk to her. The house is over there. Try the door at the left, otherwise you will find them on the top terrace.						
+35	1	4	Ok thanks for the info. Please get back into your house. I will take care about this issue.						
+35	1	5	I hope she goes to jail, bye.						
+35	2	0	Hello everybody. I need to talk to the owner of this house.						
+35	2	1	Hello officer, that's me. What can i do for you?						
+35	2	2	There has been a report of civil disturbance because of loud music.						
+35	2	3	Are you sure that's my party?						
+35	2	4	Yes i'm sure. Please do me a favour and lower the volume to adequate noise level.						
+35	2	5	Well then ok, wait here.						
+35	2	6	This is the maximum i want to lower it. Is it ok ?						
+35	2	7	Yes Miss, thank you and have a nice day.						
+35	2	8	Bye.						
+35	3	0	Miss, step over here please!						
+35	3	1	Ahm ok? What did i do wrong now ?						
+35	3	2	The noise level is back to ist original. Can you tell me why?						
+35	3	3	No it is still the same as you left. You must have something with you ears…						
+35	3	4	My ears are fine, but it seem like you memory is not. Turn off the music immediatly!						
+35	3	5	Why are you so unfriendly? I don't like that.						
+35	3	6	Well i don't like that you are lying to me. 						
+35	3	7	I say this only once. Turn off the music now or i will pull the plug and take you down to the station.						
+35	4	0	Alright, sorry… i do it.						
+35	4	1	I don't want to have any trouble.						
+35	4	2	Next time think about this when you lie to the police. Goodbye.						
+35	4	3	What a jerk…						
+35	5	0	You know what. NO. I think you are overreacting. The noise level is fine.						
+35	5	1	I have enough of this. You can explain this down at the station. Show me your hands.						
+35	5	2	… stupid whore downstairs. She is the one who should get arrested						
+36	1	0	Hello Sir. You've called 9-1-1 because of too loud music?						
+36	1	1	Hello Officer, yes, i called the police cause they are playing the music too loud.						
+36	1	2	Did you talk to the owner to turn the volume down ?						
+36	1	3	No i did not. It is the house over there.						
+36	1	4	Well next time please try yourself. This time i will talk to the owner.						
+36	1	5	Ok, thanks.						
+36	2	0	Hello ? Can i please talk to the owner of this property ?						
+36	2	1	Sure, i'm the new owner of this house. What can i do for you officer?						
+36	2	2	We have a complaint regarding your party. Could you please lower the volume?						
+36	2	3	Man, must be that stupid prick next to me. What has he said ?						
+36	2	4	I can't give you any details about the complaint. Please just turn down the volume ok ?						
+36	2	5	Yeah of course, i don't want to make any trouble.						
+36	2	6	Satisfied with the volume level ?						
+36	2	7	Yes Sir, thanks for you understanding. Have a nice party.						
+36	2	8	Goodbye officer.						
+36	3	0	Sir, I need to talk to you!						
+36	3	1	Oh hell no, what's the problem now ?						
+36	3	2	I kindly asked you to lower the volume. It seems like it doesn't had any effect. Now you need to turn it off!						
+36	3	3	What ? Do you know how much a party like this costs? Music is essential for me. Therefore it stays on!						
+36	3	4	I'm sorry but you don't have any other possibility. You had your chance.						
+36	3	5	You know that i earn more money in a day that you make in a year ? 						
+36	3	6	I don't care about your financial situation Sir.						
+36	3	7	Don't hedge arround the problem. Turn off the music  now or i will do it!						
+36	4	0	Whatever, but this will have consequences for you!						
+36	4	1	Give me your name and Badgenumber so that i can make a complaint at the department.						
+36	4	2	You can get this information directly at the department downtown. Have nice day Sir.						
+36	4	3	You won't get away with it. This will have repercussions.						
+36	5	0	My answer is simple. NO. I won't turn off the music!						
+36	5	1	Then i have no other choice as to take you down to the station. Please show me hands.						
+36	5	2	I can't believe that shit.						
+37	1	0	Hi Sir. You called 911. How can i help you ?						
+37	1	1	Yes Hello, i want you to go over the street and turn off the music. It is annoying.						
+37	1	2	Relax Sir. How long do they play with that volume level.						
+37	1	3	I don't remember. Just go over there and pull the plug.						
+37	1	4	Ok Sir, please go back inside. I will make contact with the owner and ask him to lower the volume.						
+37	1	5	No not lowering, it has to be off! You understand ?...						
+37	2	0	Excuse me. Who is the responsible person for this party?						
+37	2	1	Oh police. Yeah that's me officer. What's the problem?						
+37	2	2	Your neighbours are complaining about you noise level.						
+37	2	3	Come on, these old assholes should crawl back into their coffins…						
+37	2	4	Please don't insult anybody, just lower the volume please.						
+37	2	5	I'm really pissed… ok i will lower it.						
+37	2	6	Is it ok now ?						
+37	2	7	Sure thats fine. Please keep noise level down ok ? Goodbye.						
+37	2	8	Aha… we will see…						
+37	3	0	Sir, step over here!						
+37	3	1	Police again ?... Oh man, what now ?						
+37	3	2	My last visit seems to have no effect, so now please turn off the music.						
+37	3	3	What? Come on, i will lower the volume and keep it there, i promise.						
+37	3	4	Sir you had your chance. Sorry but this time you have to turn if off.						
+37	3	5	Whats your fucking problem? I said i promise to keep it low.						
+37	3	6	Your promise is not enough. 						
+37	3	7	Turn it off now or i will do it for you and you can explain it at the station.						
+37	4	0	Always the same shit with these old bastards…						
+37	4	1	Happy now ? 						
+37	4	2	Yes and keep it off understood ?						
+37	4	3	Just leave man.						
+37	5	0	I don't think i wanna do this. I like it that way.						
+37	5	1	Well then lets have a chat at the station. Show me your hands.						
+37	5	2	This is just bullshit….						
+									
+POSITIONS	Type	Position	Heading						
+31	DOORBELL	-214.346f, 6396.502f, 32f	0f						
+31	BACKYARD	-1011.581f, 761.659f, 170.0f	0f						
+31	PEDTALK	-1011.600f, 761.981f, 171.379f	205f						
+31	MUSIC	-1015.862f, 770.888f, 170.0f	27.622f						
+32	DOORBELL	-1940.702f, 386.947f, 95f	0f						
+32	BACKYARD	-1921.376f, 400.660f, 95f	0f						
+32	PEDTALK	-1921.751f, 400.443f, 96.296f	231.397f						
+32	MUSIC	-1928.233f, 397.908f, 96.507f	186.568f						
+33	DOORBELL	8.713f, 540.592f, 174.8f	0f						
+33	BACKYARD	16.821f, 529.340f, 169.5f	0f						
+33	PEDTALK	17.735f, 528.739f, 170.628f	52.769f						
+33	MUSIC	23.308f, 532.160f, 170.628f	308.021f						
+34	DOORBELL	906.64f, -490.16f, 58.30f	0f						
+34	BACKYARD	903.12f, -471.27f, 57.80f	0f						
+34	PEDTALK	901.41f, -471.87f, 59.02f	291.03f						
+34	MUSIC	895.15f, -474.72f, 57.83f	217.71f						
+35	DOORBELL	-1897.942f, -572.884f, 10.5f	0f						
+35	BACKYARD	-1912.776f, -572.322f, 21.5f	0f						
+35	PEDTALK	-1911.897f, -572.971f, 22.892f	50.161f						
+35	MUSIC	-1905.797f, -577.867f, 22.892f	236.886f						
+36	DOORBELL	-3017.632f, 746.330f, 26.5f	0f						
+36	BACKYARD	-2999.792f, 750.592f, 25.5f	0f						
+36	PEDTALK	-2999.766f, 752.213f, 26.687f	180.241f						
+36	MUSIC	-3007.383f, 755.513f, 27.589f	120.369f						
+37	DOORBELL	-214.346f, 6396.502f, 32	0f						
+37	BACKYARD	-190.673f, 6382.756f, 30.563f	0f						
+37	PEDTALK	-191.501f, 6381.986f, 31.864f	315.486f						
+37	MUSIC	-202.542f, 6382.753f, 30.563f	43.332f						
