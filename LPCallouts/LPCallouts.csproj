@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LPCallouts</RootNamespace>
     <AssemblyName>LPCallouts</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SccProjectName>
@@ -63,9 +63,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\GTA_Resources\Bass.Net.dll</HintPath>
     </Reference>
-    <Reference Include="ComputerPlus">
-      <HintPath>..\GTA_Resources\ComputerPlus.dll</HintPath>
-    </Reference>
     <Reference Include="LSPD First Response">
       <HintPath>..\GTA_Resources\LSPD First Response.dll</HintPath>
     </Reference>
@@ -104,7 +101,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SuspectDefinitions.tt</DependentUpon>
     </Compile>
-    <Compile Include="Externals\CPlusFunctions.cs" />
     <Compile Include="Externals\ModelDef.cs" />
     <Compile Include="Internals\ErrorHandler.cs" />
     <Compile Include="Internals\FiberHandler.cs" />
@@ -141,7 +137,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "P:\archive_c#\LPCallouts\LPCallouts\bin\Release\LPCallouts.dll" "F:\GTA5\plugins\LSPDFR" /Y</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

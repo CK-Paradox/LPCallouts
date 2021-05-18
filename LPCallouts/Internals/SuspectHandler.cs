@@ -8,8 +8,6 @@ using LSPD_First_Response.Mod.API;
 using LSPD_First_Response.Engine.Scripting.Entities;
 //LPC
 using LPCallouts.Externals;
-//External
-using ComputerPlus;
 
 namespace LPCallouts.Internals
 {
@@ -187,7 +185,7 @@ namespace LPCallouts.Internals
             }
         }
 
-        public static void GetLocation(Guid CalloutID, bool CompterPlus, string CarType, string LicencePlate, Vehicle Car, Ped Person, Ped Witness, Blip Marker, Vector3 Position, string Name)
+        public static void GetLocation(string CarType, string LicencePlate, Vehicle Car, Ped Person, Ped Witness, Blip Marker, Vector3 Position, string Name)
         {
             string Audio = LicencePlate.Aggregate(string.Empty, (c, i) => c + i + ' ');
 
@@ -205,17 +203,7 @@ namespace LPCallouts.Internals
                 uint _streethash = World.GetStreetHash(Position);
                 string _street = World.GetStreetName(_streethash);
 
-                //Computer+
-                if (CompterPlus)
-                {
-                    Persona _witness = Functions.GetPersonaForPed(Witness);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Witness Name: " + _witness.FullName);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Car model that caused the accident: " + Car.Model.Name);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Accident was 10-57, responding to " + _street);
-                    CPlusFunctions.AddPedToCallout(CalloutID, Person);
-                    CPlusFunctions.AddVehicleToCallout(CalloutID, Car);
-                    CPlusFunctions.UpdateCalloutStatus(CalloutID, (int)ECallStatus.Unit_Responding);
-                }
+
                 GameHandler.DispatchMessage("I have a vehicle match. The owner is ~y~" + Name + "~w~, and lives at ~y~" + _street);
                 GameFiber.Wait(3000);
                 Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Show me 10-76 Code 2.");
@@ -228,7 +216,7 @@ namespace LPCallouts.Internals
             }, "Suspect Location Data");
         }
 
-        public static void GetLocation(Guid CalloutID, bool CompterPlus, string CarType, string LicencePlate, Vehicle Car, Ped Witness)
+        public static void GetLocation(string CarType, string LicencePlate, Vehicle Car, Ped Witness)
         {
             string Audio = LicencePlate.Aggregate(string.Empty, (c, i) => c + i + ' ');
 
@@ -244,16 +232,6 @@ namespace LPCallouts.Internals
                 GameHandler.DispatchMessage("10-12");
                 GameFiber.Wait(7000);
 
-                //Computer+
-                if (CompterPlus)
-                {
-                    Persona _witness = Functions.GetPersonaForPed(Witness);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Witness Name: " + _witness.FullName);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Car model that caused the accident: " + Car.Model.Name);
-                    CPlusFunctions.AddUpdateToCallout(CalloutID, "Accident was 10-57");
-                    CPlusFunctions.AddVehicleToCallout(CalloutID, Car);
-                    CPlusFunctions.UpdateCalloutStatus(CalloutID, (int)ECallStatus.Unit_Responding);
-                }
                 GameHandler.DispatchMessage("Be Advised! Vehicle returned as: ~r~ STOLEN");
                 GameFiber.Wait(2000);
                 Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Can i get a BOLO on that Vehicle?");
@@ -268,7 +246,7 @@ namespace LPCallouts.Internals
             }, "Suspect Location Data");
         }
 
-        public static void GetLocation(Guid CalloutID, bool CompterPlus, string CarType, string LicencePlate, Ped Witness, Blip Marker1, Blip Marker2, Blip Marker3, string Street1, string Street2, string Street3)
+        public static void GetLocation(string CarType, string LicencePlate, Ped Witness, Blip Marker1, Blip Marker2, Blip Marker3, string Street1, string Street2, string Street3)
         {
             string Audio = LicencePlate.Aggregate(string.Empty, (c, i) => c + i + ' ');
 
@@ -284,15 +262,6 @@ namespace LPCallouts.Internals
                     Functions.PlayScannerAudio("TARGET_VEHICLE_LICENCE_PLATE " + Audio + "REPORT_RESPONSE_COPY_02");
                     GameHandler.DispatchMessage("10-12, running...");
                     GameFiber.Wait(6000);
-
-                    //Computer+
-                    if (CompterPlus)
-                    {
-                        Persona _witness = Functions.GetPersonaForPed(Witness);
-                        CPlusFunctions.AddUpdateToCallout(CalloutID, "Witness Name: " + _witness.FullName);
-                        CPlusFunctions.AddUpdateToCallout(CalloutID, "Car model that caused the accident: " + CarType);
-                        CPlusFunctions.AddUpdateToCallout(CalloutID, "Accident was hit and run");
-                    }
 
                     //GET AREAS
                     Marker1.Alpha = 0.8f;
@@ -376,7 +345,7 @@ namespace LPCallouts.Internals
             NativeFunction.CallByName<uint>("ATTACH_ENTITY_TO_ENTITY", _cigarette, Person, BoneIndex, 0f, 0f, 0f, 0f, 0f, 90f, true, false, false, false, 2, 1);
 
             Data = Functions.GetPersonaForPed(Person);
-            Functions.SetPersonaForPed(Person, new Persona(Person, Data.Gender, Data.BirthDay, Data.Citations, Data.Forename, Data.Surname, ELicenseState.Valid, 2, true, false, false));
+            Functions.SetPersonaForPed(Person, new Persona(Data.Forename, Data.Surname, Data.Gender, Data.Birthday));
             Functions.SetVehicleOwnerName(Car, Data.FullName);
         }
 
@@ -409,7 +378,7 @@ namespace LPCallouts.Internals
             Person.BlockPermanentEvents = true;
 
             Data = Functions.GetPersonaForPed(Person);
-            Functions.SetPersonaForPed(Person, new Persona(Person, Data.Gender, Data.BirthDay, Data.Citations, Data.Forename, Data.Surname, ELicenseState.Suspended, 4, true, false, false));
+            Functions.SetPersonaForPed(Person, new Persona(Data.Forename, Data.Surname, Data.Gender, Data.Birthday));
             Functions.SetVehicleOwnerName(Car, Data.FullName);
         }
 

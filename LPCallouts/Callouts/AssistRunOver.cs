@@ -12,8 +12,7 @@ using Rage.Native;
 using LSPD_First_Response.Mod.API;
 using LSPD_First_Response.Mod.Callouts;
 using LSPD_First_Response.Engine.Scripting.Entities;
-//External 
-using ComputerPlus;
+
 
 namespace LPCallouts.Callouts
 {
@@ -120,15 +119,13 @@ namespace LPCallouts.Callouts
         public bool _player_at_scene = false;
         public bool _unit_exit = false;
 
+        public bool _arrived_at_suspect = false;
+
         //string
         public string _street01;
         public string _street02;
         public string _street03;
 
-        //Computer+
-        public Guid _callout_id;
-        public bool _cplus_active;
-        public bool _arrived_at_suspect = false;
         public Persona SuspectData;
 
         public override bool OnBeforeCalloutDisplayed()
@@ -155,8 +152,6 @@ namespace LPCallouts.Callouts
                 ErrorHandler.LogMessage(ex.ToString(), 777);
             }
 
-            _cplus_active = GameHandler.IsLSPDFRPluginRunning("ComputerPlus", new Version("1.3.0.0"));
-
             if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < GameHandler._minimumdistance || Game.LocalPlayer.Character.DistanceTo(_ve3_poi) > GameHandler.ini_radius)
             {
                 return false;
@@ -170,11 +165,6 @@ namespace LPCallouts.Callouts
 
                 GameHandler.DispatchAudio(_area._area, 1);
 
-                //Computer+
-                if (_cplus_active)
-                {
-                    _callout_id = CPlusFunctions.CreateCallout("Traffic accident with possible hit and run", "ASSIST", _ve3_poi, (int)EResponseType.Code_3, "Officer requires assistance");
-                }
             }
             return base.OnBeforeCalloutDisplayed();
         }
@@ -184,8 +174,7 @@ namespace LPCallouts.Callouts
             _blip_list = new List<Blip>();
             statusmachine = Globals.PlayerState.CALLED;
             // Updates the callout's status to "Unit Responding" when the player accepts
-            if (_cplus_active)
-                CPlusFunctions.SetCalloutStatusToUnitResponding(_callout_id);
+
 
             GameHandler.DispatchMessage(_area._dispatchtext + " " + _area._street);
 
@@ -377,8 +366,6 @@ namespace LPCallouts.Callouts
 
         public override void OnCalloutNotAccepted()
         {
-            if (_cplus_active)
-                CPlusFunctions.AssignCallToAIUnit(_callout_id);
             base.OnCalloutNotAccepted();
         }
 
@@ -481,10 +468,6 @@ namespace LPCallouts.Callouts
                             _blip_cop.Color = Color.Blue;
                             _blip_list.Add(_blip_cop);
 
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.SetCalloutStatusToAtScene(_callout_id);
-                            }
                             _player_at_scene = true;
                             statusmachine = Globals.PlayerState.TALK_COP;
                         }
@@ -516,15 +499,6 @@ namespace LPCallouts.Callouts
                                 Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, Heading to ~g~" + _street01);
                                 _blip_area1.EnableRoute(System.Drawing.Color.LightBlue);
 
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Responding to " + _street01);
-                                    CPlusFunctions.AddPedToCallout(_callout_id, _ped_suspect);
-                                    CPlusFunctions.AddVehicleToCallout(_callout_id, _veh_suspect);
-                                    CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                                }
-
                                 SendBackUp(1, 2);
                                 _handover1 = 1;
                                 _handover2 = 2;
@@ -545,15 +519,6 @@ namespace LPCallouts.Callouts
                                 Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, 10-76 to ~p~" + _street02);
                                 _blip_area2.EnableRoute(System.Drawing.Color.LightBlue);
 
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Responding to " + _street02);
-                                    CPlusFunctions.AddPedToCallout(_callout_id, _ped_suspect);
-                                    CPlusFunctions.AddVehicleToCallout(_callout_id, _veh_suspect);
-                                    CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                                }
-
                                 SendBackUp(0, 2);
                                 _handover1 = 0;
                                 _handover2 = 2;
@@ -573,15 +538,6 @@ namespace LPCallouts.Callouts
                                 Game.DisplaySubtitle("You are heading to ~y~" + _street03, GameHandler._displaytime);
                                 Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, 10-76 to ~y~" + _street03);
                                 _blip_area3.EnableRoute(System.Drawing.Color.LightBlue);
-
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Responding to " + _street03);
-                                    CPlusFunctions.AddPedToCallout(_callout_id, _ped_suspect);
-                                    CPlusFunctions.AddVehicleToCallout(_callout_id, _veh_suspect);
-                                    CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                                }
 
                                 SendBackUp(0, 1);
                                 _handover1 = 0;
@@ -604,13 +560,6 @@ namespace LPCallouts.Callouts
                             {
                                 TerminateAI(1, _handover1, ref _assist01, _terminate, ref _blip_backup1, _ped_backup1, _veh_backup1);
                             }
-
-                            //Computer+
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Backup unit 1 reported no match at adress");
-                            }
-
                         }
                         #endregion terminate AI one
                         //Terminate AI Two if at area or triggered by player
@@ -620,12 +569,6 @@ namespace LPCallouts.Callouts
                             if (_veh_backup2.DistanceTo(_suspect_area[_handover2]._ped_position) < 90f || _terminate == true)
                             {
                                 TerminateAI(2, _handover2, ref _assist02, _terminate, ref _blip_backup2, _ped_backup2, _veh_backup2);
-                            }
-
-                            //Computer+
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Backup unit 2 reported no match at adress");
                             }
                         }
                         #endregion terminate AI two
@@ -685,12 +628,6 @@ namespace LPCallouts.Callouts
                                 Game.DisplayNotification("~b~03-ADAM-05:~w~ Dispatch, we're at the residence. Possible suspect located.");
                                 Functions.PlayScannerAudio("REPORT_SUSPECT_SPOTTED_01");
 
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Backup unit 1 reported possible suspect");
-                                }
-
                                 _veh_backup1.SetPositionWithSnap(_suspect_area[_handover1]._police_position);
                                 _veh_backup1.Heading = _suspect_area[_handover1]._police_heading;
                                 _veh_backup1.IsSirenOn = false;
@@ -713,12 +650,6 @@ namespace LPCallouts.Callouts
                                 _terminate = true;
                                 Game.DisplayNotification("~b~04-QUEEN-02:~w~ Dispatch, we're at the residence. Possible suspect located.");
                                 Functions.PlayScannerAudio("REPORT_SUSPECT_SPOTTED_01");
-
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Backup unit 2 reported possible suspect");
-                                }
 
                                 _veh_backup2.SetPositionWithSnap(_suspect_area[_handover2]._police_position);
                                 _veh_backup2.Heading = _suspect_area[_handover2]._police_heading;
@@ -786,11 +717,6 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.TO_SUSPECT:
                         if (Game.LocalPlayer.Character.DistanceTo(_ped_suspect.Position) < 30f && _arrived_at_suspect == false)
                         {
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.At_Scene);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Searching for possbile suspect");
-                            }
                             _arrived_at_suspect = true;
                         }
 
@@ -1000,12 +926,6 @@ namespace LPCallouts.Callouts
         {
             if (CalloutActive)
             {
-                if (_cplus_active)
-                {
-                    // Changes the call's status to "Concluded" when the callout ends
-                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Suspect has been arrested and is in custody");
-                    CPlusFunctions.ConcludeCallout(_callout_id);
-                }
                 switch (endingvariant)
                 {
                     case Globals.CalloutEnd.NORMAL:
@@ -1071,12 +991,6 @@ namespace LPCallouts.Callouts
                         _blip_witness.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness);
 
-                        //Computer+
-                        if (_cplus_active)
-                        {
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Contact with officer on scene. One Victim with injuries, EMS on scene, One Witness, possible hit and run.");
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Following up with questioning witness.");
-                        }
                         _mlog_loop1 = 5;
                         break;
                     case 5:
@@ -1127,11 +1041,11 @@ namespace LPCallouts.Callouts
                         switch (endingvariant)
                         {
                             case Globals.CalloutEnd.NORMAL:
-                                SuspectHandler.GetLocation(_callout_id, _cplus_active, _veh_suspect.Model.Name, _car_plate, _ped_civ, _blip_area1, _blip_area2, _blip_area3, _street01, _street02, _street03);
+                                SuspectHandler.GetLocation(_veh_suspect.Model.Name, _car_plate, _ped_civ, _blip_area1, _blip_area2, _blip_area3, _street01, _street02, _street03);
                                 break;
                             case Globals.CalloutEnd.ABANDON:
                             case Globals.CalloutEnd.TRAFFICSTOP:
-                                SuspectHandler.GetLocation(_callout_id, _cplus_active, _veh_suspect.Model.Name, _veh_suspect.LicensePlate, _veh_suspect, _ped_civ);
+                                SuspectHandler.GetLocation(_veh_suspect.Model.Name, _veh_suspect.LicensePlate, _veh_suspect, _ped_civ);
                                 break;
                         }
                         break;

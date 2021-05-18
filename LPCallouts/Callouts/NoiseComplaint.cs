@@ -13,7 +13,6 @@ using LSPD_First_Response.Mod.API;
 using LSPD_First_Response.Mod.Callouts;
 //External
 using Un4seen.Bass;
-using ComputerPlus;
 
 
 namespace LPCallouts.Callouts
@@ -82,9 +81,6 @@ namespace LPCallouts.Callouts
         public bool _talking_caller = false;
         public bool _pursuitcreated = false;
 
-        //Computer+
-        public Guid _callout_id;
-        public bool _cplus_active;
         public bool _arrived_at_caller = false;
 
         public override bool OnBeforeCalloutDisplayed()
@@ -116,8 +112,6 @@ namespace LPCallouts.Callouts
                 return false;
             }
 
-            _cplus_active = GameHandler.IsLSPDFRPluginRunning("ComputerPlus", new Version("1.3.0.0"));
-
             if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < GameHandler._minimumdistance || Game.LocalPlayer.Character.DistanceTo(_ve3_poi) > GameHandler.ini_radius)
             {
                 return false;
@@ -132,12 +126,6 @@ namespace LPCallouts.Callouts
 
                 GameHandler.DispatchAudio(_area._area, 2);
 
-                //Computer+
-                if (_cplus_active)
-                {
-                    _callout_id = CPlusFunctions.CreateCallout("Civilian is reporting loud music", "DISTURBANCE", _ve3_poi, (int)EResponseType.Code_3, "Resident report of disturbance");
-                }
-
                 return base.OnBeforeCalloutDisplayed();
             }
         }
@@ -145,8 +133,7 @@ namespace LPCallouts.Callouts
         public override void OnCalloutDisplayed()
         {
             // Updates the callout's status to "Dispatched" when the player sees the callout on screen
-            if (_cplus_active)
-                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Dispatched);
+
             base.OnCalloutDisplayed();
         }
 
@@ -155,8 +142,7 @@ namespace LPCallouts.Callouts
 
             _blip_list = new List<Blip>();
             // Updates the callout's status to "Unit Responding" when the player accepts
-            if (_cplus_active)
-                CPlusFunctions.SetCalloutStatusToUnitResponding(_callout_id);
+
 
             Vector3 Bell = _waypoints.First(t => t._type == Globals.PositionType.DOORBELL)._position;
 
@@ -353,8 +339,6 @@ namespace LPCallouts.Callouts
 
         public override void OnCalloutNotAccepted()
         {
-            if (_cplus_active)
-                CPlusFunctions.AssignCallToAIUnit(_callout_id);
             base.OnCalloutNotAccepted();
         }
 
@@ -377,12 +361,6 @@ namespace LPCallouts.Callouts
 
                             if (Game.LocalPlayer.Character.DistanceTo(_ped_caller.Position) < 30f && _arrived_at_caller == false)
                             {
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.At_Scene);
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Going to talk with civilian that reported the disturbance.");
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Loud Music is playing somewhere in the neighbourhood");
-                                }
                                 _arrived_at_caller = true;
                             }
 
@@ -401,11 +379,6 @@ namespace LPCallouts.Callouts
                         if (Game.LocalPlayer.Character.DistanceTo(_waypoints.First(t => t._type == Globals.PositionType.DOORBELL)._position) < 20f)
                         {
                             Game.DisplaySubtitle("Step into the marker and press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to ring the doorbell.", GameHandler._displaytime);
-
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.SetCalloutStatusToAtScene(_callout_id);
-                            }
 
                             statusmachine = Globals.PlayerState.FRONTDOOR;
                         }
@@ -470,10 +443,6 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.NICEEND:
                         if (Game.LocalPlayer.Character.DistanceTo(_waypoints.First(t => t._type == Globals.PositionType.BACKYARD)._position) > 150f)
                         {
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Talked to the owner, Music Volume has been reduced. No further actions required, going on with patrol");
-                            }
                             switch (ownerending)
                             {
                                 case Globals.DisturbanceEnd.REVISIT:
@@ -629,11 +598,6 @@ namespace LPCallouts.Callouts
 
         public override void End()
         {
-            if (_cplus_active)
-            {
-                // Changes the call's status to "Concluded" when the callout ends
-                CPlusFunctions.ConcludeCallout(_callout_id);
-            }
             Bass.BASS_StreamFree(_audio_music);
             Bass.BASS_StreamFree(_audio_ambient);
             Bass.BASS_StreamFree(_audio_doorbell);
@@ -724,13 +688,6 @@ namespace LPCallouts.Callouts
                         break;
                     case 4:
                         GameHandler.PlayerChat(1, Dialog);
-                        //Computer+
-                        if (_cplus_active)
-                        {
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Civilian is reporting ongoing noise disturbance for at least 4 hours.");
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Following up making contact with the house owner.");
-                            CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                        }
                         _mloop_caller = 5;
                         break;
                     case 5:

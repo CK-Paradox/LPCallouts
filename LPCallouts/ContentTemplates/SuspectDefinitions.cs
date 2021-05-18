@@ -2841,8 +2841,8 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._TrafficStop,
 					_id = 10,
 					_type =  Globals.PositionType.PED_UNIT,
-					_heading = 36.70f,
-					_position = new Vector3(2129.68f, 6088.43f, 51.38f),
+					_heading = 212.96f,
+					_position = new Vector3(2133.62f, 6086.68f, 51.44f),
 					_modelname = "s_f_y_sheriff_01",
 					_region = 3,
 				});
@@ -2851,8 +2851,8 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._TrafficStop,
 					_id = 10,
 					_type =  Globals.PositionType.PED_WAIT,
-					_heading = 212.96f,
-					_position = new Vector3(2133.62f, 6086.68f, 51.44f),
+					_heading = 36.70f,
+					_position = new Vector3(2129.68f, 6088.43f, 51.38f),
 					_modelname = "NONE",
 					_region = 3,
 				});
@@ -2921,8 +2921,8 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._TrafficStop,
 					_id = 12,
 					_type =  Globals.PositionType.PED_UNIT,
-					_heading = 136.78f,
-					_position = new Vector3(-2307.06f, 4194.98f, 39.96f),
+					_heading = 302.93f,
+					_position = new Vector3(-2306.14f, 4198.79f, 40.19f),
 					_modelname = "s_m_y_sheriff_01",
 					_region = 3,
 				});
@@ -2931,8 +2931,8 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._TrafficStop,
 					_id = 12,
 					_type =  Globals.PositionType.PED_WAIT,
-					_heading = 302.93f,
-					_position = new Vector3(-2306.14f, 4198.79f, 40.19f),
+					_heading = 136.78f,
+					_position = new Vector3(-2307.06f, 4194.98f, 39.96f),
 					_modelname = "NONE",
 					_region = 3,
 				});

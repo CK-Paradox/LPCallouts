@@ -21,7 +21,7 @@ using Rage;
             List<string[]> VEHICLES = new List<string[]>();
             List<string[]> DIALOGS = new List<string[]>();
 			List<string[]> POSITIONS = new List<string[]>();
-            using (FileStream _contentfile = File.Open(@"P:\archive_c#\LPCallouts\ContentData\CalloutData.txt", FileMode.Open))
+            using (FileStream _contentfile = File.Open(@"C:\Users\ckoec\Documents\GitHub\LPCallouts\ContentData\CalloutData.txt", FileMode.Open))
             {
                 using (StreamReader _contentReader = new StreamReader(_contentfile))
                 {

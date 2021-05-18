@@ -16,8 +16,6 @@ using Rage.Native;
 using LSPD_First_Response.Mod.API;
 using LSPD_First_Response.Mod.Callouts;
 using LSPD_First_Response.Engine.Scripting.Entities;
-//External
-using ComputerPlus;
 
 namespace LPCallouts.Callouts
 {
@@ -101,11 +99,9 @@ namespace LPCallouts.Callouts
         public bool _player_at_scene = false;
         public bool _player_at_witness = false;
 
-        //Computer+
-        public Guid _callout_id;
-        public bool _cplus_active;
         public bool _arrived_at_witness = false;
         public bool _arrived_at_suspect = false;
+
         public Persona SuspectData;
 
         public override bool OnBeforeCalloutDisplayed()
@@ -132,8 +128,6 @@ namespace LPCallouts.Callouts
                 ErrorHandler.LogMessage(ex.ToString(), 777);
             }
 
-            _cplus_active = GameHandler.IsLSPDFRPluginRunning("ComputerPlus", new Version("1.3.0.0"));
-
             if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < GameHandler._minimumdistance || Game.LocalPlayer.Character.DistanceTo(_ve3_poi) > GameHandler.ini_radius)
             {
                 return false;
@@ -147,11 +141,6 @@ namespace LPCallouts.Callouts
 
                 GameHandler.DispatchAudio(_area._area, 1);
 
-                //Computer+
-                if (_cplus_active)
-                {
-                    _callout_id = CPlusFunctions.CreateCallout("Traffic accident with possible hit and run", "ASSIST", _ve3_poi, (int)EResponseType.Code_3, "Officer requires assistance");
-                }
             }
             return base.OnBeforeCalloutDisplayed();
         }
@@ -159,8 +148,6 @@ namespace LPCallouts.Callouts
         public override void OnCalloutDisplayed()
         {
             // Updates the callout's status to "Dispatched" when the player sees the callout on screen
-            if (_cplus_active)
-                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Dispatched);
             base.OnCalloutDisplayed();
         }
 
@@ -170,8 +157,6 @@ namespace LPCallouts.Callouts
             statusmachine = Globals.PlayerState.CALLED;
 
             // Updates the callout's status to "Unit Responding" when the player accepts
-            if (_cplus_active)
-                CPlusFunctions.SetCalloutStatusToUnitResponding(_callout_id);
 
             GameHandler.DispatchMessage(_area._dispatchtext + " " + _area._street);
 
@@ -241,8 +226,6 @@ namespace LPCallouts.Callouts
 
         public override void OnCalloutNotAccepted()
         {
-            if (_cplus_active)
-                CPlusFunctions.AssignCallToAIUnit(_callout_id);
             base.OnCalloutNotAccepted();
         }
 
@@ -366,11 +349,6 @@ namespace LPCallouts.Callouts
                             _blip_cop = _ped_cop.AttachBlip();
                             _blip_cop.Color = Color.Blue;
                             _blip_list.Add(_blip_cop);
-
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.SetCalloutStatusToAtScene(_callout_id);
-                            }
                             _player_at_scene = true;
                             statusmachine = Globals.PlayerState.TALK_COP;
                         }
@@ -424,13 +402,6 @@ namespace LPCallouts.Callouts
                                 _blip_witness.Alpha = 1.0f;
                                 _blip_witness.EnableRoute(System.Drawing.Color.Orange);
 
-                                //Computer+
-                                if (_cplus_active)
-                                {
-                                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Report of a crime that is connected to this accident, responding to witness at " + _street);
-                                    CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                                }
-
                                 statusmachine = Globals.PlayerState.TALK_WITNESS1;
                             }, FiberHandler._fiber_request);
                         }
@@ -439,11 +410,6 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.TALK_WITNESS1:
                         if (Game.LocalPlayer.Character.DistanceTo(_ped_witness.Position) < 30f && _arrived_at_witness == false)
                         {
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.At_Scene);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Making contact with witness");
-                            }
                             _player_at_witness = true;
                             _arrived_at_witness = true;
                         }
@@ -468,11 +434,6 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.TO_SUSPECT:
                         if (Game.LocalPlayer.Character.DistanceTo(_ped_suspect.Position) < 30f && _arrived_at_suspect == false)
                         {
-                            if (_cplus_active)
-                            {
-                                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.At_Scene);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Searching for possbile suspect");
-                            }
                             _arrived_at_suspect = true;
                         }
 
@@ -609,12 +570,6 @@ namespace LPCallouts.Callouts
         {
             if (CalloutActive)
             {
-                if (_cplus_active)
-                {
-                    // Changes the call's status to "Concluded" when the callout ends
-                    CPlusFunctions.AddUpdateToCallout(_callout_id, "Suspect has been arrested and is in custody");
-                    CPlusFunctions.ConcludeCallout(_callout_id);
-                }
                 GameHandler.CleanUp(this, _area._calloutid, ref _pursuit, _isarrested);
             }
             _area = null;
@@ -655,12 +610,6 @@ namespace LPCallouts.Callouts
                         _blip_civ02.Color = Color.Yellow;
                         _blip_list.Add(_blip_civ01);
                         _blip_list.Add(_blip_civ02);
-                        //Computer+
-                        if (_cplus_active)
-                        {
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Contact with officers on scene. One Victim, no information available about what happend");
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "Following up with questioning attendant crowd.");
-                        }
                         _mlog_loop1 = 5;
                         break;
                     case 5:
@@ -739,13 +688,6 @@ namespace LPCallouts.Callouts
                         break;
                     default:
                         _talking_civ02 = false;
-
-                        //Computer+
-                        if (_cplus_active)
-                        {
-                            CPlusFunctions.AddUpdateToCallout(_callout_id, "No ID of victim available. No witnesses at the moment");
-                        }
-
                         GameHandler.PlayerChat(5, Dialog);
                         _ped_civ2.Tasks.AchieveHeading(Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 13)._heading);
                         GameHandler.RemoveBlip(_blip_civ02, _blip_list);
@@ -793,18 +735,6 @@ namespace LPCallouts.Callouts
                         GameHandler.PlayerChat(3, Dialog + _suspect_location._areaname);
                         GameFiber.StartNew(delegate
                         {
-                            //Computer+
-                            if (_cplus_active)
-                            {
-                                Persona _victim = Functions.GetPersonaForPed(_ped_witness);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Witness Name: " + _victim.FullName);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Boat model that caused the accident: " + _veh_suspect.Model.Name + ", Color " + color1 + "/" + color2);
-                                CPlusFunctions.AddUpdateToCallout(_callout_id, "Accident was hit and run, responding to " + _suspect_location._areaname);
-                                CPlusFunctions.AddPedToCallout(_callout_id, _ped_suspect);
-                                CPlusFunctions.AddVehicleToCallout(_callout_id, _veh_suspect);
-                                CPlusFunctions.UpdateCalloutStatus(_callout_id, (int)ECallStatus.Unit_Responding);
-                            }
-
                             GameFiber.Wait(2000);
                             Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, heading to " + _suspect_location._areaname);
                             GameFiber.Wait(3000);
