@@ -485,7 +485,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_01.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_01.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -499,7 +499,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_02.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_02.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -513,7 +513,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_03.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_03.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -527,7 +527,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_04.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_04.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -541,7 +541,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_05.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_05.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -555,7 +555,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_06.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_06.wav"
 				});
 				
 				CalloutLocations.Add(new Globals.Scenery
@@ -569,7 +569,7 @@ namespace LPCallouts
 					_speedzone_radius = 80f,
 					_speedzone_speed = 8f,
 					_dispatchtext = "We have 10-15 at",
-					_audio = @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_07.wav"
+					_audio = @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_07.wav"
 				});
 				
 				#endregion Locations
@@ -10442,7 +10442,7 @@ namespace LPCallouts
 					_calloutid = 2,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hi " + GameHandler.ini_username + ", this crash seems to be a Hit and Run. There are tire skids in the middle of the road.",
+					_text = "Hi " + Globals.CharacterName + ", this crash seems to be a Hit and Run. There are tire skids in the middle of the road.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -10482,7 +10482,7 @@ namespace LPCallouts
 					_calloutid = 2,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hi, I'm " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Is everything fine?",
+					_text = "Hi, I'm " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Is everything fine?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11074,7 +11074,7 @@ namespace LPCallouts
 					_calloutid = 6,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello Guys. My name is " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Please describe what happened.",
+					_text = "Hello Guys. My name is " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Please describe what happened.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11458,7 +11458,7 @@ namespace LPCallouts
 					_calloutid = 8,
 					_contactid = 3,
 					_counter = 0,
-					_text = "Hello Sir. I'm officer " + GameHandler.ini_username + " of the " + GameHandler._dialog_dept.Remove(1, 7) +  ".Do you know what happened?",
+					_text = "Hello Sir. I'm officer " + Globals.CharacterName + " of the " + GameHandler._dialog_dept.Remove(1, 7) +  ".Do you know what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11618,7 +11618,7 @@ namespace LPCallouts
 					_calloutid = 9,
 					_contactid = 3,
 					_counter = 0,
-					_text = "Hello Sir. I'm officer " + GameHandler.ini_username + " of the  " + GameHandler._dialog_dept.Remove(1, 7) +  " . Do you know what happened?",
+					_text = "Hello Sir. I'm officer " + Globals.CharacterName + " of the  " + GameHandler._dialog_dept.Remove(1, 7) +  " . Do you know what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11690,7 +11690,7 @@ namespace LPCallouts
 					_calloutid = 10,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey " + GameHandler.ini_username + ", it appears to be a Hit and Run.",
+					_text = "Hey " + Globals.CharacterName + ", it appears to be a Hit and Run.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11826,7 +11826,7 @@ namespace LPCallouts
 					_calloutid = 11,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey " + GameHandler.ini_username + ", Seems like a Hit and Run.",
+					_text = "Hey " + Globals.CharacterName + ", Seems like a Hit and Run.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -11962,7 +11962,7 @@ namespace LPCallouts
 					_calloutid = 12,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey " + GameHandler.ini_username + ", Nope. Actually it is a Hit and Run.",
+					_text = "Hey " + Globals.CharacterName + ", Nope. Actually it is a Hit and Run.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12098,7 +12098,7 @@ namespace LPCallouts
 					_calloutid = 13,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey Officer " + GameHandler.ini_username + ", thanks for the fast response. According to the first infos I have, it seems to be a Hit and Run",
+					_text = "Hey Officer " + Globals.CharacterName + ", thanks for the fast response. According to the first infos I have, it seems to be a Hit and Run",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12138,7 +12138,7 @@ namespace LPCallouts
 					_calloutid = 13,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hi, my name is " + GameHandler.ini_username  + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
+					_text = "Hi, my name is " + Globals.CharacterName  + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12266,7 +12266,7 @@ namespace LPCallouts
 					_calloutid = 13,
 					_contactid = 4,
 					_counter = 0,
-					_text = "Hey there, I'm officer " + GameHandler.ini_username + ". It seems that your car is fine. Why are you here?",
+					_text = "Hey there, I'm officer " + Globals.CharacterName + ". It seems that your car is fine. Why are you here?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12338,7 +12338,7 @@ namespace LPCallouts
 					_calloutid = 14,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hi " + GameHandler.ini_username + ", Yeah, its a miracle that there is not more damage.Looks like a Hit and Run, but I'm not sure",
+					_text = "Hi " + Globals.CharacterName + ", Yeah, its a miracle that there is not more damage.Looks like a Hit and Run, but I'm not sure",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12378,7 +12378,7 @@ namespace LPCallouts
 					_calloutid = 14,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello, I'm officer " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Are you able to answer some questions?",
+					_text = "Hello, I'm officer " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Are you able to answer some questions?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12506,7 +12506,7 @@ namespace LPCallouts
 					_calloutid = 14,
 					_contactid = 4,
 					_counter = 0,
-					_text = "Hello, my name is officer " + GameHandler.ini_username + ". Can you tell me what you doing here?",
+					_text = "Hello, my name is officer " + Globals.CharacterName + ". Can you tell me what you doing here?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12578,7 +12578,7 @@ namespace LPCallouts
 					_calloutid = 15,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey " + GameHandler.ini_username + ". You're right. No issue here a long time.",
+					_text = "Hey " + Globals.CharacterName + ". You're right. No issue here a long time.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12618,7 +12618,7 @@ namespace LPCallouts
 					_calloutid = 15,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hey, my name is " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Are you okay?",
+					_text = "Hey, my name is " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Are you okay?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12746,7 +12746,7 @@ namespace LPCallouts
 					_calloutid = 15,
 					_contactid = 4,
 					_counter = 0,
-					_text = "Hey there, I'm officer " + GameHandler.ini_username + ". Are you the 911 caller?",
+					_text = "Hey there, I'm officer " + Globals.CharacterName + ". Are you the 911 caller?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12818,7 +12818,7 @@ namespace LPCallouts
 					_calloutid = 16,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hello " + GameHandler.ini_username + ", did dispatch inform you?",
+					_text = "Hello " + Globals.CharacterName + ", did dispatch inform you?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12858,7 +12858,7 @@ namespace LPCallouts
 					_calloutid = 16,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hi, I'm office " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
+					_text = "Hi, I'm office " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -12986,7 +12986,7 @@ namespace LPCallouts
 					_calloutid = 16,
 					_contactid = 4,
 					_counter = 0,
-					_text = "Hi, my name is " + GameHandler.ini_username + " form the " + GameHandler._dialog_dept.Remove(1, 7) + " . Are you okay?",
+					_text = "Hi, my name is " + Globals.CharacterName + " form the " + GameHandler._dialog_dept.Remove(1, 7) + " . Are you okay?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -13282,7 +13282,7 @@ namespace LPCallouts
 					_calloutid = 18,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello. My name is " + GameHandler.ini_username + ". I'm from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you know what happened?",
+					_text = "Hello. My name is " + Globals.CharacterName + ". I'm from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you know what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -13906,7 +13906,7 @@ namespace LPCallouts
 					_calloutid = 23,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Hey " + GameHandler.ini_username + ", nice to see you. Yes the first one today.",
+					_text = "Hey " + Globals.CharacterName + ", nice to see you. Yes the first one today.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -13946,7 +13946,7 @@ namespace LPCallouts
 					_calloutid = 23,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello Ma'am. I'm officer " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ".Can you describe what happened?",
+					_text = "Hello Ma'am. I'm officer " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ".Can you describe what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14066,7 +14066,7 @@ namespace LPCallouts
 					_calloutid = 24,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello Miss. My name is " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". What happened?",
+					_text = "Hello Miss. My name is " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". What happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14186,7 +14186,7 @@ namespace LPCallouts
 					_calloutid = 25,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hi Sir. My name is " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you want to tell me anything?",
+					_text = "Hi Sir. My name is " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you want to tell me anything?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14194,7 +14194,7 @@ namespace LPCallouts
 					_calloutid = 25,
 					_contactid = 2,
 					_counter = 1,
-					_text = "Yes, officer " + GameHandler.ini_username + ". I called 911!",
+					_text = "Yes, officer " + Globals.CharacterName + ". I called 911!",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14306,7 +14306,7 @@ namespace LPCallouts
 					_calloutid = 26,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello Miss. I'm officer " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you know anything about the accident?",
+					_text = "Hello Miss. I'm officer " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Do you know anything about the accident?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14386,7 +14386,7 @@ namespace LPCallouts
 					_calloutid = 27,
 					_contactid = 1,
 					_counter = 1,
-					_text = "Oh hi " + GameHandler.ini_username + ". I thought you are on vacation?",
+					_text = "Oh hi " + Globals.CharacterName + ". I thought you are on vacation?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14426,7 +14426,7 @@ namespace LPCallouts
 					_calloutid = 27,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hello Sir. My name is " + GameHandler.ini_username + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
+					_text = "Hello Sir. My name is " + Globals.CharacterName + " from the " + GameHandler._dialog_dept.Remove(1, 7) + ". Can you tell me what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14434,7 +14434,7 @@ namespace LPCallouts
 					_calloutid = 27,
 					_contactid = 2,
 					_counter = 1,
-					_text = "Sure, officer " + GameHandler.ini_username + ". I saw the accident and called 9-1-1.",
+					_text = "Sure, officer " + Globals.CharacterName + ". I saw the accident and called 9-1-1.",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -14666,7 +14666,7 @@ namespace LPCallouts
 					_calloutid = 29,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hey Sir. My name is " + GameHandler.ini_username + ". Can you tell what happened?",
+					_text = "Hey Sir. My name is " + Globals.CharacterName + ". Can you tell what happened?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs
@@ -15146,7 +15146,7 @@ namespace LPCallouts
 					_calloutid = 32,
 					_contactid = 2,
 					_counter = 0,
-					_text = "Hi. I'm officer " + GameHandler.ini_username + ". Who is responsible for this party?",
+					_text = "Hi. I'm officer " + Globals.CharacterName + ". Who is responsible for this party?",
 				});		
 				
 				DialogList.Add(new Globals.Dialogs

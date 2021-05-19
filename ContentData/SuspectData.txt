@@ -51,31 +51,31 @@ LOCATIONS	Callouttype	Suspect Ped Position	Suspect Ped Heading	Suspect Vehicle P
 1	_Water	-1074.430f, -939.539f, 2.362f	148.279f	-1067.520f, -958.105f, -0.099f	118.749f	White	IndianRed	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_05
 1	_Water	-1130.453f, -1031.726f, 2.150f	50.133f	-1144.562f, -1020.402f, 0.016f	124.372f	Black	Lime	0f,0f,0f	0f	0f,0f,0f	0f	none	none	-1022.638f, -1068.662f, -0.236f	Vespuccu Canals	AREA_VESPUCCI_CANALS_06
 																
-HUMANS	Modelname	AnimationDir	AnimationName	AnimationFlags												
-_Rich	a_m_y_vinewood_01	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_m_y_vinewood_02	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_m_y_vinewood_03	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_m_y_vinewood_04	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_f_y_vinewood_01	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_f_y_vinewood_02	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_f_y_vinewood_03	missmic2@enemy	smoking_loop	Loop												
-_Rich	a_f_y_vinewood_04	missmic2@enemy	smoking_loop	Loop												
-_Normal	u_m_y_party_01	missmic2@enemy	smoking_loop	Loop												
-_Normal	u_m_m_partytarget	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_m_m_eastsa_02	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_m_m_soucent_04	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_f_y_eastsa_03	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_f_y_soucent_03	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_f_m_bevhills_01	missmic2@enemy	smoking_loop	Loop												
-_Normal	a_f_m_ktown_01	missmic2@enemy	smoking_loop	Loop												
-_County	a_f_m_eastsa_01	missmic2@enemy	smoking_loop	Loop												
-_County	a_m_m_hillbilly_01	missmic2@enemy	smoking_loop	Loop												
-_County	a_m_m_mexlabor_01	missmic2@enemy	smoking_loop	Loop												
-_County	a_m_y_salton_01	missmic2@enemy	smoking_loop	Loop												
-_County	s_f_m_sweatshop_01	missmic2@enemy	smoking_loop	Loop												
-_County	s_m_m_autoshop_01	missmic2@enemy	smoking_loop	Loop												
-_County	g_f_y_families_01	missmic2@enemy	smoking_loop	Loop												
-_County	s_m_m_trucker_01	missmic2@enemy	smoking_loop	Loop												
+HUMANS	Modelname	Scenario											
+_Rich	a_m_y_vinewood_01	WORLD_HUMAN_SMOKING										
+_Rich	a_m_y_vinewood_02	WORLD_HUMAN_SMOKING									
+_Rich	a_m_y_vinewood_03	WORLD_HUMAN_SMOKING												
+_Rich	a_m_y_vinewood_04	WORLD_HUMAN_SMOKING											
+_Rich	a_f_y_vinewood_01	WORLD_HUMAN_SMOKING											
+_Rich	a_f_y_vinewood_02	WORLD_HUMAN_SMOKING										
+_Rich	a_f_y_vinewood_03	WORLD_HUMAN_SMOKING										
+_Rich	a_f_y_vinewood_04	WORLD_HUMAN_SMOKING								
+_Normal	u_m_y_party_01	WORLD_HUMAN_SMOKING										
+_Normal	u_m_m_partytarget	WORLD_HUMAN_SMOKING										
+_Normal	a_m_m_eastsa_02	WORLD_HUMAN_SMOKING											
+_Normal	a_m_m_soucent_04	WORLD_HUMAN_SMOKING										
+_Normal	a_f_y_eastsa_03	WORLD_HUMAN_SMOKING						
+_Normal	a_f_y_soucent_03	WORLD_HUMAN_SMOKING									
+_Normal	a_f_m_bevhills_01	WORLD_HUMAN_SMOKING												
+_Normal	a_f_m_ktown_01	WORLD_HUMAN_SMOKING												
+_County	a_f_m_eastsa_01	WORLD_HUMAN_SMOKING										
+_County	a_m_m_hillbilly_01	WORLD_HUMAN_SMOKING										
+_County	a_m_m_mexlabor_01	WORLD_HUMAN_SMOKING									
+_County	a_m_y_salton_01	WORLD_HUMAN_SMOKING							
+_County	s_f_m_sweatshop_01	WORLD_HUMAN_SMOKING									
+_County	s_m_m_autoshop_01	WORLD_HUMAN_SMOKING										
+_County	g_f_y_families_01	WORLD_HUMAN_SMOKING									
+_County	s_m_m_trucker_01	WORLD_HUMAN_SMOKING										
 																
 VEHICLES	Modelname															
 _Rich	REAPER															
@@ -120,125 +120,125 @@ _Water	SQUALO
 _Water	SUNTRAP															
 																
 DIALOGS	Dialog ID	Counter	Text													
-_Default	1	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do you own the vehicle in your driveway?"													
+_Default	1	0	"~b~"" + Globals.CharacterName + "":~w~ Hello. Do you own the vehicle in your driveway?"													
 _Default	1	1	~r~Suspect:~w~ Yes, officer, I do.													
-_Default	1	2	"~b~"" + GameHandler.ini_username + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
+_Default	1	2	"~b~"" + Globals.CharacterName + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
 _Default	1	3	~r~Suspect:~w~ Am I being detained, officer?													
-_Default	1	4	"~b~"" + GameHandler.ini_username + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
+_Default	1	4	"~b~"" + Globals.CharacterName + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
 _Default	1	5	~r~Suspect:~w~ Well, what's happening? Is there a problem with my vehicle?													
-_Default	1	6	"~b~"" + GameHandler.ini_username + "":~w~ Yes. It matches the description of a vehicle involved in a Hit and Run."													
+_Default	1	6	"~b~"" + Globals.CharacterName + "":~w~ Yes. It matches the description of a vehicle involved in a Hit and Run."													
 _Default	1	7	~r~Suspect:~w~ Well, I was home all day. Your source must have a misunderstanding or something.													
-_Default	1	8	"~b~"" + GameHandler.ini_username + "":~w~ Can I take a closer look at your vehicle?"													
+_Default	1	8	"~b~"" + Globals.CharacterName + "":~w~ Can I take a closer look at your vehicle?"													
 _Default	1	9	~r~Suspect:~w~ Ugh, you got me. I hit the person and drove off, I didn't know what to do. I'm so sorry, don't arrest me please!													
-_Default	1	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
+_Default	1	10	"~b~"" + Globals.CharacterName + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
 _Default	1	11	~r~Suspect:~w~ Fuck this! I ain't going' back to jail.													
-_Default	2	0	"~b~"" + GameHandler.ini_username + "":~w~ Hey there. Is that your vehicle in the driveway?"													
+_Default	2	0	"~b~"" + Globals.CharacterName + "":~w~ Hey there. Is that your vehicle in the driveway?"													
 _Default	2	1	r~Suspect:~w~ Yes, it is. Is everything okay?													
-_Default	2	2	"~b~"" + GameHandler.ini_username + "":~w~ Can you tell me where you were about 15 minutes ago? "													
+_Default	2	2	"~b~"" + Globals.CharacterName + "":~w~ Can you tell me where you were about 15 minutes ago? "													
 _Default	2	3	~r~Suspect:~w~ Can you tell me what is going on? Do I need a lawyer?													
-_Default	2	4	"~b~"" + GameHandler.ini_username + "":~w~Your vehicle matches the description of a vehicle involved in a Hit and Run"													
+_Default	2	4	"~b~"" + Globals.CharacterName + "":~w~Your vehicle matches the description of a vehicle involved in a Hit and Run"													
 _Default	2	5	~r~Suspect:~w~ Bullshit! I was home all day!													
-_Default	2	6	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained and will have to come down to the station with me."													
+_Default	2	6	"~b~"" + Globals.CharacterName + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained and will have to come down to the station with me."													
 _Default	2	7	~r~Suspect:~w~ No! I'm not doing that!													
-_Default	2	8	"~b~"" + GameHandler.ini_username + "":~w~ Well unfortunately, at this point, you have no choice. "													
+_Default	2	8	"~b~"" + Globals.CharacterName + "":~w~ Well unfortunately, at this point, you have no choice. "													
 _Default	2	9	~r~Suspect:~w~ Stupid cops, stupid justice system. Go screw yourself!													
-_Default	2	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Go ahead and put your hands where I can see them."													
+_Default	2	10	"~b~"" + Globals.CharacterName + "":~w~ Okay. Go ahead and put your hands where I can see them."													
 _Default	2	11	~r~Suspect:~w~ Screw this! Try to catch me pig!													
-_Default	3	0	"~b~"" + GameHandler.ini_username + "":~w~ Is that your vehicle in the driveway?"													
+_Default	3	0	"~b~"" + Globals.CharacterName + "":~w~ Is that your vehicle in the driveway?"													
 _Default	3	1	~r~Suspect:~w~ Hello Officer. Yes, it is.													
-_Default	3	2	"~b~"" + GameHandler.ini_username + "":~w~: Any reason for so much vehicle damage?"													
+_Default	3	2	"~b~"" + Globals.CharacterName + "":~w~: Any reason for so much vehicle damage?"													
 _Default	3	3	~r~Suspect:~w~ I got in an accident a few days ago. It's in the process of being fixed, officer.													
-_Default	3	4	"~b~"" + GameHandler.ini_username + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
+_Default	3	4	"~b~"" + Globals.CharacterName + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
 _Default	3	5	~r~Suspect:~w~ No, I wasn't involved in an accident today. Why do you ask?													
-_Default	3	6	"~b~"" + GameHandler.ini_username + "":~w~ This vehicle matches the description of a vehicle involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
+_Default	3	6	"~b~"" + Globals.CharacterName + "":~w~ This vehicle matches the description of a vehicle involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
 _Default	3	7	~r~Suspect:~w~ I am clean. I didn't get in an accident. Please leave now. You aren't welcomed at my home.													
-_Default	3	8	"~b~"" + GameHandler.ini_username + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
+_Default	3	8	"~b~"" + Globals.CharacterName + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
 _Default	3	9	~r~Suspect:~w~ Ugh, fine! The person got in my way. I couldn't stop in time. It wasn't my fault, officer, it was theirs...													
-_Default	3	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
+_Default	3	10	"~b~"" + Globals.CharacterName + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
 _Default	3	11	~r~Suspect:~w~ I'm not going back to jail! Stupid pig!													
-_Default	4	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
+_Default	4	0	"~b~"" + Globals.CharacterName + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
 _Default	4	1	~r~Suspect:~w~ No, sorry. I'm in a hurry!													
-_Default	4	2	"~b~"" + GameHandler.ini_username + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your vehicle?"													
+_Default	4	2	"~b~"" + Globals.CharacterName + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your vehicle?"													
 _Default	4	3	~r~Suspect:~w~ As I said, I don't have time! Please leave!													
-_Default	4	4	"~b~"" + GameHandler.ini_username + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your vehicle?"													
+_Default	4	4	"~b~"" + Globals.CharacterName + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your vehicle?"													
 _Default	4	5	~r~Suspect:~w~ Because some bastard hit me, and now you are going to arrest me, when they caused it!													
-_Default	4	6	"~b~"" + GameHandler.ini_username + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
+_Default	4	6	"~b~"" + Globals.CharacterName + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
 _Default	4	7	~r~Suspect:~w~ No, I am staying right here.													
-_Default	4	8	"~b~"" + GameHandler.ini_username + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
+_Default	4	8	"~b~"" + Globals.CharacterName + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
 _Default	4	9	~r~Suspect:~w~ This isn't fair!.													
-_Default	4	10	"~b~"" + GameHandler.ini_username + "":~w~ Last chance. Put your hands where I can see them."													
+_Default	4	10	"~b~"" + Globals.CharacterName + "":~w~ Last chance. Put your hands where I can see them."													
 _Default	4	11	~r~Suspect:~w~ No, this isn't fair I said!													
-_Default	5	0	"~b~"" + GameHandler.ini_username + "":~w~ Do me a favor and keep your hands where I can see them. Is that your vehicle parked over there?"													
+_Default	5	0	"~b~"" + Globals.CharacterName + "":~w~ Do me a favor and keep your hands where I can see them. Is that your vehicle parked over there?"													
 _Default	5	1	~r~Suspect:~w~ ..Yes officer, it is. Is everything alright?													
-_Default	5	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
+_Default	5	2	"~b~"" + Globals.CharacterName + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
 _Default	5	3	~r~Suspect:~w~ Can you tell me why you're acting like a dick?													
-_Default	5	4	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
+_Default	5	4	"~b~"" + Globals.CharacterName + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
 _Default	5	5	~r~Suspect:~w~ I was cruising around! I was enjoying my day off and just got done pulling in. What the hell is going on?!													
-_Default	5	6	"~b~"" + GameHandler.ini_username + "":~w~ Did you happen to hit someone while you were out?"													
+_Default	5	6	"~b~"" + Globals.CharacterName + "":~w~ Did you happen to hit someone while you were out?"													
 _Default	5	7	~r~Suspect:~w~ What?													
-_Default	5	8	"~b~"" + GameHandler.ini_username + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
+_Default	5	8	"~b~"" + Globals.CharacterName + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
 _Default	5	9	~r~Suspect:~w~ Maybe. I would like to talk to my lawyer.													
-_Default	5	10	"~b~"" + GameHandler.ini_username + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
+_Default	5	10	"~b~"" + Globals.CharacterName + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
 _Default	5	11	~r~Suspect:~w~ Fuck you, bitch. Catch me if you can!													
-_Water	6	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do you own the boat anchored over there?"													
+_Water	6	0	"~b~"" + Globals.CharacterName + "":~w~ Hello. Do you own the boat anchored over there?"													
 _Water	6	1	~r~Suspect:~w~ Yes, officer, I do.													
-_Water	6	2	"~b~"" + GameHandler.ini_username + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
+_Water	6	2	"~b~"" + Globals.CharacterName + "":~w~: Okay. Can you tell me where you were about 15 minutes ago?"													
 _Water	6	3	~r~Suspect:~w~ Am I being detained, officer?													
-_Water	6	4	"~b~"" + GameHandler.ini_username + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
+_Water	6	4	"~b~"" + Globals.CharacterName + "":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?"													
 _Water	6	5	~r~Suspect:~w~ Well, whats happening? Is there a problem with my boat?													
-_Water	6	6	"~b~"" + GameHandler.ini_username + "":~w~ Yes. It matches the description of a watercraft involved in a Hit and Run."													
+_Water	6	6	"~b~"" + Globals.CharacterName + "":~w~ Yes. It matches the description of a watercraft involved in a Hit and Run."													
 _Water	6	7	~r~Suspect:~w~ Well, I was home all day. Your source must have a misunderstanding or something.													
-_Water	6	8	"~b~"" + GameHandler.ini_username + "":~w~ Can I take a closer look at your boat?"													
+_Water	6	8	"~b~"" + Globals.CharacterName + "":~w~ Can I take a closer look at your boat?"													
 _Water	6	9	~r~Suspect:~w~ Ugh, you got me. I hit the person and sped off, I didn't know what to do. I'm so sorry, don't arrest me please!													
-_Water	6	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
+_Water	6	10	"~b~"" + Globals.CharacterName + "":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please."													
 _Water	6	11	~r~Suspect:~w~ Fuck this! I ain't going back to jail.													
-_Water	7	0	"~b~"" + GameHandler.ini_username + "":~w~ Hey there. Is that your boat anchored over there?"													
+_Water	7	0	"~b~"" + Globals.CharacterName + "":~w~ Hey there. Is that your boat anchored over there?"													
 _Water	7	1	~r~Suspect:~w~ Yes, it is. Is everything okay?													
-_Water	7	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were about 15 minutes ago?"													
+_Water	7	2	"~b~"" + Globals.CharacterName + "":~w~: Can you tell me where you were about 15 minutes ago?"													
 _Water	7	3	~r~Suspect:~w~ Can you tell me what is going on? Do I need a lawyer?													
-_Water	7	4	"~b~"" + GameHandler.ini_username + "":~w~Your boat matches the description of a watercraft involved in a Hit and Run"													
+_Water	7	4	"~b~"" + Globals.CharacterName + "":~w~Your boat matches the description of a watercraft involved in a Hit and Run"													
 _Water	7	5	~r~Suspect:~w~ Bullshit! I was home all day!													
-_Water	7	6	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained, and will have to come down to the station with me."													
+_Water	7	6	"~b~"" + Globals.CharacterName + "":~w~ Okay. We can sort this out at the station. Currently, you are being detained, and will have to come down to the station with me."													
 _Water	7	7	~r~Suspect:~w~ No! I am not doing that!													
-_Water	7	8	"~b~"" + GameHandler.ini_username + "":~w~ Well unfortunately, at this point, you have no choice."													
+_Water	7	8	"~b~"" + Globals.CharacterName + "":~w~ Well unfortunately, at this point, you have no choice."													
 _Water	7	9	~r~Suspect:~w~ Stupid cops, stupid justice system. Go screw yourself.													
-_Water	7	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Go ahead and put your hands where I can see them."													
+_Water	7	10	"~b~"" + Globals.CharacterName + "":~w~ Okay. Go ahead and put your hands where I can see them."													
 _Water	7	11	~r~Suspect:~w~ Screw this. Try to catch me pig!													
-_Water	8	0	"~b~"" + GameHandler.ini_username + "":~w~ Is that your boat anchored over there?"													
+_Water	8	0	"~b~"" + Globals.CharacterName + "":~w~ Is that your boat anchored over there?"													
 _Water	8	1	~r~Suspect:~w~ Hello Officer. Yes, it is.													
-_Water	8	2	"~b~"" + GameHandler.ini_username + "":~w~: Any reason for so much damage to your boat?"													
+_Water	8	2	"~b~"" + Globals.CharacterName + "":~w~: Any reason for so much damage to your boat?"													
 _Water	8	3	~r~Suspect:~w~ I got in an accident a few days ago. It's in the process of being fixed, officer.													
-_Water	8	4	"~b~"" + GameHandler.ini_username + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
+_Water	8	4	"~b~"" + Globals.CharacterName + "":~w~ Oh, okay. Did you happen to get in an accident today?"													
 _Water	8	5	~r~Suspect:~w~ No, I wasn't involved in an accident today. Why do you ask?													
-_Water	8	6	"~b~"" + GameHandler.ini_username + "":~w~ Your boat matches the description of a watercraft involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
+_Water	8	6	"~b~"" + Globals.CharacterName + "":~w~ Your boat matches the description of a watercraft involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?"													
 _Water	8	7	~r~Suspect:~w~ I am clean. I didn't get in an accident. Please leave now. I don't want to answer any more questions.													
-_Water	8	8	"~b~"" + GameHandler.ini_username + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
+_Water	8	8	"~b~"" + Globals.CharacterName + "":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?"													
 _Water	8	9	~r~Suspect:~w~ Ugh, fine! The person got in my way. I couldn't stop in time. It wast my fault, officer, it was theirs...													
-_Water	8	10	"~b~"" + GameHandler.ini_username + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
+_Water	8	10	"~b~"" + Globals.CharacterName + "":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them."													
 _Water	8	11	~r~Suspect:~w~ I'm not going back to jail! Stupid pig!													
-_Water	9	0	"~b~"" + GameHandler.ini_username + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
+_Water	9	0	"~b~"" + Globals.CharacterName + "":~w~ Hello. Do have a minute? I would like to ask you some questions."													
 _Water	9	1	~r~Suspect:~w~ No, sorry. I'm in a hurry!													
-_Water	9	2	"~b~"" + GameHandler.ini_username + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your boat?"													
+_Water	9	2	"~b~"" + Globals.CharacterName + "":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your boat?"													
 _Water	9	3	~r~Suspect:~w~ As I said, I don't have time! Please leave!													
-_Water	9	4	"~b~"" + GameHandler.ini_username + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your boat?"													
+_Water	9	4	"~b~"" + Globals.CharacterName + "":~w~ I am not leaving until you answer my question. Why is there so much damage to your boat?"													
 _Water	9	5	~r~Suspect:~w~ Because some bastard got in front of me, and now you are going to arrest me, when they caused it!													
-_Water	9	6	"~b~"" + GameHandler.ini_username + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
+_Water	9	6	"~b~"" + Globals.CharacterName + "":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning."													
 _Water	9	7	~r~Suspect:~w~ No, I am staying right here.													
-_Water	9	8	"~b~"" + GameHandler.ini_username + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
+_Water	9	8	"~b~"" + Globals.CharacterName + "":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them."													
 _Water	9	9	~r~Suspect:~w~ This isn't fair!.													
-_Water	9	10	"~b~"" + GameHandler.ini_username + "":~w~ Last chance. Put your hands where I can see them."													
+_Water	9	10	"~b~"" + Globals.CharacterName + "":~w~ Last chance. Put your hands where I can see them."													
 _Water	9	11	~r~Suspect:~w~ No, this isn't fair I said!													
-_Water	10	0	"~b~"" + GameHandler.ini_username + "":~w~ Do me a favor and keep your hands where I can see them. Is that your boat over there?"													
+_Water	10	0	"~b~"" + Globals.CharacterName + "":~w~ Do me a favor and keep your hands where I can see them. Is that your boat over there?"													
 _Water	10	1	~r~Suspect:~w~ ..Yes officer, it is. Is everything alright?													
-_Water	10	2	"~b~"" + GameHandler.ini_username + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
+_Water	10	2	"~b~"" + Globals.CharacterName + "":~w~: Can you tell me where you were approximately 20 minutes ago?"													
 _Water	10	3	"~r~Suspect:~w~ Can you tell me why you're acting like a dick?"""													
-_Water	10	4	"~b~"" + GameHandler.ini_username + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
+_Water	10	4	"~b~"" + Globals.CharacterName + "":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?"													
 _Water	10	5	~r~Suspect:~w~ I was cruising around! I was enjoying my day off and just got done pulling in. What the hell is going on?!													
-_Water	10	6	"~b~"" + GameHandler.ini_username + "":~w~ Did you happen to hit someone while you were out?"													
+_Water	10	6	"~b~"" + Globals.CharacterName + "":~w~ Did you happen to hit someone while you were out?"													
 _Water	10	7	~r~Suspect:~w~ What?													
-_Water	10	8	"~b~"" + GameHandler.ini_username + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
+_Water	10	8	"~b~"" + Globals.CharacterName + "":~w~ Don't act like nothing has happened. Last chance, did you hit a person?"													
 _Water	10	9	~r~Suspect:~w~ Maybe. I would like to talk to my lawyer.													
-_Water	10	10	"~b~"" + GameHandler.ini_username + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
+_Water	10	10	"~b~"" + Globals.CharacterName + "":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them."													
 _Water	10	11	~r~Suspect:~w~ Fuck you, bitch. Catch me if you can!													
 _NoSuspect	11	0	Hey partner, looks like you found the car I was looking for.													
 _NoSuspect	11	1	Hi, yeah, i was doing my patrol round when i saw it there.													

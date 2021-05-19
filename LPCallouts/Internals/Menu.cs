@@ -320,7 +320,7 @@ namespace LPCallouts.Menu
                 GameHandler._dialog_dept = GameHandler._dept_sapr;
             }
             GameHandler.WriteIniValue(_selected_dept);
-            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 DIV_" + GameHandler.ini_division + " " + GameHandler.ini_unittype + " BEAT_" + GameHandler.ini_beat + " LPC_IS DIV_10 DIV_08");
+            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 DIV_" + GameHandler.ini_division_p + " " + GameHandler.ini_unittype_p + " BEAT_" + GameHandler.ini_beat_p + " LPC_IS DIV_10 DIV_08");
         }
 
         private static void _settings_OnCheckboxChange(UIMenu sender, UIMenuCheckboxItem checkbox, bool Checked)

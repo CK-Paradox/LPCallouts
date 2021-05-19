@@ -159,7 +159,7 @@ namespace LPCallouts.Callouts
                 {
                     GameHandler.DispatchMessage("Location " + _area._street + ". It should be the party from before.");
                     GameFiber.Wait(2000);
-                    Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. I will take care about this.");
+                    Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. I will take care about this.");
                     GameFiber.Wait(2000);
                     GameHandler.DispatchMessage("10-4.");
                     Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 PROCEED_WITH_CAUTION_ASSORTED");
@@ -304,7 +304,7 @@ namespace LPCallouts.Callouts
 
                             _playmusic = true;
                         }
-                        _audio_ambient = Bass.BASS_StreamCreateFile(_audiopath + @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\crowd.wav", 0L, 0L, BASSFlag.BASS_DEFAULT);
+                        _audio_ambient = Bass.BASS_StreamCreateFile(_audiopath + @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\crowd.wav", 0L, 0L, BASSFlag.BASS_DEFAULT);
                         if (_audio_ambient != 0)
                         {
                             // play the channel
@@ -393,7 +393,7 @@ namespace LPCallouts.Callouts
                                 Game.LocalPlayer.Character.Tasks.PlayAnimation("mp_doorbell", "ring_bell_a", 1f, AnimationFlags.None);
                                 GameFiber.Wait(1100);
                                 string _audiopath = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
-                                _audio_doorbell = Bass.BASS_StreamCreateFile(_audiopath + @"\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\doorbell.wav", 0L, 0L, BASSFlag.BASS_DEFAULT);
+                                _audio_doorbell = Bass.BASS_StreamCreateFile(_audiopath + @"\lspdfr\audio\LPCallouts Audio\NoiseComplaint\doorbell.wav", 0L, 0L, BASSFlag.BASS_DEFAULT);
                                 if (_audio_doorbell != 0)
                                 {
                                     Bass.BASS_ChannelSetAttribute(_audio_doorbell, BASSAttribute.BASS_ATTRIB_VOL, 0.9f);

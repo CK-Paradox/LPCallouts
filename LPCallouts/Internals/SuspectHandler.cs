@@ -191,12 +191,13 @@ namespace LPCallouts.Internals
 
             GameFiber.StartNew(delegate
             {
+                Game.LocalPlayer.Character.Tasks.PlayAnimation("random@arrests", "generic_radio_chatter", 1f, AnimationFlags.UpperBodyOnly | AnimationFlags.SecondaryTask);
                 GameFiber.Wait(2000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, can i get a 10-28");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, can i get a 10-28");
                 GameFiber.Wait(3000);
                 GameHandler.DispatchMessage("10-4, go ahead.");
                 GameFiber.Wait(3000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate ~y~" + LicencePlate);
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate ~y~" + LicencePlate);
                 Functions.PlayScannerAudio("TARGET_VEHICLE_LICENCE_PLATE " + Audio + "REPORT_RESPONSE_COPY_02");
                 GameHandler.DispatchMessage("10-12");
                 GameFiber.Wait(5000);
@@ -206,12 +207,12 @@ namespace LPCallouts.Internals
 
                 GameHandler.DispatchMessage("I have a vehicle match. The owner is ~y~" + Name + "~w~, and lives at ~y~" + _street);
                 GameFiber.Wait(3000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Show me 10-76 Code 2.");
+                Game.LocalPlayer.Character.Tasks.PlayAnimation("random@arrests", "generic_radio_chatter", 1f, AnimationFlags.UpperBodyOnly | AnimationFlags.SecondaryTask);
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. Show me 10-76 Code 2.");
                 GameFiber.Wait(3000);
                 GameHandler.DispatchMessage("10-4. Showing you 10-76. Respond to ~y~" + _street + "~w~ Code 2.");
                 Marker.Alpha = 1.0f;
                 Marker.EnableRoute(System.Drawing.Color.Yellow);
-
                 GameFiber.Yield();
             }, "Suspect Location Data");
         }
@@ -222,23 +223,26 @@ namespace LPCallouts.Internals
 
             GameFiber.StartNew(delegate
             {
+                Game.LocalPlayer.Character.Tasks.PlayAnimation("random@arrests", "generic_radio_chatter", 1f, AnimationFlags.UpperBodyOnly | AnimationFlags.SecondaryTask);
                 GameFiber.Wait(2000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, can i get a 10-28");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, can i get a 10-28");
                 GameFiber.Wait(3000);
                 GameHandler.DispatchMessage("10-4, go ahead.");
                 GameFiber.Wait(3000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate ~y~" + LicencePlate);
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate ~y~" + LicencePlate);
                 Functions.PlayScannerAudio("TARGET_VEHICLE_LICENCE_PLATE " + Audio + "REPORT_RESPONSE_COPY_02");
                 GameHandler.DispatchMessage("10-12");
                 GameFiber.Wait(7000);
 
                 GameHandler.DispatchMessage("Be Advised! Vehicle returned as: ~r~ STOLEN");
                 GameFiber.Wait(2000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Can i get a BOLO on that Vehicle?");
+                Game.LocalPlayer.Character.Tasks.PlayAnimation("random@arrests", "generic_radio_chatter", 1f, AnimationFlags.UpperBodyOnly | AnimationFlags.SecondaryTask);
+                GameFiber.Wait(2000);
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. Can i get a BOLO on that Vehicle?");
                 GameFiber.Wait(3000);
                 GameHandler.DispatchMessage("10-4. Informing all Units.");
                 GameFiber.Wait(3000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ I will search the surrounding area.");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ I will search the surrounding area.");
                 GameFiber.Wait(2000);
                 GameHandler.DispatchMessage("10-4.");
                 Game.DisplaySubtitle("Search the surrounding area for the suspect vehicle");
@@ -252,12 +256,13 @@ namespace LPCallouts.Internals
 
             GameFiber.StartNew(delegate
                 {
+                    Game.LocalPlayer.Character.Tasks.PlayAnimation("random@arrests", "generic_radio_chatter", 1f, AnimationFlags.UpperBodyOnly | AnimationFlags.SecondaryTask);
                     GameFiber.Wait(2000);
-                    Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, i need a 10-28 on a partial plate.");
+                    Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, i need a 10-28 on a partial plate.");
                     GameFiber.Wait(3000);
                     GameHandler.DispatchMessage("10-4, go ahead.");
                     GameFiber.Wait(3000);
-                    Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate contains ~y~" + LicencePlate);
+                    Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ The vehicle is going to be a ~y~" + CarType + "~w~, license plate contains ~y~" + LicencePlate);
                     GameFiber.Wait(3000);
                     Functions.PlayScannerAudio("TARGET_VEHICLE_LICENCE_PLATE " + Audio + "REPORT_RESPONSE_COPY_02");
                     GameHandler.DispatchMessage("10-12, running...");
@@ -334,15 +339,11 @@ namespace LPCallouts.Internals
             Person = new Ped(PersonData._modelname, Location._ped_position, Location._ped_heading);
             Person.IsPersistent = true;
             Person.BlockPermanentEvents = true;
-            Person.Tasks.PlayAnimation(PersonData._animdir, PersonData._animname, 1f, PersonData._animflag);
+            NativeFunction.Natives.TASK_START_SCENARIO_IN_PLACE(Person, PersonData._scenario, 0, true);
             Marker = Person.AttachBlip();
             Marker.Alpha = 0.0f;
             Marker.Color = System.Drawing.Color.Yellow;
             BlipList.Add(Marker);
-
-            Rage.Object _cigarette = new Rage.Object("prop_cs_ciggy_01b", Person.Position);
-            int BoneIndex = NativeFunction.Natives.GET_PED_BONE_INDEX<int>(Person, (int)PedBoneId.RightIndexFinger2);
-            NativeFunction.CallByName<uint>("ATTACH_ENTITY_TO_ENTITY", _cigarette, Person, BoneIndex, 0f, 0f, 0f, 0f, 0f, 90f, true, false, false, false, 2, 1);
 
             Data = Functions.GetPersonaForPed(Person);
             Functions.SetPersonaForPed(Person, new Persona(Data.Forename, Data.Surname, Data.Gender, Data.Birthday));

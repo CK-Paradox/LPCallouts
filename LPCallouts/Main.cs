@@ -7,6 +7,7 @@ using LPCallouts.Menu;
 //LSPDFR
 using Rage;
 using LSPD_First_Response.Mod.API;
+using LSPD_First_Response.Engine.Scripting.Entities;
 
 namespace LPCallouts
 {
@@ -17,6 +18,9 @@ namespace LPCallouts
         public static ModelDef.ModelDefinition model_def;
         public static bool _nc_rerun { get; set; }
         public static int _nc_id { get; set; }
+
+        public static bool _plugin_loaded = false;
+        public static Persona _UserData { get; set; }
 
         public override void Initialize()
         {
@@ -65,6 +69,7 @@ namespace LPCallouts
                 Functions.OnOnDutyStateChanged += Functions_OnOnDutyStateChanged;
                 Game.LogTrivial("LPCallouts registered.");
                 Game.DisplayNotification("crosstheline", "timer_largetick_32", "Successful loaded", "~o~LPCallouts ~c~Version " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(), "");
+                _plugin_loaded = true;
             }
             catch
             {
@@ -115,6 +120,14 @@ namespace LPCallouts
             if (onDuty)
             {
                 RegisterCallouts();
+                if(_plugin_loaded)
+                { 
+                    Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "LPCallouts Active", "", "");
+
+                    //Get Playear character name
+                    _UserData = Functions.GetPersonaForPed(Game.LocalPlayer.Character);
+                    Globals.CharacterName = _UserData.Forename + " " + _UserData.Surname;
+                }
             }
         }
 

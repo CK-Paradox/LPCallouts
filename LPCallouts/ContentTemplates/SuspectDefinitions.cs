@@ -1100,193 +1100,145 @@ namespace LPCallouts
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_m_y_vinewood_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_m_y_vinewood_02",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_m_y_vinewood_03",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_m_y_vinewood_04",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_f_y_vinewood_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_f_y_vinewood_02",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_f_y_vinewood_03",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Rich,
 					_modelname = "a_f_y_vinewood_04",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "u_m_y_party_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "u_m_m_partytarget",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_m_m_eastsa_02",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_m_m_soucent_04",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_f_y_eastsa_03",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_f_y_soucent_03",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_f_m_bevhills_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._Normal,
 					_modelname = "a_f_m_ktown_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "a_f_m_eastsa_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "a_m_m_hillbilly_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "a_m_m_mexlabor_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "a_m_y_salton_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "s_f_m_sweatshop_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "s_m_m_autoshop_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "g_f_y_families_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				SuspectPeds.Add(new Globals.SuspectPerson
 				{
 					_type = Globals.HumanType._County,
 					_modelname = "s_m_m_trucker_01",
-					_animdir = "missmic2@enemy",
-					_animname = "smoking_loop",
-					_animflag = AnimationFlags.Loop
+					_scenario = "WORLD_HUMAN_SMOKING"
 				});
 				#endregion PedModels
 
@@ -1499,7 +1451,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hello. Do you own the vehicle in your driveway?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hello. Do you own the vehicle in your driveway?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1513,7 +1465,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Okay. Can you tell me where you were about 15 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Okay. Can you tell me where you were about 15 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1527,7 +1479,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1541,7 +1493,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Yes. It matches the description of a vehicle involved in a Hit and Run.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Yes. It matches the description of a vehicle involved in a Hit and Run.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1555,7 +1507,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Can I take a closer look at your vehicle?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Can I take a closer look at your vehicle?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1569,7 +1521,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 1,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1583,7 +1535,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hey there. Is that your vehicle in the driveway?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hey there. Is that your vehicle in the driveway?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1597,7 +1549,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Can you tell me where you were about 15 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Can you tell me where you were about 15 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1611,7 +1563,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~Your vehicle matches the description of a vehicle involved in a Hit and Run",
+					_text = "~b~" + Globals.CharacterName + ":~w~Your vehicle matches the description of a vehicle involved in a Hit and Run",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1625,7 +1577,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. We can sort this out at the station. Currently, you are being detained and will have to come down to the station with me.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. We can sort this out at the station. Currently, you are being detained and will have to come down to the station with me.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1639,7 +1591,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Well unfortunately, at this point, you have no choice.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Well unfortunately, at this point, you have no choice.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1653,7 +1605,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 2,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. Go ahead and put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. Go ahead and put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1667,7 +1619,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Is that your vehicle in the driveway?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Is that your vehicle in the driveway?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1681,7 +1633,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Any reason for so much vehicle damage?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Any reason for so much vehicle damage?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1695,7 +1647,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Oh, okay. Did you happen to get in an accident today?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Oh, okay. Did you happen to get in an accident today?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1709,7 +1661,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ This vehicle matches the description of a vehicle involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ This vehicle matches the description of a vehicle involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1723,7 +1675,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1737,7 +1689,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 3,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1751,7 +1703,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hello. Do have a minute? I would like to ask you some questions.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hello. Do have a minute? I would like to ask you some questions.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1765,7 +1717,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your vehicle?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your vehicle?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1779,7 +1731,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ I am not leaving until you answer my question. Why is there so much damage to your vehicle?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ I am not leaving until you answer my question. Why is there so much damage to your vehicle?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1793,7 +1745,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1807,7 +1759,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1821,7 +1773,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 4,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Last chance. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Last chance. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1835,7 +1787,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Do me a favor and keep your hands where I can see them. Is that your vehicle parked over there?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Do me a favor and keep your hands where I can see them. Is that your vehicle parked over there?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1849,7 +1801,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Can you tell me where you were approximately 20 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Can you tell me where you were approximately 20 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1863,7 +1815,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1877,7 +1829,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Did you happen to hit someone while you were out?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Did you happen to hit someone while you were out?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1891,7 +1843,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Don't act like nothing has happened. Last chance, did you hit a person?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Don't act like nothing has happened. Last chance, did you hit a person?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1905,7 +1857,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Default,
 					_dialogid = 5,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1919,7 +1871,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hello. Do you own the boat anchored over there?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hello. Do you own the boat anchored over there?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1933,7 +1885,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Okay. Can you tell me where you were about 15 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Okay. Can you tell me where you were about 15 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1947,7 +1899,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ I'm only asking you where you were. Can you tell me that, or should I come back with a warrant?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1961,7 +1913,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Yes. It matches the description of a watercraft involved in a Hit and Run.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Yes. It matches the description of a watercraft involved in a Hit and Run.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1975,7 +1927,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Can I take a closer look at your boat?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Can I take a closer look at your boat?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -1989,7 +1941,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 6,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay, well I have to take you down to the station. Put your hands where I can see them, please.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2003,7 +1955,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hey there. Is that your boat anchored over there?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hey there. Is that your boat anchored over there?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2017,7 +1969,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Can you tell me where you were about 15 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Can you tell me where you were about 15 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2031,7 +1983,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~Your boat matches the description of a watercraft involved in a Hit and Run",
+					_text = "~b~" + Globals.CharacterName + ":~w~Your boat matches the description of a watercraft involved in a Hit and Run",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2045,7 +1997,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. We can sort this out at the station. Currently, you are being detained, and will have to come down to the station with me.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. We can sort this out at the station. Currently, you are being detained, and will have to come down to the station with me.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2059,7 +2011,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Well unfortunately, at this point, you have no choice.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Well unfortunately, at this point, you have no choice.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2073,7 +2025,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 7,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. Go ahead and put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. Go ahead and put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2087,7 +2039,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Is that your boat anchored over there?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Is that your boat anchored over there?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2101,7 +2053,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Any reason for so much damage to your boat?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Any reason for so much damage to your boat?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2115,7 +2067,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Oh, okay. Did you happen to get in an accident today?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Oh, okay. Did you happen to get in an accident today?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2129,7 +2081,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Your boat matches the description of a watercraft involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Your boat matches the description of a watercraft involved in a hit and run. And by the way you're talking, I can tell you are nervous. Want to come clean?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2143,7 +2095,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ The charge isn't that severe. If you come clean, you might get a lesser sentence. Last chance, do you want to come clean?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2157,7 +2109,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 8,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. We can sort it out at the station. Right now you are being detained. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2171,7 +2123,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Hello. Do have a minute? I would like to ask you some questions.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Hello. Do have a minute? I would like to ask you some questions.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2185,7 +2137,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your boat?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: I am assuming you know why I am here. Can you tell me why you have so much front end damage on your boat?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2199,7 +2151,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ I am not leaving until you answer my question. Why is there so much damage to your boat?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ I am not leaving until you answer my question. Why is there so much damage to your boat?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2213,7 +2165,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Well due to you admitting to me you were just involved in a hit and run, you will need to come down to the station for further questioning.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2227,7 +2179,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ No, you aren't. Please, don't make me have to use force. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2241,7 +2193,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 9,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Last chance. Put your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Last chance. Put your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2255,7 +2207,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 0,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Do me a favor and keep your hands where I can see them. Is that your boat over there?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Do me a favor and keep your hands where I can see them. Is that your boat over there?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2269,7 +2221,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 2,
-					_text = "~b~" + GameHandler.ini_username + ":~w~: Can you tell me where you were approximately 20 minutes ago?",
+					_text = "~b~" + Globals.CharacterName + ":~w~: Can you tell me where you were approximately 20 minutes ago?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2283,7 +2235,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 4,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Okay. Would you like to tell me where you were, or should I take you down to the station until our investigation is over?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2297,7 +2249,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 6,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Did you happen to hit someone while you were out?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Did you happen to hit someone while you were out?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2311,7 +2263,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 8,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ Don't act like nothing has happened. Last chance, did you hit a person?",
+					_text = "~b~" + Globals.CharacterName + ":~w~ Don't act like nothing has happened. Last chance, did you hit a person?",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{
@@ -2325,7 +2277,7 @@ namespace LPCallouts
 					_callouttype = Globals.CalloutType._Water,
 					_dialogid = 10,
 					_counter = 10,
-					_text = "~b~" + GameHandler.ini_username + ":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them.",
+					_text = "~b~" + Globals.CharacterName + ":~w~ You can, down at the station. Right now, you are under arrest for a Hit and Run. Keep your hands where I can see them.",
 				});
 				SuspectDialogs.Add(new Globals.SuspectDialog
 				{

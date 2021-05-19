@@ -138,9 +138,7 @@ namespace LPCallouts
 				{
 					_type = Globals.HumanType.<#=hum[0].Trim(new char[] { '\"', ' ', ',' })#>,
 					_modelname = "<#=hum[1].Trim(new char[] { '\"', ' ', ',' })#>",
-					_animdir = "<#=hum[2].Trim(new char[] { '\"', ' ', ',' })#>",
-					_animname = "<#=hum[3].Trim(new char[] { '\"', ' ', ',' })#>",
-					_animflag = AnimationFlags.<#=hum[4].Trim(new char[] { '\"', ' ', ',' })#>
+					_scenario = "<#=hum[2].Trim(new char[] { '\"', ' ', ',' })#>"
 				});
 <#
 				}

@@ -126,6 +126,9 @@ namespace LPCallouts.Callouts
         public string _street02;
         public string _street03;
 
+        public string _BackUpUnit01;
+        public string _BackUpUnit02;
+
         public Persona SuspectData;
 
         public override bool OnBeforeCalloutDisplayed()
@@ -379,6 +382,11 @@ namespace LPCallouts.Callouts
                 //////////////////////////////////////////////
                 //  C A L L O U T - S T A T U S M A C H I N E
                 //////////////////////////////////////////////
+
+                _BackUpUnit01 = GameHandler.ini_division_1 + "-" + GameHandler.ini_unittype_1 + "-" + GameHandler.ini_beat_1;
+                _BackUpUnit02 = GameHandler.ini_division_2 + "-" + GameHandler.ini_unittype_2 + "-" + GameHandler.ini_beat_2;
+
+
                 switch (statusmachine)
                 {
                     case Globals.PlayerState.CALLED:
@@ -496,7 +504,7 @@ namespace LPCallouts.Callouts
                                 _selection = false;
                                 _selectedarea = 0;
                                 Game.DisplaySubtitle("You are heading to ~g~" + _street01, GameHandler._displaytime);
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, Heading to ~g~" + _street01);
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, Heading to ~g~" + _street01);
                                 _blip_area1.EnableRoute(System.Drawing.Color.LightBlue);
 
                                 SendBackUp(1, 2);
@@ -516,7 +524,7 @@ namespace LPCallouts.Callouts
                                 _selection = false;
                                 _selectedarea = 1;
                                 Game.DisplaySubtitle("You are heading to ~p~" + _street02, GameHandler._displaytime);
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, 10-76 to ~p~" + _street02);
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, 10-76 to ~p~" + _street02);
                                 _blip_area2.EnableRoute(System.Drawing.Color.LightBlue);
 
                                 SendBackUp(0, 2);
@@ -536,7 +544,7 @@ namespace LPCallouts.Callouts
                                 _selection = false;
                                 _selectedarea = 2;
                                 Game.DisplaySubtitle("You are heading to ~y~" + _street03, GameHandler._displaytime);
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, 10-76 to ~y~" + _street03);
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, 10-76 to ~y~" + _street03);
                                 _blip_area3.EnableRoute(System.Drawing.Color.LightBlue);
 
                                 SendBackUp(0, 1);
@@ -578,7 +586,7 @@ namespace LPCallouts.Callouts
                         {
                             if (_terminate == false)
                             {
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, 10-23, I will make contact with the person");
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, 10-23, I will make contact with the person");
                                 _terminate = true;
                                 switch (_selectedarea)
                                 {
@@ -625,7 +633,7 @@ namespace LPCallouts.Callouts
                             {
                                 _assist01 = false;
                                 _terminate = true;
-                                Game.DisplayNotification("~b~03-ADAM-05:~w~ Dispatch, we're at the residence. Possible suspect located.");
+                                Game.DisplayNotification("~b~" +_BackUpUnit01+ "~w~ Dispatch, we're at the residence. Possible suspect located.");
                                 Functions.PlayScannerAudio("REPORT_SUSPECT_SPOTTED_01");
 
                                 _veh_backup1.SetPositionWithSnap(_suspect_area[_handover1]._police_position);
@@ -648,7 +656,7 @@ namespace LPCallouts.Callouts
                             {
                                 _assist02 = false;
                                 _terminate = true;
-                                Game.DisplayNotification("~b~04-QUEEN-02:~w~ Dispatch, we're at the residence. Possible suspect located.");
+                                Game.DisplayNotification("~b~" + _BackUpUnit02 + "~w~ Dispatch, we're at the residence. Possible suspect located.");
                                 Functions.PlayScannerAudio("REPORT_SUSPECT_SPOTTED_01");
 
                                 _veh_backup2.SetPositionWithSnap(_suspect_area[_handover2]._police_position);
@@ -682,7 +690,7 @@ namespace LPCallouts.Callouts
                             }
                             GameFiber.StartNew(delegate
                             {
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, nobody is home or i'm at the wrong adress.");
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, nobody is home or i'm at the wrong adress.");
                                 Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_04");
                                 GameHandler.DispatchMessage("10-4, wait for further instructions.");
                             }, FiberHandler._fiber_request);
@@ -707,7 +715,7 @@ namespace LPCallouts.Callouts
                                 _blip_suspect.Color = System.Drawing.Color.Red;
                                 _blip_suspect.Alpha = 1f;
                             }
-                            GameHandler.DispatchMessage(GameHandler.ini_division + "-" + GameHandler.ini_unittype + "-" + GameHandler.ini_beat + " Suspect located. Respond Code 3");
+                            GameHandler.DispatchMessage(GameHandler.ini_division_p + "-" + GameHandler.ini_unittype_p + "-" + GameHandler.ini_beat_p + " Suspect located. Respond Code 3");
                             _blip_suspect.EnableRoute(Color.Red);
                             statusmachine = Globals.PlayerState.TO_SUSPECT;
                         }
@@ -1143,7 +1151,7 @@ namespace LPCallouts.Callouts
                 Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_04");
                 GameHandler.DispatchMessage("10-24 , sending additional units to the other locations.");
                 GameFiber.Wait(3000);
-                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_01 DIV_03 ADAM BEAT_05 ASSISTANCE_REQUIRED_02");
+                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_01 DIV_" + GameHandler.ini_division_1 + " " + GameHandler.ini_unittype_1 + " BEAT_" + GameHandler.ini_beat_1 + " ASSISTANCE_REQUIRED_02");
                 _blip_backup1.Alpha = 1.0f;
 
                 NativeFunction.CallByName<uint>("TASK_VEHICLE_DRIVE_TO_COORD_LONGRANGE", _ped_backup1, _veh_backup1, _suspect_area[area1]._police_position.X, _suspect_area[area1]._police_position.Y, _suspect_area[area1]._police_position.Z, 25f, 1, 1074528293, 2f);
@@ -1154,7 +1162,7 @@ namespace LPCallouts.Callouts
                 _veh_backup2.IsSirenSilent = true;
                 _assist02 = true;
                 GameFiber.Wait(5000);
-                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_04 QUEEN BEAT_02 ASSISTANCE_REQUIRED_04");
+                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division_2 + " " + GameHandler.ini_unittype_2 + " BEAT_" + GameHandler.ini_beat_2 + " ASSISTANCE_REQUIRED_04");
                 _blip_backup2.Alpha = 1.0f;
 
                 NativeFunction.CallByName<uint>("TASK_VEHICLE_DRIVE_TO_COORD_LONGRANGE", _ped_backup2, _veh_backup2, _suspect_area[area2]._police_position.X, _suspect_area[area2]._police_position.Y, _suspect_area[area2]._police_position.Z, 25f, 1, 1074528293, 2f);
@@ -1196,9 +1204,9 @@ namespace LPCallouts.Callouts
                         }
                         else
                         {
-                            Game.DisplayNotification("~b~03-ADAM-05:~w~ Dispatch, 10-23, No match, 10-19 returning to patrol");
+                            Game.DisplayNotification("~b~" + _BackUpUnit01 + "~w~ Dispatch, 10-23, No match, 10-19 returning to patrol");
                             GameFiber.Wait(3000);
-                            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 DIV_03 ADAM BEAT_05 PROCEED_WITH_PATROL");
+                            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 DIV_" + GameHandler.ini_division_1 + " " + GameHandler.ini_unittype_1 + " BEAT_" + GameHandler.ini_beat_1 + " PROCEED_WITH_PATROL");
                         }
                         break;
                     case 2:
@@ -1208,9 +1216,9 @@ namespace LPCallouts.Callouts
                         }
                         else
                         {
-                            Game.DisplayNotification("~b~04-QUEEN-02:~w~ Dispatch, 10-23, No match, 10-19 returning to patrol");
+                            Game.DisplayNotification("~b~" + _BackUpUnit02 + "~w~ Dispatch, 10-23, No match, 10-19 returning to patrol");
                             GameFiber.Wait(3000);
-                            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_02 DIV_04 QUEEN BEAT_02 PROCEED_WITH_PATROL");
+                            Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_02 DIV_" + GameHandler.ini_division_2 + " " + GameHandler.ini_unittype_2 + " BEAT_" + GameHandler.ini_beat_2 + " PROCEED_WITH_PATROL");
                         }
                         break;
                 }

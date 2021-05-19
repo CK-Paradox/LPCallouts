@@ -19,6 +19,7 @@ namespace LPCallouts.Internals
         public static string _fiber_cleanup = "Entity Cleanup";
         public static string _fiber_request = "Dispatch request";
         public static string _fiber_anim = "Back to Animation";
+        public static string _fiber_radio = "Player Radio Animation";
         public static string _fiber_move = "Ped Move to Vehicle";
         public static string _fiber_backup = "AI Backup";
         public static string _fiber_bell = "Doorbell interaction";
@@ -109,13 +110,13 @@ namespace LPCallouts.Internals
             GameFiber.StartNew(delegate
             {
                 GameFiber.Wait(2000);
-                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division + " " + GameHandler.ini_unittype + " BEAT_" + GameHandler.ini_beat);
+                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division_p + " " + GameHandler.ini_unittype_p + " BEAT_" + GameHandler.ini_beat_p);
                 GameFiber.Wait(6000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4, go ahead.");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4, go ahead.");
                 GameFiber.Wait(2000);
                 GameHandler.DispatchMessage("Stolen Vehicle was found by another unit.");
                 GameFiber.Wait(5000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Can you give me the location?");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. Can you give me the location?");
                 GameFiber.Wait(5000);
                 GameHandler.DispatchMessage("10-4. Showing you 10-76. Respond Code 2.");
                 Marker.Alpha = 1.0f;
@@ -130,13 +131,13 @@ namespace LPCallouts.Internals
             GameFiber.StartNew(delegate
             {
                 GameFiber.Wait(2000);
-                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division + " " + GameHandler.ini_unittype + " BEAT_" + GameHandler.ini_beat);
+                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division_p + " " + GameHandler.ini_unittype_p + " BEAT_" + GameHandler.ini_beat_p);
                 GameFiber.Wait(4000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4, go ahead.");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4, go ahead.");
                 GameFiber.Wait(2000);
                 GameHandler.DispatchMessage("We have 10-38 with a vehicle matching your description.");
                 GameFiber.Wait(5000);
-                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Can you give me the location?");
+                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. Can you give me the location?");
                 GameFiber.Wait(5000);
                 GameHandler.DispatchMessage("10-4. Showing you 10-76. Respond Code 3.");
                 Marker = new Blip(Position);

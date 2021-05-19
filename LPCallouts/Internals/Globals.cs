@@ -56,6 +56,8 @@ namespace LPCallouts.Internals
     {
         public static string HitModel = "prop_sign_road_04r";
 
+        public static string CharacterName = "Undefined";
+
         #region Callout Classes
         public class Scenery
         {
@@ -166,9 +168,7 @@ namespace LPCallouts.Internals
         {
             public HumanType _type { get; set; }
             public string _modelname { get; set; }
-            public AnimationDictionary _animdir { get; set; }
-            public string _animname { get; set; }
-            public AnimationFlags _animflag { get; set; }
+            public string _scenario { get; set; }
         }
 
         public class SuspectDialog

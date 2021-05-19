@@ -388,13 +388,13 @@ namespace LPCallouts.Callouts
                             {
                                 _dispatched = true;
                                 GameFiber.Wait(2000);
-                                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division + " " + GameHandler.ini_unittype + " BEAT_" + GameHandler.ini_beat + " CITIZENS_REPORT_03 CRIME_HITRUN UNITS_RESPOND_CODE_02_01");
+                                Functions.PlayScannerAudio("DISP_ATTENTION_UNIT_02 DIV_" + GameHandler.ini_division_p + " " + GameHandler.ini_unittype_p + " BEAT_" + GameHandler.ini_beat_p + " CITIZENS_REPORT_03 CRIME_HITRUN UNITS_RESPOND_CODE_02_01");
                                 GameFiber.Wait(6000);
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4, go ahead.");
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4, go ahead.");
                                 GameFiber.Wait(2000);
                                 GameHandler.DispatchMessage(Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5)._text);
                                 GameFiber.Wait(5000);
-                                Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ 10-4. Can you give me the location of the caller?");
+                                Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ 10-4. Can you give me the location of the caller?");
                                 GameFiber.Wait(5000);
                                 uint _streethash = World.GetStreetHash(_ped_witness.Position);
                                 string _street = World.GetStreetName(_streethash);
@@ -444,7 +444,7 @@ namespace LPCallouts.Callouts
                                 GameFiber.StartNew(delegate
                                 {
                                     _initaudio = true;
-                                    Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, possible suspect identified");
+                                    Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, possible suspect identified");
                                     GameHandler.RemoveBlip(_blip_searcharea, _blip_list);
                                     _blip_suspect.Alpha = 1.0f;
                                     GameFiber.Wait(3000);
@@ -736,7 +736,7 @@ namespace LPCallouts.Callouts
                         GameFiber.StartNew(delegate
                         {
                             GameFiber.Wait(2000);
-                            Game.DisplayNotification("~b~" + GameHandler.ini_username + ":~w~ Dispatch, heading to " + _suspect_location._areaname);
+                            Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, heading to " + _suspect_location._areaname);
                             GameFiber.Wait(3000);
                             GameHandler.DispatchMessage("10-4.");
                             Functions.PlayScannerAudio("REPORT_RESPONSE_COPY_01 " + _suspect_location._audioarea);

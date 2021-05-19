@@ -16,10 +16,20 @@ namespace LPCallouts.Internals
 {
     public class GameHandler
     {
-        public static string ini_username { get; set; }
-        public static string ini_division { get; set; }
-        public static string ini_unittype { get; set; }
-        public static string ini_beat { get; set; }
+        public static string ini_division_p { get; set; }
+        public static string ini_unittype_p { get; set; }
+        public static string ini_beat_p { get; set; }
+
+        public static string ini_division_1 { get; set; }
+        public static string ini_unittype_1 { get; set; }
+        public static string ini_beat_1 { get; set; }
+
+
+        public static string ini_division_2 { get; set; }
+        public static string ini_unittype_2 { get; set; }
+        public static string ini_beat_2 { get; set; }
+
+
         public static int ini_department { get; set; }
         public static Keys ini_action { get; set; }
         public static Keys ini_menu { get; set; }
@@ -55,28 +65,9 @@ namespace LPCallouts.Internals
         {
             InitializationFile ini = initialiseFile();
 
-            #region username
-            //USERNAME
-            string username = ini.ReadString("USER", "OfficerName", "HotActionCop");
-            if (string.IsNullOrWhiteSpace(username))
-            {
-                ini_username = "HotActionCop";
-                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Username~w~ is empty, default value loaded");
-            }
-            else if (username.Length > 15)
-            {
-                ini_username = "HotActionCop";
-                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Username~w~ is to long (max. 15char), default value loaded");
-            }
-            else
-            {
-                ini_username = username;
-            }
-            #endregion username
-
             #region division
             //CHECK IF DIVISION IS BETWEEN 1 and 10
-            string unit = ini.ReadString("UNIT", "Division", "01");
+            string unit = ini.ReadString("UNIT", "Division", "07");
             if (string.IsNullOrWhiteSpace(unit))
             {
                 Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is empty, default value loaded");
@@ -86,11 +77,11 @@ namespace LPCallouts.Internals
                 int readdivision = Int32.Parse(unit);
                 if (Enumerable.Range(1, 10).Contains(readdivision))
                 {
-                    ini_division = unit;
+                    ini_division_p = unit;
                 }
                 else
                 {
-                    ini_division = "01";
+                    ini_division_p = "07";
                     Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is invalid or out of range, default value loaded");
                 }
             }
@@ -98,7 +89,7 @@ namespace LPCallouts.Internals
 
             #region unittype
             //CHECK IF UNITTYPE IS EXISTING
-            string unittype = ini.ReadString("UNIT", "UnitType", "LINCOLN");
+            string unittype = ini.ReadString("UNIT", "UnitType", "ADAM");
             if (string.IsNullOrWhiteSpace(unittype))
             {
                 Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is empty, default value loaded");
@@ -133,10 +124,10 @@ namespace LPCallouts.Internals
                     case "XRAY":
                     case "YOUNG":
                     case "ZEBRA":
-                        ini_unittype = unittype;
+                        ini_unittype_p = unittype;
                         break;
                     default:
-                        ini_unittype = "LINCOLN";
+                        ini_unittype_p = "LINCOLN";
                         Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is invalid or not existing, default value loaded");
                         break;
                 }
@@ -155,15 +146,169 @@ namespace LPCallouts.Internals
                 int readbeat = Int32.Parse(beat);
                 if (Enumerable.Range(1, 24).Contains(readbeat))
                 {
-                    ini_beat = beat;
+                    ini_beat_p = beat;
                 }
                 else
                 {
-                    ini_beat = "18";
+                    ini_beat_p = "18";
                     Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Beat~w~ is invalid or out of range, default value loaded");
                 }
             }
             #endregion beat
+
+            #region Backup Units
+
+            #region Division
+                string unit_1 = ini.ReadString("BACKUP_UNITS", "U1_Division", "07");
+                string unit_2 = ini.ReadString("BACKUP_UNITS", "U2_Division", "07");
+
+                if (string.IsNullOrWhiteSpace(unit_1))
+                    Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is empty, default value loaded");
+                else
+                {
+                    int readdivision_1 = Int32.Parse(unit_1);
+                    if (Enumerable.Range(1, 10).Contains(readdivision_1))
+                        ini_division_1 = unit_1;
+                    else
+                    {
+                        ini_division_1 = "07";
+                        Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is invalid or out of range, default value loaded");
+                    }
+                }
+
+                if (string.IsNullOrWhiteSpace(unit_2))
+                    Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is empty, default value loaded");
+                else
+                {
+                    int readdivision_2 = Int32.Parse(unit_2);
+                    if (Enumerable.Range(1, 10).Contains(readdivision_2))
+                        ini_division_2 = unit_2;
+                    else
+                    {
+                        ini_division_2 = "07";
+                        Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Division~w~ is invalid or out of range, default value loaded");
+                    }
+                }
+            #endregion
+
+            #region Unittype
+            string unittype_1 = ini.ReadString("BACKUP_UNITS", "U1_UnitType", "ADAM");
+            string unittype_2 = ini.ReadString("BACKUP_UNITS", "U2_UnitType", "ADAM");
+            if (string.IsNullOrWhiteSpace(unittype_1))
+                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is empty, default value loaded");
+            else
+                switch (unittype_1)
+                {
+                    case "ADAM":
+                    case "BOY":
+                    case "CHARLES":
+                    case "DAVID":
+                    case "EDWARD":
+                    case "FRANK":
+                    case "GEORGE":
+                    case "HENRY":
+                    case "IDA":
+                    case "JOHN":
+                    case "KING":
+                    case "LINCOLN":
+                    case "MARY":
+                    case "NORA":
+                    case "OCEAN":
+                    case "PAUL":
+                    case "QUEEN":
+                    case "ROBERT":
+                    case "SAM":
+                    case "TOM":
+                    case "UNION":
+                    case "VICTOR":
+                    case "WILLIAM":
+                    case "XRAY":
+                    case "YOUNG":
+                    case "ZEBRA":
+                        ini_unittype_1 = unittype_1;
+                        break;
+                    default:
+                        ini_unittype_1 = "ADAM";
+                        Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is invalid or not existing, default value loaded");
+                        break;
+            }
+
+            if (string.IsNullOrWhiteSpace(unittype_2))
+                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is empty, default value loaded");
+            else
+                switch (unittype_2)
+                {
+                    case "ADAM":
+                    case "BOY":
+                    case "CHARLES":
+                    case "DAVID":
+                    case "EDWARD":
+                    case "FRANK":
+                    case "GEORGE":
+                    case "HENRY":
+                    case "IDA":
+                    case "JOHN":
+                    case "KING":
+                    case "LINCOLN":
+                    case "MARY":
+                    case "NORA":
+                    case "OCEAN":
+                    case "PAUL":
+                    case "QUEEN":
+                    case "ROBERT":
+                    case "SAM":
+                    case "TOM":
+                    case "UNION":
+                    case "VICTOR":
+                    case "WILLIAM":
+                    case "XRAY":
+                    case "YOUNG":
+                    case "ZEBRA":
+                        ini_unittype_2 = unittype_2 ;
+                        break;
+                    default:
+                        ini_unittype_2 = "ADAM";
+                        Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~UnitType~w~ is invalid or not existing, default value loaded");
+                        break;
+                }
+            #endregion
+
+            #region Beat
+            string beat_1 = ini.ReadString("BACKUP_UNITS", "U1_Beat", "07");
+            string beat_2 = ini.ReadString("BACKUP_UNITS", "U2_Beat", "15");
+
+            if (string.IsNullOrWhiteSpace(beat_1))
+                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Beat~w~ is empty, default value loaded");
+            else
+            {
+                int readbeat_1 = Int32.Parse(beat_1);
+                if (Enumerable.Range(1, 24).Contains(readbeat_1))
+                    ini_beat_1 = beat_1;
+                else
+                {
+                    ini_beat_1 = "07";
+                    Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Beat~w~ is invalid or out of range, default value loaded");
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(beat_2))
+                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Beat~w~ is empty, default value loaded");
+            else
+            {
+                int readbeat_2 = Int32.Parse(beat_2);
+                if (Enumerable.Range(1, 24).Contains(readbeat_2))
+                    ini_beat_2 = beat_2;
+                else
+                {
+                    ini_beat_2 = "15";
+                    Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Beat~w~ is invalid or out of range, default value loaded");
+                }
+            }
+            #endregion
+
+
+
+            #endregion
 
             #region department
             string department = ini.ReadString("UNIT", "Department", "1");
@@ -396,7 +541,7 @@ namespace LPCallouts.Internals
                 {
                     Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~Department~w~ value could not be written, check access rights on ini file");
                 }
-                DispatchMessage("10-4, " + ini_division + "-" + ini_unittype + "-" + ini_beat + " is 10-8.");
+                DispatchMessage("10-4, " + ini_division_p + "-" + ini_unittype_p + "-" + ini_beat_p + " is 10-8.");
                 GameFiber.Yield();
             }, "Write to INI");
 
@@ -528,13 +673,13 @@ namespace LPCallouts.Internals
             switch (type)
             {
                 case 1:
-                    Functions.PlayScannerAudio("DIV_" + ini_division + " " + ini_unittype + " BEAT_" + ini_beat + " ASSISTANCE_REQUIRED IN " + area + " UNITS_RESPOND_CODE_03_02");
+                    Functions.PlayScannerAudio("DIV_" + ini_division_p + " " + ini_unittype_p + " BEAT_" + ini_beat_p + " ASSISTANCE_REQUIRED IN " + area + " UNITS_RESPOND_CODE_03_02");
                     break;
                 case 2:
-                    Functions.PlayScannerAudio("DIV_" + ini_division + " " + ini_unittype + " BEAT_" + ini_beat + " CITIZENS_REPORT_01 DISTURBANCE_LPC IN_01 " + area);
+                    Functions.PlayScannerAudio("DIV_" + ini_division_p + " " + ini_unittype_p + " BEAT_" + ini_beat_p + " CITIZENS_REPORT_01 DISTURBANCE_LPC IN_01 " + area);
                     break;
                 case 3:
-                    Functions.PlayScannerAudio("DIV_" + ini_division + " " + ini_unittype + " BEAT_" + ini_beat + " WE_HAVE_01 LPC_EM_CALL " + area);
+                    Functions.PlayScannerAudio("DIV_" + ini_division_p + " " + ini_unittype_p + " BEAT_" + ini_beat_p + " WE_HAVE_01 LPC_EM_CALL " + area);
                     break;
                 default:
                     break;
@@ -582,7 +727,7 @@ namespace LPCallouts.Internals
             {
                 //PLAYER
                 case 1:
-                    Game.DisplaySubtitle("~b~" + GameHandler.ini_username + ":~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~b~" + Globals.CharacterName + ":~w~ " + text, GameHandler._displaytime);
                     break;
                 //OFFICER
                 case 2:

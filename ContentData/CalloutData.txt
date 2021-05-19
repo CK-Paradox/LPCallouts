@@ -29,13 +29,13 @@ LOCATIONS	Type	Area	Street	Position	SpeedZone_Radius	SpeedZone_Speed	Region	Disp
 28	RunOver	AREA_MOUNT_CHILLIAD_01	US Route 13	1695.102f, 6404.390f, 32.089f	80f	8f	3	Backup requested, 10-57 at	0
 29	RunOver	AREA_THE_CHILLIAD_MOUNTAIN_STATE_WILDERNESS_01	US Route 1	-1525.297f, 4920.376f, 66.648f	80f	8f	3	Backup requested, 10-57 at	0
 30	RunOver	AREA_PALETO_BAY_01	Cascabel Ave	-94.168f, 6430.299f, 31.356f	80f	8f	3	Backup requested, 10-57 at	0
-31	Disturbance	AREA_VINEWOOD_HILLS_01	North Sheldon Ave	-960.665f, 802.342f, 177.430f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_01.wav
-32	Disturbance	AREA_RICHMAN_01	Rockford Drive	-1957.251f, 351.642f, 90.761f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_02.wav
-33	Disturbance	AREA_VINEWOOD_HILLS_01	Whispymound Drive	28.611f, 564.187f, 178.758f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_03.wav
-34	Disturbance	AREA_MIRROR_PARK_01	W Mirror Drive	909.33f, -495.73f, 58.55f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_04.wav
-35	Disturbance	AREA_PACIFIC_BLUFFS_01	Interstate 2	-1898.226f, -556.283f, 11.741f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_05.wav
-36	Disturbance	AREA_BANHAM_CANYON_01	US Route 1	-3025.912f, 718.948f, 22.857f	80f	8f	1	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_06.wav
-37	Disturbance	AREA_PALETO_BAY_01	Procopio Drive	-228.124f, 6414.138f, 31.355f	80f	8f	3	We have 10-15 at	\lspdfr\Police Scanner\LPCallouts Audio\NoiseComplaint\music_07.wav
+31	Disturbance	AREA_VINEWOOD_HILLS_01	North Sheldon Ave	-960.665f, 802.342f, 177.430f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_01.wav
+32	Disturbance	AREA_RICHMAN_01	Rockford Drive	-1957.251f, 351.642f, 90.761f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_02.wav
+33	Disturbance	AREA_VINEWOOD_HILLS_01	Whispymound Drive	28.611f, 564.187f, 178.758f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_03.wav
+34	Disturbance	AREA_MIRROR_PARK_01	W Mirror Drive	909.33f, -495.73f, 58.55f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_04.wav
+35	Disturbance	AREA_PACIFIC_BLUFFS_01	Interstate 2	-1898.226f, -556.283f, 11.741f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_05.wav
+36	Disturbance	AREA_BANHAM_CANYON_01	US Route 1	-3025.912f, 718.948f, 22.857f	80f	8f	1	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_06.wav
+37	Disturbance	AREA_PALETO_BAY_01	Procopio Drive	-228.124f, 6414.138f, 31.355f	80f	8f	3	We have 10-15 at	\lspdfr\audio\LPCallouts Audio\NoiseComplaint\music_07.wav
 									
 OBJECTS	HitModel	ModelName	Heading	Position					
 1	TRUE	prop_mp_cone_03	 99.459f	-1040.806f, 1182.763f, 216.031f					
@@ -881,12 +881,12 @@ DIALOGS	ContactId	Counter	Text
 1	2	7	Its a good thing that I remembered the plate! Get this son of a bitch...						
 1	2	8	Sorry, but that's all I can tell you.						
 2	1	0	Hey. You requested backup. How can I help?						
-2	1	1	"Hi "" + GameHandler.ini_username + "", this crash seems to be a Hit and Run. There are tire skids in the middle of the road."						
+2	1	1	"Hi "" + Globals.CharacterName + "", this crash seems to be a Hit and Run. There are tire skids in the middle of the road."						
 2	1	2	So another vehicle caused the crash?						
 2	1	3	According to the victim, it seems so. Best is that you ask him yourself. He probably can give you more information.						
 2	1	4	OK. I will talk to him.						
 2	1	5	That is all I can tell you						
-2	2	0	"Hi, I'm "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Is everything fine?"						
+2	2	0	"Hi, I'm "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Is everything fine?"						
 2	2	1	Hello officer. Yes I'm fine but pretty pissed.						
 2	2	2	I can imagine that. Can you tell me what happened?						
 2	2	3	~w~ drifted around the corner and was in the middle of the road when I was coming around. I took a hit and lost control of my car and crashed.						
@@ -960,7 +960,7 @@ DIALOGS	ContactId	Counter	Text
 6	1	3	According to them, a car did cause it. Ask for yourself.						
 6	1	4	Up here? What the hell is a car doing up here? I will talk to the workers, see if they can tell me anything else about it.						
 6	1	5	That is all I have for you!						
-6	2	0	"Hello Guys. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Please describe what happened."						
+6	2	0	"Hello Guys. My name is "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Please describe what happened."						
 6	2	1	Hi Officer. Will the biker be okay?. It looks bad for him, doesn't it?						
 6	2	2	Paramedics try to stabilize him. We need to see. Please focus on the accident. What happened?						
 6	2	3	Ah yes sorry. We are performing roadwork here, 'cause the rain washed away parts of this trail. We found him unconscious. 						
@@ -1008,7 +1008,7 @@ DIALOGS	ContactId	Counter	Text
 8	2	4	What time is it? What happend? Where am I ?						
 8	2	5	Officer, please stop questioning. Try talking to the security guard over there. He called 911.						
 8	2	6	That is all I have for you.						
-8	3	0	"Hello Sir. I'm officer "" + GameHandler.ini_username + "" of the "" + GameHandler._dialog_dept.Remove(1, 7) +  "".Do you know what happened?"						
+8	3	0	"Hello Sir. I'm officer "" + Globals.CharacterName + "" of the "" + GameHandler._dialog_dept.Remove(1, 7) +  "".Do you know what happened?"						
 8	3	1	Hi Officer. Yes, I saw the accident. I was driving to the labs when a car came into the other lane. How is the woman doing?						
 8	3	2	She is facing memory loss. Do you have a description of the vehicle or the driver?						
 8	3	3	. The car came here often.. always at a high rate of speed.						
@@ -1028,7 +1028,7 @@ DIALOGS	ContactId	Counter	Text
 9	2	4	Who...? What...? 						
 9	2	5	Believe me. That makes no sense. He definitely has a concussion. Try to get info from the witness there.						
 9	2	6	That is all I have for you.						
-9	3	0	"Hello Sir. I'm officer "" + GameHandler.ini_username + "" of the  "" + GameHandler._dialog_dept.Remove(1, 7) +  "" . Do you know what happened?"						
+9	3	0	"Hello Sir. I'm officer "" + Globals.CharacterName + "" of the  "" + GameHandler._dialog_dept.Remove(1, 7) +  "" . Do you know what happened?"						
 9	3	1	Hello. Yes, that is why I stopped and called 9-1-1?	 					
 9	3	2	Can you explain what happened?						
 9	3	3	The driver was on the wrong side of the road with a high rate of speed.						
@@ -1037,7 +1037,7 @@ DIALOGS	ContactId	Counter	Text
 9	3	6	Thanks for your time and for stopping. Not everybody shows respect these days.						
 9	3	7	I appreciate hearing this from a police officer!						
 10	1	0	Hey Marcus, nice to see ya. What do we have here?						
-10	1	1	"Hey "" + GameHandler.ini_username + "", it appears to be a Hit and Run."						
+10	1	1	"Hey "" + Globals.CharacterName + "", it appears to be a Hit and Run."						
 10	1	2	Are there any injuries?						
 10	1	3	Yes. The truck driver ended up rolling his truck and got injured. He's currently getting help in the ambulance, and will most likely spend the night in the hospital.						
 10	1	4	Damn. Do you know what caused it?						
@@ -1054,7 +1054,7 @@ DIALOGS	ContactId	Counter	Text
 10	2	7	Okay Officer. Thanks.						
 10	2	8	Sorry, but that's all I can tell you.,						
 11	1	0	Hey Frank, long time no see. What happend here?						
-11	1	1	"Hey "" + GameHandler.ini_username + "", Seems like a Hit and Run."						
+11	1	1	"Hey "" + Globals.CharacterName + "", Seems like a Hit and Run."						
 11	1	2	Is anyone injured?						
 11	1	3	I'm afraid so. The driver of the truck rolled his vehicle and got injured. Paramedics are taking care about him in the ambulance. He will be sent to the hospital.						
 11	1	4	It's been a while since I saw an accident like this. Do we know the cause?						
@@ -1071,7 +1071,7 @@ DIALOGS	ContactId	Counter	Text
 11	2	7	Okay Officer. Thanks.						
 11	2	8	Sorry, but that's all I can tell you.,						
 12	1	0	Hi Partner. Wow. That's a deep fall! Let me guess: Drunk Driver.						
-12	1	1	"Hey "" + GameHandler.ini_username + "", Nope. Actually it is a Hit and Run."						
+12	1	1	"Hey "" + Globals.CharacterName + "", Nope. Actually it is a Hit and Run."						
 12	1	2	Really. On this road? What happened?						
 12	1	3	The driver of the Log truck rolled his vehicle and got injured by evading a speeding car. He will be sent to the hospital.						
 12	1	4	Do we know anything about this car?						
@@ -1088,12 +1088,12 @@ DIALOGS	ContactId	Counter	Text
 12	2	7	Okay Officer. Thanks.						
 12	2	8	Sorry, but that's all I can tell you.,						
 13	1	0	Hi, what the hell happened here?						
-13	1	1	"Hey Officer "" + GameHandler.ini_username + "", thanks for the fast response. According to the first infos I have, it seems to be a Hit and Run"						
+13	1	1	"Hey Officer "" + Globals.CharacterName + "", thanks for the fast response. According to the first infos I have, it seems to be a Hit and Run"						
 13	1	2	Did you already talk to victims and witnesses?						
 13	1	3	No sorry, i was helping securing the scene and keep the traffic flow.						
 13	1	4	Okay, then i will talk to the involved people to gain information about a possible suspect.						
 13	1	5	Thanks, meanwhile i will take care about the traffic, see ya later.						
-13	2	0	"Hi, my name is "" + GameHandler.ini_username  + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+13	2	0	"Hi, my name is "" + Globals.CharacterName  + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
 13	2	1	Oh my god, i hope she will be ok, they just have taken her to the hospital..						
 13	2	2	Calm down, everything will be fine. I need you to tell me what happened. Can you do that for me?						
 13	2	3	I think so, but it all happened so fast... it wasn't my fault.. i needed to pull away...						
@@ -1109,7 +1109,7 @@ DIALOGS	ContactId	Counter	Text
 13	3	4	Sorry for that. Can you remember a licence plate or a the car type or maybe the color?						
 13	3	5	Not really, I was focusing not to crash.						
 13	3	6	"Thanks for your time, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
-13	4	0	"Hey there, I'm officer "" + GameHandler.ini_username + "". It seems that your car is fine. Why are you here?"						
+13	4	0	"Hey there, I'm officer "" + Globals.CharacterName + "". It seems that your car is fine. Why are you here?"						
 13	4	1	Hi, i was the one that called 9-1-1. And i decided to stay cause i have wrote down the car that caused this mess.						
 13	4	2	Perfect. So you can tell me the licence plate of the 						
 13	4	3	Yes i can tell you, but it wasn't a 						
@@ -1118,12 +1118,12 @@ DIALOGS	ContactId	Counter	Text
 13	4	6	Thanks for helping out, it will help to identify this reckless driver. You can leave now						
 13	4	7	Okay. Bye						
 14	1	0	Hey Partner. This crash looks serious. Do you know what happened?						
-14	1	1	"Hi "" + GameHandler.ini_username + "", Yeah, its a miracle that there is not more damage.Looks like a Hit and Run, but I'm not sure"						
+14	1	1	"Hi "" + Globals.CharacterName + "", Yeah, its a miracle that there is not more damage.Looks like a Hit and Run, but I'm not sure"						
 14	1	2	How do you know. Have you already talked to involved people?						
 14	1	3	Unfortunately not. I took care about getting EMS and the fire team here.						
 14	1	4	Okay, then I will start questioning to see if we get a cause or maybe a suspect.						
 14	1	5	Meanwhile I will contact dispatch and give them an update about the status here.						
-14	2	0	"Hello, I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you able to answer some questions?"						
+14	2	0	"Hello, I'm officer "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you able to answer some questions?"						
 14	2	1	Oh hi, ehm... yes maybe... they just took my wife to the hospital with the helicopter. They said that she has internal chest injuries.						
 14	2	2	Damn, sad to hear that. But she is in god hands. Can you tell me what happened?						
 14	2	3	I was driving on the second lane at suddenly the guy on the first one pulled over.I reacted and flipped the car.						
@@ -1139,7 +1139,7 @@ DIALOGS	ContactId	Counter	Text
 14	3	4	Do you remember a licence plate or a the car type or maybe the color?						
 14	3	5	No sorry.						
 14	3	6	"Thanks for your time, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
-14	4	0	"Hello, my name is officer "" + GameHandler.ini_username + "". Can you tell me what you doing here?"						
+14	4	0	"Hello, my name is officer "" + Globals.CharacterName + "". Can you tell me what you doing here?"						
 14	4	1	Hello officer. I saw exactly what happened from the other side.						
 14	4	2	Okay. The victims sad that a vehicle pulled on the other lane and caused the crash. It was a 						
 14	4	3	Then they must be wrong. It was definitely not a 						
@@ -1148,12 +1148,12 @@ DIALOGS	ContactId	Counter	Text
 14	4	6	Thanks for your help. You can leave now						
 14	4	7	Bye						
 15	1	0	Wow. Its been a while since a crash happened here. What's going on?						
-15	1	1	"Hey "" + GameHandler.ini_username + "". You're right. No issue here a long time."						
+15	1	1	"Hey "" + Globals.CharacterName + "". You're right. No issue here a long time."						
 15	1	2	Did you already make contact with the involved people?						
 15	1	3	Nope. You're the higher ranked cop here. Please take care of it.						
 15	1	4	Always the same excuse. This id getting old. Well okay, I will do it.						
 15	1	5	Thank you very much. I will keep traffic off your back						
-15	2	0	"Hey, my name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you okay?"						
+15	2	0	"Hey, my name is "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Are you okay?"						
 15	2	1	Yes I fine, just some bruising. But my daughter is injured. EMS is now talking her to the hospital						
 15	2	2	Sorry to hear that. Is it possible for you to answer some questions regarding the crash?						
 15	2	3	Well I hope I remember something. Its all a bit blurred from the impact. I will try.						
@@ -1169,7 +1169,7 @@ DIALOGS	ContactId	Counter	Text
 15	3	4	Can you remember a licence plate or a the car type or maybe the color?						
 15	3	5	No sorry. My eyes where focused on car in front of me... sorry						
 15	3	6	"Okay, if you need anything then contact "" + GameHandler._dialog_dept.Remove(1, 7) + ""."						
-15	4	0	"Hey there, I'm officer "" + GameHandler.ini_username + "". Are you the 911 caller?"						
+15	4	0	"Hey there, I'm officer "" + Globals.CharacterName + "". Are you the 911 caller?"						
 15	4	1	Yes I called the police. I was driving a little bit behind those two when the accident happened						
 15	4	2	There seems to be a third car which was causing the accident. Did you see the licence plate of the						
 15	4	3	Yes, but the car wasn't a 						
@@ -1178,12 +1178,12 @@ DIALOGS	ContactId	Counter	Text
 15	4	6	Thanks for your help, appreciate it. You can leave now						
 15	4	7	Okay. Goodbye						
 16	1	0	Hi, How can I assist?						
-16	1	1	"Hello "" + GameHandler.ini_username + "", did dispatch inform you?"						
+16	1	1	"Hello "" + Globals.CharacterName + "", did dispatch inform you?"						
 16	1	2	No, just send me here. So what happened here						
 16	1	3	Its a Hit and Run. But I just shortly talked to the witnesses. Bring yourself up-to-date by talking to the involved ones.						
 16	1	4	Okay, I will do so.						
 16	1	5	I will make sure that we don't get a traffic jam here.						
-16	2	0	"Hi, I'm office "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+16	2	0	"Hi, I'm office "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
 16	2	1	Shit... my head hurts.. where is my girlfriend..?						
 16	2	2	She left in the helicopter. She need to get to the hospital as quickly as possible.						
 16	2	3	Fuck, were is that fucking bastard..						
@@ -1199,7 +1199,7 @@ DIALOGS	ContactId	Counter	Text
 16	3	4	For know I don't care about that. Can you remember a licence plate or a the car type or maybe the color?						
 16	3	5	Sorry. No.						
 16	3	6	"Okay thanks, "" + GameHandler._dialog_dept.Remove(1, 7) + "" will contact you later."						
-16	4	0	"Hi, my name is "" + GameHandler.ini_username + "" form the "" + GameHandler._dialog_dept.Remove(1, 7) + "" . Are you okay?"						
+16	4	0	"Hi, my name is "" + Globals.CharacterName + "" form the "" + GameHandler._dialog_dept.Remove(1, 7) + "" . Are you okay?"						
 16	4	1	Hello officer, yes I'm okay and luckily I don't have any damage cause I could stop in time.						
 16	4	2	The other two told me that someone forced them off the road. Car type is a 						
 16	4	3	That's true. I was driving behind them. But the car wasn't a 						
@@ -1236,7 +1236,7 @@ DIALOGS	ContactId	Counter	Text
 18	1	3	The civilians found him 10 minutes ago and called in the lifeguards. I don't have more for you.						
 18	1	4	Okay. Thanks for the info. I'll try to find out if somebody knows anything.						
 18	1	5	That is all I know!						
-18	2	0	"Hello. My name is "" + GameHandler.ini_username + "". I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know what happened?"						
+18	2	0	"Hello. My name is "" + Globals.CharacterName + "". I'm from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know what happened?"						
 18	2	1	No sorry. I just wanted to know what was going on here.						
 18	2	2	Okay. Please stay away from the scene...						
 18	2	3	Okay.						
@@ -1314,12 +1314,12 @@ DIALOGS	ContactId	Counter	Text
 22	2	7	Thank you officer. Will do.						
 22	2	8	Sorry, but that's all I can tell you.,						
 23	1	0	Hi Chloe. First deployment today?						
-23	1	1	"Hey "" + GameHandler.ini_username + "", nice to see you. Yes the first one today."						
+23	1	1	"Hey "" + Globals.CharacterName + "", nice to see you. Yes the first one today."						
 23	1	2	So what do we have here?						
 23	1	3	Seems to be a Hit and Run. Talk to the Woman over there she will update you.						
 23	1	4	Okay. Ehm.. Let go for a drink when your shift is over.						
 23	1	5	Sure why not... see ya later.						
-23	2	0	"Hello Ma'am. I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "".Can you describe what happened?"						
+23	2	0	"Hello Ma'am. I'm officer "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "".Can you describe what happened?"						
 23	2	1	Hi, yes this is my boyfriend who got hit!						
 23	2	2	Oh, I didn't know. So why is he hurt?						
 23	2	3	~w~ came out of this alleyway and hit him!						
@@ -1334,7 +1334,7 @@ DIALOGS	ContactId	Counter	Text
 24	1	3	The woman is the guys wife. She told me that. But ask her yourself.						
 24	1	4	Will do so. Anything else?						
 24	1	5	Nope. That is all I know!						
-24	2	0	"Hello Miss. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". What happened?"						
+24	2	0	"Hello Miss. My name is "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". What happened?"						
 24	2	1	Hello officer! Some stupid dude ran him over.						
 24	2	2	Can you describe the vehicle or do you know the type?						
 24	2	3	~w~ came around with a high rate of speed. I think he lost control, that is why he hit my husband!						
@@ -1349,8 +1349,8 @@ DIALOGS	ContactId	Counter	Text
 25	1	3	Yes. One of the shop owners came out when i got here. Talk to him.						
 25	1	4	At least something. I will question him.						
 25	1	5	That is all I have for you!						
-25	2	0	"Hi Sir. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you want to tell me anything?"						
-25	2	1	"Yes, officer "" + GameHandler.ini_username + "". I called 911!"						
+25	2	0	"Hi Sir. My name is "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you want to tell me anything?"						
+25	2	1	"Yes, officer "" + Globals.CharacterName + "". I called 911!"						
 25	2	2	Thank you. Can you tell me what happened to the woman?						
 25	2	3	~w~ parked out and hit the woman in reverse and then just left the area.						
 25	2	4	Did you see the vehicle's license plate?						
@@ -1364,7 +1364,7 @@ DIALOGS	ContactId	Counter	Text
 26	1	3	I shorty talked to the victim. But there is maybe witness. Talk to the Woman in front the Liquor store.						
 26	1	4	Sure. I will try to find out more about the accident.						
 26	1	5	That is all I have for you!						
-26	2	0	"Hello Miss. I'm officer "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know anything about the accident?"						
+26	2	0	"Hello Miss. I'm officer "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Do you know anything about the accident?"						
 26	2	1	Yes, officer i do. I'm the owner of this store and i ran out as i saw a car ran over this guy!						
 26	2	2	Can you tell me how this happened?						
 26	2	3	~w~ was driving down Joshua road when it suddenly came on the sidewalk and hit the guy!						
@@ -1374,13 +1374,13 @@ DIALOGS	ContactId	Counter	Text
 26	2	7	Thank you officer.						
 26	2	8	Sorry, but that's all I can tell you.,						
 27	1	0	Hey, how i can assist?						
-27	1	1	"Oh hi "" + GameHandler.ini_username + "". I thought you are on vacation?"						
+27	1	1	"Oh hi "" + Globals.CharacterName + "". I thought you are on vacation?"						
 27	1	2	Well, someone got sick so i canceled it. What happened here?						
 27	1	3	Sad to hear. The Visitor here got hit by car. The cook of this place can tell you more.						
 27	1	4	Okay. I will ask him.						
 27	1	5	That is all I have for you!						
-27	2	0	"Hello Sir. My name is "" + GameHandler.ini_username + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
-27	2	1	"Sure, officer "" + GameHandler.ini_username + "". I saw the accident and called 9-1-1."						
+27	2	0	"Hello Sir. My name is "" + Globals.CharacterName + "" from the "" + GameHandler._dialog_dept.Remove(1, 7) + "". Can you tell me what happened?"						
+27	2	1	"Sure, officer "" + Globals.CharacterName + "". I saw the accident and called 9-1-1."						
 27	2	2	Thanks. So what happened to your visitor?						
 27	2	3	~w~ just ran him over. The car came out this parking place.						
 27	2	4	Do you have surveillance cameras to maybe get the license plate?						
@@ -1409,7 +1409,7 @@ DIALOGS	ContactId	Counter	Text
 29	1	3	To be honest, i didn't ask. Its your jurisdiction and i was busy getting EMS here and providing first aid.						
 29	1	4	Fair enough. I will ask the man some questions.						
 29	1	5	That is all I have for you!						
-29	2	0	"Hey Sir. My name is "" + GameHandler.ini_username + "". Can you tell what happened?"						
+29	2	0	"Hey Sir. My name is "" + Globals.CharacterName + "". Can you tell what happened?"						
 29	2	1	Hi officer. I'm glad that the ranger came bye and called the EMS.						
 29	2	2	Okay. Please focus on my questions. What happened?						
 29	2	3	~w~ was driving crazy down here. We wanted to go for a hike and then it suddenly appeared and hit my girl!						
@@ -1469,7 +1469,7 @@ DIALOGS	ContactId	Counter	Text
 32	1	3	Yes. Those party-goers are always partying, and us neighbors are always suffering! Can you shut it down please?						
 32	1	4	Certainly. I will take to the owner and ask them to lower the volume.						
 32	1	5	Thank you so much officer.						
-32	2	0	"Hi. I'm officer "" + GameHandler.ini_username + "". Who is responsible for this party?"						
+32	2	0	"Hi. I'm officer "" + Globals.CharacterName + "". Who is responsible for this party?"						
 32	2	1	That's me. Michael De Santa. Is there a problem officer?						
 32	2	2	Yes Mr. De Santa. Sorry to interrupt but people in your neighborhood are complaining about the loud music.						
 32	2	3	Oh come on, this is a celebration party for my daughter Tracy. She finally got a job on TV.						
