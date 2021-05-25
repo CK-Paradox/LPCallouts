@@ -478,7 +478,7 @@ namespace LPCallouts.Callouts
 
                         if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < 50f)
                         {
-                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler.ini_displaytime);
                             _blip_poi.DisableRoute();
                             GameHandler.RemoveBlip(_blip_poi, _blip_list);
                             _blip_cop = _ped_cop.AttachBlip();
@@ -534,7 +534,7 @@ namespace LPCallouts.Callouts
                         {
                             if (suspectending == Globals.PursuitEnd.PURSUIT && _pursuitcreated == false && _isarrested == false && _getintocar == false && Game.LocalPlayer.Character.DistanceTo(_ped_suspect.Position) < 100f && Game.LocalPlayer.Character.LastVehicle.IsSirenOn && !Game.LocalPlayer.Character.LastVehicle.IsSirenSilent)
                             {
-                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler._displaytime);
+                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler.ini_displaytime);
                                 _ped_suspect.Tasks.ClearImmediately();
                                 _ped_suspect.Tasks.EnterVehicle(_veh_suspect, 10000, -1);
                                 _getintocar = true;
@@ -762,23 +762,23 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_cop = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _blip_witness01 = _ped_civ1.AttachBlip();
                         _blip_witness01.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness01);
@@ -789,7 +789,7 @@ namespace LPCallouts.Callouts
                         break;
                     case 5:
                         GameHandler.RemoveBlip(_blip_cop, _blip_list);
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _talking_cop = false;
                         statusmachine = Globals.PlayerState.TALK_WITNESS1;
                         FiberHandler.BackToAnimation(_ped_cop, Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 1)._heading, "missheist_agency3aig_24", "agent01_conversation", AnimationFlags.Loop);
@@ -809,37 +809,37 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_witness1 = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 5;
                         break;
                     case 5:
                         Random rnd_car = new Random();
                         _possible_veh = Suspects.SuspectCars[rnd_car.Next(Suspects.SuspectCars.Count)];
-                        GameHandler.PlayerChat(3, Dialog + _possible_veh._modelname);
+                        GameHandler.PlayerChat(3, Dialog + _possible_veh._modelname, GameHandler.ini_displaytime);
                         _mlog_loop2 = 6;
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 7;
                         break;
                     case 7:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _blip_witness02 = _ped_civ2.AttachBlip();
                         _blip_witness02.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness02);
@@ -848,7 +848,7 @@ namespace LPCallouts.Callouts
                         break;
                     case 8:
                         GameHandler.RemoveBlip(_blip_witness01, _blip_list);
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _talking_witness1 = false;
                         statusmachine = Globals.PlayerState.TALK_WITNESS2;
                         FiberHandler.BackToAnimation(_ped_civ1, Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 4)._heading, "missmic_4premierejimwaitbef_prem", "wait_idle_b", AnimationFlags.Loop);
@@ -869,27 +869,27 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_witness2 = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _blip_witness03 = _ped_civ3.AttachBlip();
                         _blip_witness03.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness03);
@@ -897,7 +897,7 @@ namespace LPCallouts.Callouts
                         break;
                     case 6:
                         GameHandler.RemoveBlip(_blip_witness02, _blip_list);
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _talking_witness2 = false;
                         statusmachine = Globals.PlayerState.TALK_WITNESS3;
                         FiberHandler.BackToAnimation(_ped_civ2, Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 5)._heading, "missmic_4premierejimwaitbef_prem", "wait_idle_b", AnimationFlags.Loop);
@@ -916,27 +916,27 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_witness3 = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop4 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop4 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog + _possible_veh._modelname);
+                        GameHandler.PlayerChat(1, Dialog + _possible_veh._modelname, GameHandler.ini_displaytime);
                         _mlog_loop4 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(3, Dialog + _possible_veh._modelname);
+                        GameHandler.PlayerChat(3, Dialog + _possible_veh._modelname, GameHandler.ini_displaytime);
                         _mlog_loop4 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop4 = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.Model.Name + " with licence plate " + _veh_suspect.LicensePlate);
+                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.Model.Name + " with licence plate " + _veh_suspect.LicensePlate, GameHandler.ini_displaytime);
                         _mlog_loop4 = 6;
                         switch (endingvariant)
                         {
@@ -950,12 +950,12 @@ namespace LPCallouts.Callouts
                         }
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop4 = 7;
                         break;
                     case 7:
                         GameHandler.RemoveBlip(_blip_witness03, _blip_list);
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _talking_witness3 = false;
                         _player_at_scene = false;
                         FiberHandler.CivCarLeaveArea(_veh_civ3, _ped_civ3);

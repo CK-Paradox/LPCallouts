@@ -6,8 +6,10 @@ using LPCallouts.Externals;
 using LPCallouts.Menu;
 //LSPDFR
 using Rage;
+using Rage.Native;
 using LSPD_First_Response.Mod.API;
 using LSPD_First_Response.Engine.Scripting.Entities;
+using System.Drawing;
 
 namespace LPCallouts
 {
@@ -29,6 +31,8 @@ namespace LPCallouts
 
             _nc_rerun = false;
             _nc_id = 0;
+
+            Game.RawFrameRender += Game_RawFrameRender;
 
             //LOAD INI CONTENT
             try
@@ -56,8 +60,8 @@ namespace LPCallouts
             //LOAD CONTENT
             try
             {
-                    Suspects.GenerateContent();
-                    Content.GenerateContent();
+                Suspects.GenerateContent();
+                Content.GenerateContent();
             }
             catch
             {
@@ -85,17 +89,6 @@ namespace LPCallouts
             {
                 ErrorHandler.LogMessage("Menu could not be loaded", 991);
             }
-
-            //LOAD IPLS
-            try
-            {
-                GameHandler.LoadIPLs(); 
-            }
-            catch
-            {
-                ErrorHandler.LogMessage("IPLS could not be loaded", 998);
-            }
-
         }
 
         public static Assembly LSPDFRResolveEventHandler(object sender, ResolveEventArgs args)
@@ -120,8 +113,8 @@ namespace LPCallouts
             if (onDuty)
             {
                 RegisterCallouts();
-                if(_plugin_loaded)
-                { 
+                if (_plugin_loaded)
+                {
                     Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "LPCallouts Active", "", "");
 
                     //Get Playear character name
@@ -175,6 +168,16 @@ namespace LPCallouts
                 ErrorHandler.LogMessage("Callouts could not be registered", 997);
             }
         }
+
+        private void Game_RawFrameRender(object sender, GraphicsEventArgs e)
+        {
+
+                Ped ped = Game.LocalPlayer.Character;
+                string _text = "X: " + ped.Position.X + "  ; Y: " + ped.Position.Y + "  ;  Z: " + ped.Position.Z + "  ; HEADING:  " + ped.Heading;
+
+                e.Graphics.DrawText(_text, "Arial", 28.0f, new PointF(10f, 100f), Color.FromArgb(255, 255, 255));
+        }
+
 
     }
 }

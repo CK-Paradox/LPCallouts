@@ -38,6 +38,8 @@ namespace LPCallouts.Internals
         public static bool ini_custommodels { get; set; }
         public static int ini_occurrence { get; set; }
 
+        public static int ini_displaytime { get; set; }
+
         public static string _dialog_dept;
         public static bool _lights_on = false;
 
@@ -49,7 +51,6 @@ namespace LPCallouts.Internals
         public static string _dept_sapr = "SAPR - San Andreas Park Ranger";
         public static string _usernotice = "Please return to the accident scene and finish the conversation!";
 
-        public static int _displaytime = 8000;
         public static float _minimumdistance = 2f;
         public static float _driveoffdistance = 100f;
 
@@ -523,7 +524,29 @@ namespace LPCallouts.Internals
                     Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~RDE Value~w~ is invalid or out of range, default value loaded");
                     break;
             }
-            #endregion RDE
+            #endregion 
+
+            #region TextDisplayTime
+            //CHECK IF DIVISION IS BETWEEN 1 and 10
+            string _time = ini.ReadString("DISPLAYTIME", "TextTime", "6");
+            if (string.IsNullOrWhiteSpace(_time))
+            {
+                Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~TextTime~w~ is empty, default value loaded");
+            }
+            else
+            {
+                int readtime = Int32.Parse(_time);
+                if (Enumerable.Range(1, 24).Contains(readtime))
+                {
+                    ini_displaytime = readtime*1000;
+                }
+                else
+                {
+                    ini_displaytime = 6000;
+                    Game.DisplayNotification("~r~LPCallouts~w~ ini file error: ~y~TextTime~w~ is invalid or out of range, default value loaded");
+                }
+            }
+            #endregion 
         }
 
         public static void WriteIniValue(int dept)
@@ -721,45 +744,45 @@ namespace LPCallouts.Internals
             }
         }
 
-        public static void PlayerChat(int type, string text)
+        public static void PlayerChat(int type, string text, int displaytime)
         {
             switch (type)
             {
                 //PLAYER
                 case 1:
-                    Game.DisplaySubtitle("~b~" + Globals.CharacterName + ":~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~b~" + Globals.CharacterName + ":~w~ " + text, displaytime);
                     break;
                 //OFFICER
                 case 2:
-                    Game.DisplaySubtitle("~g~Officer:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~g~Officer:~w~ " + text, displaytime);
                     break;
                 //WITNESS
                 case 3:
-                    Game.DisplaySubtitle("~y~Witness:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~y~Witness:~w~ " + text, displaytime);
                     break;
                 //VICTIM
                 case 4:
-                    Game.DisplaySubtitle("~y~Victim:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~y~Victim:~w~ " + text, displaytime);
                     break;
                 //CIVILIAN
                 case 5:
-                    Game.DisplaySubtitle("~y~Civilian:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~y~Civilian:~w~ " + text, displaytime);
                     break;
                 //PARAMEDIC
                 case 6:
-                    Game.DisplaySubtitle("~g~Paramedic:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~g~Paramedic:~w~ " + text, displaytime);
                     break;
                 //CALLER
                 case 7:
-                    Game.DisplaySubtitle("~y~Caller:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~y~Caller:~w~ " + text, displaytime);
                     break;
                 //OWNER
                 case 8:
-                    Game.DisplaySubtitle("~y~Owner:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~y~Owner:~w~ " + text, displaytime);
                     break;
                 //OWNER
                 case 9:
-                    Game.DisplaySubtitle("~r~Suspect:~w~ " + text, GameHandler._displaytime);
+                    Game.DisplaySubtitle("~r~Suspect:~w~ " + text, displaytime);
                     break;
             }
 
@@ -836,66 +859,6 @@ namespace LPCallouts.Internals
             return false;
         }
 
-        public static void LoadIPLs()
-        {
-            //TREQULA-LA
-            uint inter_id = NativeFunction.CallByName<uint>("GET_INTERIOR_AT_COORDS", -556.508f, 286.318f, 81.176f);
-            NativeFunction.CallByName<uint>("DISABLE_INTERIOR", inter_id, false);
-            NativeFunction.CallByName<uint>("CAP_INTERIOR", inter_id, false);
-            NativeFunction.CallByName<uint>("REQUEST_IPL", "v_rockclub");
-            //LifeInvader
-            NativeFunction.CallByName<uint>("REQUEST_IPL", "facelobby");
-            NativeFunction.CallByName<uint>("REMOVE_IPL", "facelobbyfake");
-            //Lesters Factory
-            NativeFunction.CallByName<uint>("REQUEST_IPL", "id2_14_during_door");
-            NativeFunction.CallByName<uint>("REQUEST_IPL", "id2_14_during1");
-            //Jewlery Store
-            uint inter_id1 = NativeFunction.CallByName<uint>("GET_INTERIOR_AT_COORDS", -630.4f, -236.7f, 40.0f);
-            NativeFunction.CallByName<uint>("CAP_INTERIOR", inter_id1, false);
-            NativeFunction.CallByName<uint>("UNPIN_INTERIOR", inter_id1);
-            NativeFunction.CallByName<uint>("DISABLE_INTERIOR", inter_id1, false);
-            NativeFunction.CallByName<uint>("REQUEST_IPL", "post_hiest_unload");
-            NativeFunction.CallByName<uint>("REMOVE_IPL", "jewel2fake");
-            NativeFunction.CallByName<uint>("REMOVE_IPL", "bh1_16_refurb");
-        }
-
-        public static void UnlockLifeInvaderDoors()
-        {
-            uint lifeinvader_doorleft = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_fb_door01");
-            uint lifeinvader_doorright = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_fb_door02");
-
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", lifeinvader_doorleft, -1083.62f, -260.4167f, 38.1867f, false, 1, 0);
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", lifeinvader_doorright, -1080.974f, -259.0204f, 38.1867f, false, 1, 0);
-        }
-
-        public static void UnlockTequillaDoors()
-        {
-            uint teq_door1 = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_roc_door4");
-
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", teq_door1, -565.1712f, 276.6259f, 83.2863f, false, 1, 0);
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", teq_door1, -561.2863f, 293.5043f, 87.7771f, false, 1, 0);
-        }
-
-        public static void UnlockJewleryStore()
-        {
-            uint door_front = NativeFunction.CallByName<uint>("GET_HASH_KEY", "p_jewel_door_l");
-            uint door_rear = NativeFunction.CallByName<uint>("GET_HASH_KEY", "p_jewel_door_r1");
-
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", door_front, -631.96f, -236.33f, 38.21f, false, 1, 0);
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", door_rear, -630.43f, -238.44f, 38.21f, false, 1, 0);
-        }
-
-        public static void UnlockLesterFactory()
-        {
-            uint door1 = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_ss_door7");
-            uint door2 = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_ss_door8");
-            uint door3 = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_ss_door02");
-            uint door4 = NativeFunction.CallByName<uint>("GET_HASH_KEY", "v_ilev_ss_door03");
-
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", door1, 719.0f, -975.0f, 25.0f, false, 1, 0);
-            NativeFunction.CallByName<uint>("SET_STATE_OF_CLOSEST_DOOR_OF_TYPE", door2, 717.0f, -975.0f, 25.0f, false, 1, 0);
-        }
-
         public static void SetRelationShip()
         {
             Game.SetRelationshipBetweenRelationshipGroups("COP", "CIVMALE", Relationship.Respect);
@@ -957,23 +920,23 @@ namespace LPCallouts.Internals
                 {
                     case 0:
                         Talking = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         Loop = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, ini_displaytime);
                         Loop = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         Loop = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, ini_displaytime);
                         Loop = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         SuspectMarker.Alpha = 1.0f;
                         Loop = 5;
                         Talking = false;
@@ -1003,28 +966,28 @@ namespace LPCallouts.Internals
                 {
                     case 0:
                         Talking = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         Loop = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, ini_displaytime);
                         Loop = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         Loop = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, ini_displaytime);
                         Loop = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, ini_displaytime);
                         Loop = 5;
                         break;
                     case 5:
                         Talking = false;
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, ini_displaytime);
                         Loop = 6;
                         GameHandler.RemoveBlip(Marker, BlipList);
                         GameFiber.StartNew(delegate

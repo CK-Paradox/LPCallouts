@@ -356,7 +356,7 @@ namespace LPCallouts.Callouts
 
                         if (Game.LocalPlayer.Character.DistanceTo(_ped_caller.Position) < 50f)
                         {
-                            Game.DisplaySubtitle("Talk to the caller by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Talk to the caller by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information.", GameHandler.ini_displaytime);
                             if (_blip_caller.Exists()) { _blip_caller.DisableRoute(); }
 
                             if (Game.LocalPlayer.Character.DistanceTo(_ped_caller.Position) < 30f && _arrived_at_caller == false)
@@ -378,7 +378,7 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.TO_SCENERY:
                         if (Game.LocalPlayer.Character.DistanceTo(_waypoints.First(t => t._type == Globals.PositionType.DOORBELL)._position) < 20f)
                         {
-                            Game.DisplaySubtitle("Step into the marker and press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to ring the doorbell.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Step into the marker and press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to ring the doorbell.", GameHandler.ini_displaytime);
 
                             statusmachine = Globals.PlayerState.FRONTDOOR;
                         }
@@ -402,7 +402,7 @@ namespace LPCallouts.Callouts
                                 _marker_bell = false;
                                 if (_blip_bell.Exists()) { _blip_bell.Alpha = 0.0f; }
                                 GameFiber.Wait(3000);
-                                Game.DisplaySubtitle("No one has heard the doorbell. Check the backyard of this property!", GameHandler._displaytime);
+                                Game.DisplaySubtitle("No one has heard the doorbell. Check the backyard of this property!", GameHandler.ini_displaytime);
                                 _blip_talk = new Blip(_waypoints.First(t => t._type == Globals.PositionType.BACKYARD)._position);
                                 _blip_talk.Color = Color.Aqua;
                                 _blip_list.Add(_blip_talk);
@@ -414,7 +414,7 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.BACKYARD:
                         if (Game.LocalPlayer.Character.DistanceTo(_waypoints.First(t => t._type == Globals.PositionType.BACKYARD)._position) < 10f)
                         {
-                            Game.DisplaySubtitle("Step into the marker and press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to talk.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Step into the marker and press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to talk.", GameHandler.ini_displaytime);
                             statusmachine = Globals.PlayerState.SEARCHING;
                         }
                         break;
@@ -462,7 +462,7 @@ namespace LPCallouts.Callouts
                     case Globals.PlayerState.RERUN:
                         if (Game.LocalPlayer.Character.DistanceTo(_waypoints.First(t => t._type == Globals.PositionType.BACKYARD)._position) < 50f)
                         {
-                            Game.DisplaySubtitle("Go to the backyard and step into the marker. Press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to talk.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Go to the backyard and step into the marker. Press ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to talk.", GameHandler.ini_displaytime);
                             _blip_area.DisableRoute();
                             _marker_talk = true;
                             statusmachine = Globals.PlayerState.BACKYARD2;
@@ -656,19 +656,19 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_caller = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_caller = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(7, Dialog);
+                        GameHandler.PlayerChat(7, Dialog, GameHandler.ini_displaytime);
                         _mloop_caller = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_caller = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(7, Dialog);
+                        GameHandler.PlayerChat(7, Dialog, GameHandler.ini_displaytime);
                         _mloop_caller = 4;
                         _talking_caller = false;
                         GameFiber.StartNew(delegate
@@ -687,11 +687,11 @@ namespace LPCallouts.Callouts
                         }, FiberHandler._fiber_anim);
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_caller = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(7, Dialog);
+                        GameHandler.PlayerChat(7, Dialog, GameHandler.ini_displaytime);
                         _blip_bell = new Blip(_waypoints.First(t => t._type == Globals.PositionType.DOORBELL)._position);
                         _blip_bell.Color = Color.Aqua;
                         _blip_list.Add(_blip_bell);
@@ -716,27 +716,27 @@ namespace LPCallouts.Callouts
                         if (_owner_to_player == false)
                         {
                             _owner_to_player = true;
-                            GameHandler.PlayerChat(1, Dialog);
+                            GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                             GameFiber.StartNew(delegate
                             {
 
                                 _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._heading, 1f, 10000);
                                 GameFiber.Wait(4000);
-                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text);
+                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text, GameHandler.ini_displaytime);
                                 _mloop_owner = 2;
                             }, FiberHandler._fiber_move);
                         }
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(8, Dialog);
+                        GameHandler.PlayerChat(8, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 5;
                         break;
                     case 5:
@@ -745,7 +745,7 @@ namespace LPCallouts.Callouts
                             _owner_to_volume = true;
                             GameFiber.StartNew(delegate
                             {
-                                GameHandler.PlayerChat(8, Dialog);
+                                GameHandler.PlayerChat(8, Dialog, GameHandler.ini_displaytime);
                                 _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.MUSIC)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.MUSIC)._heading, 1f, 10000);
                                 GameFiber.Wait(6000);
                                 _ped_owner.Tasks.PlayAnimation("anim@narcotics@trash", "drop_front", 1f, AnimationFlags.None);
@@ -754,13 +754,13 @@ namespace LPCallouts.Callouts
                                 GameFiber.Wait(1000);
                                 _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._heading, 1f, 10000);
                                 GameFiber.Wait(6000);
-                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text);
+                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text, GameHandler.ini_displaytime);
                                 _mloop_owner = 7;
                             }, FiberHandler._fiber_move);
                         }
                         break;
                     case 7:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
 
                         _freezeposition = false;
                         statusmachine = Globals.PlayerState.NICEEND;
@@ -774,7 +774,7 @@ namespace LPCallouts.Callouts
                             GameFiber.Wait(2000);
                             Game.DisplayHelp("Leave the area");
                             _ped_owner.Tasks.GoStraightToPosition(_endtask._position, 1f, _endtask._heading, 1f, 10000);
-                            GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text);
+                            GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 2 && t._counter == _mloop_owner + 1)._text, GameHandler.ini_displaytime);
                             GameFiber.Wait(4000);
                             _ped_owner.Tasks.PlayAnimation(_endtask._animdir, _endtask._animname, 1f, _endtask._animflag);
                             _mloop_owner = 9;
@@ -803,38 +803,38 @@ namespace LPCallouts.Callouts
                         if (_owner_to_player == false)
                         {
                             _owner_to_player = true;
-                            GameHandler.PlayerChat(1, Dialog);
+                            GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                             GameFiber.StartNew(delegate
                             {
                                 _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._heading, 1f, 10000);
                                 GameFiber.Wait(4000);
-                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 3 && t._counter == _mloop_owner + 1)._text);
+                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 3 && t._counter == _mloop_owner + 1)._text, GameHandler.ini_displaytime);
                                 _mloop_owner = 2;
                             }, FiberHandler._fiber_move);
                         }
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(8, Dialog);
+                        GameHandler.PlayerChat(8, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(8, Dialog);
+                        GameHandler.PlayerChat(8, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 6;
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 7;
                         break;
                     case 7:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mloop_owner = 8;
                         break;
                     case 8:
@@ -846,7 +846,7 @@ namespace LPCallouts.Callouts
                                     _owner_to_volume = true;
                                     GameFiber.StartNew(delegate
                                     {
-                                        GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 0)._text);
+                                        GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 0)._text, GameHandler.ini_displaytime);
                                         _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.MUSIC)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.MUSIC)._heading, 1f, 10000);
                                         GameFiber.Wait(6000);
                                         _ped_owner.Tasks.PlayAnimation("anim@narcotics@trash", "drop_front", 1f, AnimationFlags.None);
@@ -855,12 +855,12 @@ namespace LPCallouts.Callouts
                                         GameFiber.Wait(1000);
                                         _ped_owner.Tasks.GoStraightToPosition(_waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._position, 1f, _waypoints.First(t => t._type == Globals.PositionType.PEDTALK)._heading, 1f, 10000);
                                         GameFiber.Wait(6000);
-                                        GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 1)._text);
+                                        GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 1)._text, GameHandler.ini_displaytime);
                                     }, FiberHandler._fiber_move);
                                 }
                                 break;
                             case Globals.PursuitEnd.PURSUIT:
-                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 0)._text);
+                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 0)._text, GameHandler.ini_displaytime);
                                 break;
                         }
                         _mloop_owner = 9;
@@ -869,10 +869,10 @@ namespace LPCallouts.Callouts
                         switch (suspectending)
                         {
                             case Globals.PursuitEnd.GIVEUP:
-                                GameHandler.PlayerChat(1, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 2)._text);
+                                GameHandler.PlayerChat(1, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 2)._text, GameHandler.ini_displaytime);
                                 break;
                             case Globals.PursuitEnd.PURSUIT:
-                                GameHandler.PlayerChat(1, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 1)._text);
+                                GameHandler.PlayerChat(1, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 1)._text, GameHandler.ini_displaytime);
                                 break;
                         }
                         _mloop_owner = 10;
@@ -888,7 +888,7 @@ namespace LPCallouts.Callouts
                                     GameHandler.RemoveBlip(_blip_area, _blip_list);
                                     _freezeposition = false;
                                     _ped_owner.Tasks.GoStraightToPosition(_endtask._position, 1f, _endtask._heading, 1f, 10000);
-                                    GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 3)._text);
+                                    GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 4 && t._counter == 3)._text, GameHandler.ini_displaytime);
                                     GameFiber.Wait(4000);
                                     _ped_owner.Tasks.PlayAnimation(_endtask._animdir, _endtask._animname, 1f, _endtask._animflag);
                                     Game.DisplayHelp("Leave the area");
@@ -897,10 +897,10 @@ namespace LPCallouts.Callouts
                                 break;
                             case Globals.PursuitEnd.PURSUIT:
                                 statusmachine = Globals.PlayerState.BADEND;
-                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 2)._text);
+                                GameHandler.PlayerChat(8, Content.DialogList.First(t => t._calloutid == _area._calloutid && t._contactid == 5 && t._counter == 2)._text, GameHandler.ini_displaytime);
                                 GameFiber.StartNew(delegate
                                 {
-                                    Game.DisplaySubtitle("Arrest the owner and turn off the music by steping into the marker and press ~o~'" + GameHandler.ini_action.ToString(), GameHandler._displaytime);
+                                    Game.DisplaySubtitle("Arrest the owner and turn off the music by steping into the marker and press ~o~'" + GameHandler.ini_action.ToString(), GameHandler.ini_displaytime);
                                     _marker_music = true;
                                     GameHandler.RemoveBlip(_blip_area, _blip_list);
                                     _blip_owner = _ped_owner.AttachBlip();

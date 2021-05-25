@@ -438,7 +438,7 @@ namespace LPCallouts.Callouts
 
                         if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < 50f)
                         {
-                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler.ini_displaytime);
                             _blip_poi.DisableRoute();
                             GameHandler.RemoveBlip(_blip_poi, _blip_list);
                             _blip_cop = _ped_cop.AttachBlip();
@@ -480,7 +480,7 @@ namespace LPCallouts.Callouts
                         {
                             if (suspectending == Globals.PursuitEnd.PURSUIT && _pursuitcreated == false && _isarrested == false && _getintocar == false && Game.LocalPlayer.Character.DistanceTo(_ped_suspect.Position) < 100f && Game.LocalPlayer.Character.LastVehicle.IsSirenOn && !Game.LocalPlayer.Character.LastVehicle.IsSirenSilent)
                             {
-                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler._displaytime);
+                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler.ini_displaytime);
                                 _ped_suspect.Tasks.ClearImmediately();
                                 _ped_suspect.Tasks.EnterVehicle(_veh_suspect, 10000, -1);
                                 _getintocar = true;
@@ -691,32 +691,32 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_cop = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 6;
                         FiberHandler.EMSLeaveArea(_veh_ems, _ped_ems);
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _blip_witness01 = _ped_civ.AttachBlip();
                         _blip_witness01.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness01);
@@ -724,7 +724,7 @@ namespace LPCallouts.Callouts
                         break;
                     case 7:
                         GameHandler.RemoveBlip(_blip_cop, _blip_list);
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _talking_cop = false;
                         statusmachine = Globals.PlayerState.TALK_WITNESS1;
                         FiberHandler.BackToAnimation(_ped_cop, Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 1)._heading, "missheist_agency3aig_24", "agent01_conversation", AnimationFlags.Loop);
@@ -744,27 +744,27 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_witness = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.Model.Name);
+                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.Model.Name, GameHandler.ini_displaytime);
                         _mlog_loop3 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 5;
                         break;
                     case 5:
-                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.LicensePlate);
+                        GameHandler.PlayerChat(3, Dialog + _veh_suspect.LicensePlate, GameHandler.ini_displaytime);
                         _mlog_loop3 = 6;
                         switch (endingvariant)
                         {
@@ -778,16 +778,16 @@ namespace LPCallouts.Callouts
                         }
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 7;
                         break;
                     case 7:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop3 = 8;
                         break;
                     case 8:
                         GameHandler.RemoveBlip(_blip_witness01, _blip_list);
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _talking_witness = false;
                         _player_at_scene = false;
                         Globals.Humans _endanim = Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 3);

@@ -13,8 +13,6 @@ namespace LPCallouts.Internals
 {
     public class SuspectHandler
     {
-        public static int OnScreenTime = 8000;
-
         public static void Conversation(Ped ped_suspect, Blip blip_suspect, ref LHandle pursuit, Globals.SuspectDialog dialog, bool pursuitcreated, ref int loop, ref bool talking)
         {
             if (Game.LocalPlayer.Character.DistanceTo(ped_suspect.Position) < 5f && Rage.Game.IsKeyDown(GameHandler.ini_action))
@@ -26,39 +24,39 @@ namespace LPCallouts.Internals
                 {
                     case 0:
                         talking = true;
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 1;
                         break;
                     case 1:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 2;
                         break;
                     case 2:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 3;
                         break;
                     case 3:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 4;
                         break;
                     case 4:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 5;
                         break;
                     case 5:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 6;
                         break;
                     case 6:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 7;
                         break;
                     case 7:
-                        Game.DisplaySubtitle(Dialog, OnScreenTime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 8;
                         break;
                     case 8:
-                        Game.DisplaySubtitle(Dialog, GameHandler._displaytime);
+                        Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                         loop = 9;
                         break;
                     case 9:
@@ -71,7 +69,7 @@ namespace LPCallouts.Internals
                             switch (suspectending)
                             {
                                 case Globals.PursuitEnd.PURSUIT:
-                                    Game.DisplaySubtitle(Dialog, GameHandler._displaytime);
+                                    Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                                     if (!pursuitcreated && Game.LocalPlayer.Character.DistanceTo(ped_suspect.Position) < 30f)
                                     {
                                         blip_suspect.IsFriendly = false;
@@ -84,9 +82,9 @@ namespace LPCallouts.Internals
                                     break;
                                 case Globals.PursuitEnd.GIVEUP:
                                 default:
-                                    Game.DisplaySubtitle(Dialog, GameHandler._displaytime);
+                                    Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                                     GameFiber.Wait(3000);
-                                    Game.DisplaySubtitle(Dialog, GameHandler._displaytime);
+                                    Game.DisplaySubtitle(Dialog, GameHandler.ini_displaytime);
                                     ped_suspect.Tasks.PlayAnimation("anim@move_m@prisoner_cuffed", "idle_intro", 1f, AnimationFlags.StayInEndFrame);
                                     blip_suspect.IsFriendly = false;
                                     GameFiber.Wait(3000);
@@ -114,15 +112,15 @@ namespace LPCallouts.Internals
                 switch (Loop)
                 {
                     case 5:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         Loop = 6;
                         break;
                     case 6:
-                        GameHandler.PlayerChat(9, Dialog);
+                        GameHandler.PlayerChat(9, Dialog, GameHandler.ini_displaytime);
                         Loop = 7;
                         break;
                     case 7:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         Loop = 8;
                         break;
                     case 8:
@@ -131,11 +129,11 @@ namespace LPCallouts.Internals
                         switch (suspectending)
                         {
                             case Globals.PursuitEnd.GIVEUP:
-                                GameHandler.PlayerChat(1, Dialog);
+                                GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                                 Loop = 9;
                                 break;
                             case Globals.PursuitEnd.PURSUIT:
-                                GameHandler.PlayerChat(9, Suspects.SuspectDialogs.First(t => t._callouttype == Globals.CalloutType._TrafficStop && t._dialogid == DialogID && t._counter == 10)._text);
+                                GameHandler.PlayerChat(9, Suspects.SuspectDialogs.First(t => t._callouttype == Globals.CalloutType._TrafficStop && t._dialogid == DialogID && t._counter == 10)._text, GameHandler.ini_displaytime);
                                 GameHandler.RemoveBlip(Marker, BlipList);
 
                                 GameFiber.StartNew(delegate
@@ -160,7 +158,7 @@ namespace LPCallouts.Internals
                         }
                         break;
                     case 9:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         Marker.IsFriendly = false;
                         GameFiber.StartNew(delegate
                         {

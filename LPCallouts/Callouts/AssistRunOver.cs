@@ -470,7 +470,7 @@ namespace LPCallouts.Callouts
 
                         if (Game.LocalPlayer.Character.DistanceTo(_ve3_poi) < 50f)
                         {
-                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler._displaytime);
+                            Game.DisplaySubtitle("Talk to the officer and witnesses by pressing ~o~'" + GameHandler.ini_action.ToString() + "'~w~ to gain information about the accident.", GameHandler.ini_displaytime);
                             GameHandler.RemoveBlip(_blip_poi, _blip_list);
                             _blip_cop = _ped_cop.AttachBlip();
                             _blip_cop.Color = Color.Blue;
@@ -503,7 +503,7 @@ namespace LPCallouts.Callouts
                                 _player_at_scene = false;
                                 _selection = false;
                                 _selectedarea = 0;
-                                Game.DisplaySubtitle("You are heading to ~g~" + _street01, GameHandler._displaytime);
+                                Game.DisplaySubtitle("You are heading to ~g~" + _street01, GameHandler.ini_displaytime);
                                 Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, Heading to ~g~" + _street01);
                                 _blip_area1.EnableRoute(System.Drawing.Color.LightBlue);
 
@@ -523,7 +523,7 @@ namespace LPCallouts.Callouts
                                 _player_at_scene = false;
                                 _selection = false;
                                 _selectedarea = 1;
-                                Game.DisplaySubtitle("You are heading to ~p~" + _street02, GameHandler._displaytime);
+                                Game.DisplaySubtitle("You are heading to ~p~" + _street02, GameHandler.ini_displaytime);
                                 Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, 10-76 to ~p~" + _street02);
                                 _blip_area2.EnableRoute(System.Drawing.Color.LightBlue);
 
@@ -543,7 +543,7 @@ namespace LPCallouts.Callouts
                                 _player_at_scene = false;
                                 _selection = false;
                                 _selectedarea = 2;
-                                Game.DisplaySubtitle("You are heading to ~y~" + _street03, GameHandler._displaytime);
+                                Game.DisplaySubtitle("You are heading to ~y~" + _street03, GameHandler.ini_displaytime);
                                 Game.DisplayNotification("~b~" + Globals.CharacterName + ":~w~ Dispatch, 10-76 to ~y~" + _street03);
                                 _blip_area3.EnableRoute(System.Drawing.Color.LightBlue);
 
@@ -737,7 +737,7 @@ namespace LPCallouts.Callouts
                         {
                             if (suspectending == Globals.PursuitEnd.PURSUIT && _pursuitcreated == false && _isarrested == false && _getintocar == false && Game.LocalPlayer.Character.DistanceTo(_ped_suspect.Position) < 100f && Game.LocalPlayer.Character.LastVehicle.IsSirenOn && !Game.LocalPlayer.Character.LastVehicle.IsSirenSilent)
                             {
-                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler._displaytime);
+                                Game.DisplaySubtitle("Suspect had heard your sirens and is fleeing their home.", GameHandler.ini_displaytime);
                                 _ped_suspect.Tasks.ClearImmediately();
                                 _ped_suspect.Tasks.EnterVehicle(_veh_suspect, 10000, -2);
                                 _getintocar = true;
@@ -978,23 +978,23 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_cop = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop1 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _blip_witness = _ped_civ.AttachBlip();
                         _blip_witness.Color = System.Drawing.Color.Orange;
                         _blip_list.Add(_blip_witness);
@@ -1003,7 +1003,7 @@ namespace LPCallouts.Callouts
                         break;
                     case 5:
                         GameHandler.RemoveBlip(_blip_cop, _blip_list);
-                        GameHandler.PlayerChat(2, Dialog);
+                        GameHandler.PlayerChat(2, Dialog, GameHandler.ini_displaytime);
                         _talking_cop = false;
                         Globals.Humans _endcop = Content.HumanList.First(t => t._calloutid == _area._calloutid && t._id == 1);
                         FiberHandler.BackToAnimation(_ped_cop, _endcop._heading, _endcop._animdir, _endcop._animname, _endcop._animflag);
@@ -1023,28 +1023,28 @@ namespace LPCallouts.Callouts
                 {
                     case 0:
                         _talking_witness = true;
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 1;
                         break;
                     case 1:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 2;
                         break;
                     case 2:
-                        GameHandler.PlayerChat(1, Dialog); ;
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime); ;
                         _mlog_loop2 = 3;
                         break;
                     case 3:
-                        GameHandler.PlayerChat(3, "A ~y~" + _veh_suspect.Model.Name + Dialog);
+                        GameHandler.PlayerChat(3, "A ~y~" + _veh_suspect.Model.Name + Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 4;
                         break;
                     case 4:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 5;
                         break;
                     case 5:
                         string _car_plate = _veh_suspect.LicensePlate.Remove(1, 5);
-                        GameHandler.PlayerChat(3, Dialog + _car_plate);
+                        GameHandler.PlayerChat(3, Dialog + _car_plate, GameHandler.ini_displaytime);
                         _mlog_loop2 = 6;
                         switch (endingvariant)
                         {
@@ -1058,16 +1058,16 @@ namespace LPCallouts.Callouts
                         }
                         break;
                     case 6:
-                        GameHandler.PlayerChat(1, Dialog);
+                        GameHandler.PlayerChat(1, Dialog, GameHandler.ini_displaytime);
                         _mlog_loop2 = 7;
                         break;
                     case 7:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         GameHandler.RemoveBlip(_blip_witness, _blip_list);
                         _mlog_loop2 = 8;
                         break;
                     case 8:
-                        GameHandler.PlayerChat(3, Dialog);
+                        GameHandler.PlayerChat(3, Dialog, GameHandler.ini_displaytime);
                         FiberHandler.PedLeaveArea(_ped_civ);
                         _talking_witness = false;
                         _player_at_scene = false;
